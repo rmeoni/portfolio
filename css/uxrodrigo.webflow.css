@@ -4312,7 +4312,7 @@ figcaption {
 
 .pricing {
   display: -ms-grid;
-  display: grid;
+  display: none;
   margin-right: auto;
   margin-left: auto;
   padding-top: 20px;
