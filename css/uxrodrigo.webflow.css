@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .w-layout-grid {
   display: -ms-grid;
   display: grid;
