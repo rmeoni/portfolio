@@ -2795,7 +2795,7 @@ figcaption {
   -ms-flex-align: center;
   align-items: center;
   border-radius: 50%;
-  background-color: #433056;
+  background-color: #94B0FF;
   -webkit-transition: background-color 300ms ease;
   transition: background-color 300ms ease;
   color: #fff;
@@ -2973,7 +2973,7 @@ figcaption {
 }
 
 .button:hover {
-  background-color: #452c48;
+  background-color: #f96a4c;
 }
 
 .button.testimonials-button {
@@ -3025,6 +3025,20 @@ figcaption {
   display: none;
 }
 
+.projects{
+  margin-bottom: 48px;
+}
+
+.project-categories {
+  margin-bottom: 48px;
+}
+.portfolio-links {
+  transition:font-size .6s;
+}
+
+.portfolio-links:hover {
+  font-size:15.5px;
+}
 .page-header {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4886,7 +4900,7 @@ figcaption {
   width: 100%;
   height: 100%;
   margin: auto;
-  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
+  /*background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');*/
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -5414,6 +5428,11 @@ figcaption {
 .tag-badge:hover {
   background-color: #f96a4c;
   color: #fff;
+}
+
+.tag-badge:focus {
+    background-color: #f96a4c;
+    color: #fff;
 }
 
 .tag-badge.job-badge {
