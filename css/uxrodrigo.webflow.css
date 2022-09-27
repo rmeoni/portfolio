@@ -5435,6 +5435,11 @@ figcaption {
     color: #fff;
 }
 
+.tag-badge.active {
+  background-color: #f96a4c;
+  color: #fff;
+}
+
 .tag-badge.job-badge {
   margin-top: 6px;
   margin-right: 0px;

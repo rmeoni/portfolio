@@ -10,7 +10,7 @@ const projects = {
     eagles: {
         title: "Eagle's Nest UI Design",
         category: 'UI Design',
-        description: "For this project I had the opportunity to work along with a team of 8+ creatives. Including marketing specialists, copywriters, programmers and team leaders. By sticking to the brand's core beliefs and values I worked developing a <strong>Design System and Prototype in Figma. </strong> Afterwards I handed off the <strong>CSS</strong> to the developers. While I did some coding as well, most of the development of the site was taken care by another programmer to divide labor and separate concerns. The site was built in <strong>Wordpress.</strong>",
+        description: "For this project I had the opportunity to work along with a team of 8+ creatives. Including marketing specialists, copywriters, programmers and team leaders. By sticking to the brand's core beliefs and values I worked developing a <strong>Design System and Prototype in Figma. </strong> The site was built in <strong>Wordpress.</strong>",
         link: 'https://eaglesnestatitlan.com/',
         image: 'images/portfolio-thumb-4.jpeg',
         buttonText: 'Visit Website',
