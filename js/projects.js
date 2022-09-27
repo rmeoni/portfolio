@@ -80,6 +80,22 @@ const projects = {
         image: './images/portfolio-thumb-2.jpg',
         buttonText: 'View Prototype',
     },
+    teamapps : {
+        title: 'Team Prototype Design',
+        category: 'Prototype Design',
+        description: 'Prototype made for a Team collaboration app as part of a webdesign course from Udemy. Design for a landing page, blog section and posts <strong>made in Figma</strong> This was one of the final excercises assigned by the master Vako Shvilli in his course.',
+        link: 'https://www.figma.com/proto/BsWVtJ9gLTVbLaiFsP9Wab/Team-App-Designs-Final?page-id=16919%3A61&node-id=16919%3A62&viewport=79%2C25%2C0.13&scaling=scale-down-width&starting-point-node-id=16919%3A62',
+        image: './images/portfolio-thumb-11.jpeg',
+        buttonText: 'View Prototype',
+    },
+    chatapp : {
+        title: 'Chat App Prototype Design',
+        category: 'Prototype Design',
+        description: 'Prototype made for a chat app as part of a webdesign course from Udemy. Design for a landing page <strong>made in Figma</strong> This was one of the final excercises assigned by the master Vako Shvilli in his course.',
+        link: 'https://www.figma.com/proto/SwAsxxXoJOVGm3dwzD87lC/Practice%3A-Chat-App-Homepage-Design-(Copy)?page-id=2498%3A2&node-id=2498%3A3&scaling=scale-down-width',
+        image: './images/portfolio-thumb-12.jpeg',
+        buttonText: 'View Prototype',
+    },
 }
 
 
