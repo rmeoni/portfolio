@@ -75,7 +75,7 @@ const projects = {
     lozana : {
         title: 'Lozana Prototype Design',
         category: 'Prototype Design',
-        description: 'In this opportunity I got to design the User Interface of a Real State company. Working hand in hand with the client, we designed a <strong>prototype with Figma</strong> to then be <strong>developed in Webflow.</strong> ',
+        description: 'In this opportunity I got to design the User Interface of a Real Estate company. Working hand in hand with the client, we designed a <strong>prototype with Figma</strong> to then be <strong>developed in Webflow.</strong> ',
         link: 'https://www.figma.com/proto/8X8SJLP7QarDud2e1hDE00/Lozana-Web-Design?page-id=164%3A1650&node-id=164%3A1779&viewport=25%2C72%2C0.08&scaling=scale-down-width&starting-point-node-id=164%3A1779',
         image: './images/portfolio-thumb-2.jpg',
         buttonText: 'View Prototype',
