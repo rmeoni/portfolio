@@ -5435,7 +5435,7 @@ figcaption {
     color: #fff;
 }
 
-.tag-badge.active {
+.tag-badge.activeBtn {
   background-color: #f96a4c;
   color: #fff;
 }
