@@ -24,7 +24,7 @@ const projects = {
         buttonText: 'Visit Website',
     },
     windhillgrowers: {
-        title: "Wind Hill Growers Design System",
+        title: "Wind Hill Growers UI Design",
         category: "UI Design",
         description: "Working in the expansion of the website from this beautiful brand we got to build a <strong>Design System in Figma</strong> to keep all our digital products on brand. I've been lucky enough to be able to collaborate and keep expanding this website. Built on <strong>Squarespace</strong>",
         link: "https://www.windhillgrowers.com/",
