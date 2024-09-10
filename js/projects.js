@@ -15,14 +15,6 @@ const projects = {
         image: 'images/portfolio-thumb-4.jpeg',
         buttonText: 'Visit Website',
     },
-    utopia : {
-        title: 'Utopia UI Design',
-        category: 'UI Design',
-        description: 'During this project I got the opportunity to work alongside a Dutch designer and developer. It was an eye-opening experience for I got to learn the basics of wireframing with <strong>Sketch</strong> as well as to strenghten my web development skills. Even thou this project was done using <strong>Shopify</strong>, I got the Javascript bug thanks to this master developer I got to work with. I got a first-hand opportunity to see an app being built from scratch using node.js as well as to see the design process of it.',
-        link: 'https://utopia-eco-hotel.myshopify.com/',
-        image: 'images/portfolio-thumb-6.jpeg',
-        buttonText: 'Visit Website',
-    },
     windhillgrowers: {
         title: "Wind Hill Growers UI Design",
         category: "UI Design",
