@@ -64,7 +64,7 @@ const projects = {
         image: "images/portfolio-thumb-9.jpeg",
         buttonText: 'Visit Website',
     },
-    lozana : {
+    lozana: {
         title: 'Lozana Prototype Design',
         category: 'Prototype Design',
         description: 'In this opportunity I got to design the User Interface of a Real Estate company. Working hand in hand with the client, we designed a <strong>prototype with Figma</strong> to then be <strong>developed in Webflow.</strong> ',
@@ -72,7 +72,7 @@ const projects = {
         image: './images/portfolio-thumb-2.jpg',
         buttonText: 'View Prototype',
     },
-    teamapps : {
+    teamapps: {
         title: 'Team Prototype Design',
         category: 'Prototype Design',
         description: 'Prototype made for a Team collaboration app as part of a webdesign course from Udemy. Design for a landing page, blog section and posts <strong>made in Figma</strong> This was one of the final excercises assigned by the master Vako Shvilli in his course.',
@@ -80,7 +80,7 @@ const projects = {
         image: './images/portfolio-thumb-11.jpeg',
         buttonText: 'View Prototype',
     },
-    chatapp : {
+    chatapp: {
         title: 'Chat App Prototype Design',
         category: 'Prototype Design',
         description: 'Prototype made for a chat app as part of a webdesign course from Udemy. Design for a landing page <strong>made in Figma</strong> This was one of the final excercises assigned by the master Vako Shvilli in his course.',
@@ -88,6 +88,12 @@ const projects = {
         image: './images/portfolio-thumb-12.jpeg',
         buttonText: 'View Prototype',
     },
+
+    gummies_mockups: 'Gummies Product Mockup', 
+    category: 'Mockup',
+    description: 'I used the provided label design to create a realistic product mockup in Photoshop, applying the label to a 3D-rendered container and refining the look with shadows and reflections. The result is a professional and lifelike representation of the product.',
+    image: './images/portfolio-thumb-11.jpeg',
+
 }
 
 
