@@ -89,11 +89,12 @@ const projects = {
         buttonText: 'View Prototype',
     },
 
-    gummies_mockups: 'Gummies Product Mockup', 
+    gummies_mockups: {
+    title: 'Gummies Product Mockup', 
     category: 'Mockups',
     description: 'I used the provided label design to create a realistic product mockup in Photoshop, applying the label to a 3D-rendered container and refining the look with shadows and reflections. The result is a professional and lifelike representation of the product.',
     image: './focus-gummies-wind-hill-growers.jpg',
-    buttonText: ' ',
+    buttonText: ' '},
 }
 
 
