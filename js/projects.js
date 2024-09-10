@@ -96,6 +96,15 @@ const projects = {
     link: './images/focus-gummies-wind-hill-growers.jpg',
     image: './images/focus-gummies-wind-hill-growers.jpg',
     buttonText: ' '},
+
+    zoho_google_api: {
+        title:'Zoho Inventory to Google Sheets API',
+        category: 'API',
+        description: 'A company was struggling with managing inventory in Zoho Inventory. I created a JavaScript that pulls new invoices via the Zoho Inventory API and pushes them to Google Sheets, allowing them to easily manage the data.',
+        link: 'https://codepen.io/uxrodrigo/pen/PorLWbe',
+        image: './images/zoho-inventory-to-google-sheet.png',
+        buttonText: 'View CodePen Project',
+    }
 }
 
 
