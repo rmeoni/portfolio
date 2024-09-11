@@ -31,14 +31,6 @@ const projects = {
         image: "images/portfolio-thumb-5.jpeg",
         buttonText: 'Visit Website',
     },
-    santelmo: {
-        title: "Restaurant San Telmo Landing Page",
-        category: "UI Design",
-        description: "This project was coded from scratch using <strong>HTML, CSS and Javascript.</strong> The vision of the project was to create a formidable landing page with a satisfactory user flow. Making all the different platforms from the business accesible from the main menu, thus increasing the conversion into bookings and sales.",
-        link: "https://www.santelmoflores.com/",
-        image: "images/portfolio-thumb-3.jpg",
-        buttonText: 'Visit Website',
-    },
     whgapp: {
         title: "Cannabis Tester App",
         category: "Javascript",
@@ -55,14 +47,6 @@ const projects = {
         image: "images/portfolio-thumb-7.jpeg",
         buttonText: 'View Prototype',
 
-    },
-    wht: {
-        title: "Wind Hill Tours UX Design",
-        category: "UX Design",
-        description: "For this culturally rich project I got to work with a team of creatives focusing on the Colombian market. We performed <strong>Quantitative an Qualitative research </strong>, collecting data trough surveys and statistics to better understand our audience. Then we designed a <strong>Prototype in Figma</strong> putting our user's painpoints first. Then we developed the website on in <strong>Squarespace</strong> providing a great customer experience by solving our users problems in an accesible way.  ",
-        link: "https://windhilltours.com/",
-        image: "images/portfolio-thumb-9.jpeg",
-        buttonText: 'Visit Website',
     },
     lozana: {
         title: 'Lozana Prototype Design',
