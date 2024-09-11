@@ -101,9 +101,9 @@ const projects = {
         title:'Zoho Inventory to Google Sheets API',
         category: 'API',
         description: 'A company was struggling with managing inventory in Zoho Inventory. I created a JavaScript that pulls new invoices via the Zoho Inventory API and pushes them to Google Sheets, allowing them to easily manage the data.',
-        link: 'https://codepen.io/uxrodrigo/pen/PorLWbe',
+        link: './detail_project_zoho_google_api.html',
         image: './images/zoho-inventory-to-google-sheet.png',
-        buttonText: 'View CodePen Project',
+        buttonText: 'View Project',
     }
 }
 
