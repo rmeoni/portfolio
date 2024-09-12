@@ -7,20 +7,20 @@ const projects = {
         image: 'images/portfolio-thumb-8.jpeg',
         buttonText: 'View Prototype',
     },
-    eagles: {
-        title: "Eagle's Nest UI Design",
-        category: 'UI Design',
-        description: "For this project I had the opportunity to work along with a team of 8+ creatives. Including marketing specialists, copywriters, programmers and team leaders. By sticking to the brand's core beliefs and values we worked developing a <strong>Design System and Prototype in Figma. </strong> The site was built in <strong>Wordpress.</strong>",
-        link: 'https://eaglesnestatitlan.com/',
-        image: 'images/portfolio-thumb-4.jpeg',
-        buttonText: 'Visit Website',
-    },
     windhillgrowers: {
         title: "Wind Hill Growers UI Design",
         category: "UI Design",
         description: "Working in the expansion of the website from this beautiful brand we got to build a <strong>Design System in Figma</strong> to keep all our digital products on brand. I've been lucky enough to be able to collaborate and keep expanding this website. Built on <strong>Squarespace</strong>",
         link: "https://www.windhillgrowers.com/",
         image: "images/portfolio-thumb-10.jpeg",
+        buttonText: 'Visit Website',
+    },
+    eagles: {
+        title: "Eagle's Nest UI Design",
+        category: 'UI Design',
+        description: "For this project I had the opportunity to work along with a team of 8+ creatives. Including marketing specialists, copywriters, programmers and team leaders. By sticking to the brand's core beliefs and values we worked developing a <strong>Design System and Prototype in Figma. </strong> The site was built in <strong>Wordpress.</strong>",
+        link: 'https://eaglesnestatitlan.com/',
+        image: 'images/portfolio-thumb-4.jpeg',
         buttonText: 'Visit Website',
     },
     xejas: {
@@ -77,9 +77,9 @@ const projects = {
     title: 'Gummies Product Mockup', 
     category: 'Mockups',
     description: 'I used the provided label design to create a realistic product mockup in Photoshop, applying the label to a 3D-rendered container and refining the look with shadows and reflections. The result is a professional and lifelike representation of the product.',
-    link: './images/focus-gummies-wind-hill-growers.jpg',
-    image: './images/focus-gummies-wind-hill-growers.jpg',
-    buttonText: ' '},
+    link: './detail_project_gummies_mockup.html',
+    image: './images/project-focus-gummies-wind-hill-growers.jpg',
+    buttonText: 'View Project'},
 
     zoho_google_api: {
         title:'Zoho Inventory to Google Sheets API',
