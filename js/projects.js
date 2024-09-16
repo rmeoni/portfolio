@@ -6,6 +6,14 @@ const projects = {
         link: 'https://www.figma.com/proto/VkEcXX513HG6Eyrupg7Tg1/UI-KIT-UKP?page-id=0%3A1&node-id=833%3A2955&viewport=1126%2C2233%2C0.33&scaling=scale-down-width&starting-point-node-id=833%3A2955',
         image: 'images/portfolio-thumb-8.jpeg',
         buttonText: 'View Prototype',
+    },   
+    xejas: {
+        title: "Restaurant Paseo Xejasmin Booking Page",
+        category: "UI Design",
+        description: "One of my first coding projects. For this awesome place I got to build a solution from scratch using <strong>HTML, CSS and Basic Javascript</strong>. This website showcases the attractions from the place, allows customers to download a PDF menu trough a QR code and even book events that go into <strong>Podio CRM</strong> directly from the home page. ",
+        link: "https://www.paseoxejasmin.com/",
+        image: "images/portfolio-thumb-5.jpeg",
+        buttonText: 'Visit Website',
     },
     windhillgrowers: {
         title: "Wind Hill Growers UI Design",
@@ -13,22 +21,6 @@ const projects = {
         description: "Working in the expansion of the website from this beautiful brand we got to build a <strong>Design System in Figma</strong> to keep all our digital products on brand. I've been lucky enough to be able to collaborate and keep expanding this website. Built on <strong>Squarespace</strong>",
         link: "https://www.windhillgrowers.com/",
         image: "images/portfolio-thumb-10.jpeg",
-        buttonText: 'Visit Website',
-    },
-    eagles: {
-        title: "Eagle's Nest UI Design",
-        category: 'UI Design',
-        description: "For this project I had the opportunity to work along with a team of 8+ creatives. Including marketing specialists, copywriters, programmers and team leaders. By sticking to the brand's core beliefs and values we worked developing a <strong>Design System and Prototype in Figma. </strong> The site was built in <strong>Wordpress.</strong>",
-        link: 'https://eaglesnestatitlan.com/',
-        image: 'images/portfolio-thumb-4.jpeg',
-        buttonText: 'Visit Website',
-    },
-    xejas: {
-        title: "Restaurant Paseo Xejasmin Booking Page",
-        category: "UI Design",
-        description: "One of my first coding projects. For this awesome place I got to build a solution from scratch using <strong>HTML, CSS and Basic Javascript</strong>. This website showcases the attractions from the place, allows customers to download a PDF menu trough a QR code and even book events that go into <strong>Podio CRM</strong> directly from the home page. ",
-        link: "https://www.paseoxejasmin.com/",
-        image: "images/portfolio-thumb-5.jpeg",
         buttonText: 'Visit Website',
     },
     whgapp: {
@@ -56,23 +48,6 @@ const projects = {
         image: './images/portfolio-thumb-2.jpg',
         buttonText: 'View Prototype',
     },
-    teamapps: {
-        title: 'Team Prototype Design',
-        category: 'Prototype Design',
-        description: 'Prototype made for a Team collaboration app as part of a webdesign course from Udemy. Design for a landing page, blog section and posts <strong>made in Figma</strong> This was one of the final excercises assigned by the master Vako Shvilli in his course.',
-        link: 'https://www.figma.com/proto/BsWVtJ9gLTVbLaiFsP9Wab/Team-App-Designs-Final?page-id=16919%3A61&node-id=16919%3A62&viewport=79%2C25%2C0.13&scaling=scale-down-width&starting-point-node-id=16919%3A62',
-        image: './images/portfolio-thumb-11.jpeg',
-        buttonText: 'View Prototype',
-    },
-    chatapp: {
-        title: 'Chat App Prototype Design',
-        category: 'Prototype Design',
-        description: 'Prototype made for a chat app as part of a webdesign course from Udemy. Design for a landing page <strong>made in Figma</strong> This was one of the final excercises assigned by the master Vako Shvilli in his course.',
-        link: 'https://www.figma.com/proto/SwAsxxXoJOVGm3dwzD87lC/Practice%3A-Chat-App-Homepage-Design-(Copy)?page-id=2498%3A2&node-id=2498%3A3&scaling=scale-down-width',
-        image: './images/portfolio-thumb-12.jpeg',
-        buttonText: 'View Prototype',
-    },
-
     gummies_mockups: {
     title: 'Gummies Product Mockup', 
     category: 'Mockups',
