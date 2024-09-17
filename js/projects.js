@@ -53,17 +53,16 @@ const projects = {
     category: 'Mockups',
     description: 'I used the provided label design to create a realistic product mockup in Photoshop, applying the label to a 3D-rendered container and refining the look with shadows and reflections. The result is a professional and lifelike representation of the product.',
     link: './detail_project_gummies_mockup.html',
-    image: './images/project-focus-gummies-wind-hill-growers.jpg',
+    image: './images/portfolio-thumb-14.png',
     buttonText: 'View Project'},
-
     zoho_google_api: {
         title:'Zoho Inventory to Google Sheets API',
         category: 'API',
         description: 'A company was struggling with managing inventory in Zoho Inventory. I created a JavaScript that pulls new invoices via the Zoho Inventory API and pushes them to Google Sheets, allowing them to easily manage the data.',
         link: './detail_project_zoho_google_api.html',
-        image: './images/zoho-inventory-to-google-sheet.png',
+        image: './images/portfolio-thumb-15.png',
         buttonText: 'View Project',
-    }
+    },
 }
 
 
