@@ -6,7 +6,7 @@ const projects = {
         link: 'https://www.figma.com/proto/VkEcXX513HG6Eyrupg7Tg1/UI-KIT-UKP?page-id=0%3A1&node-id=833%3A2955&viewport=1126%2C2233%2C0.33&scaling=scale-down-width&starting-point-node-id=833%3A2955',
         image: 'images/portfolio-thumb-8.jpeg',
         buttonText: 'View Prototype',
-    },   
+    },
     xejas: {
         title: "Restaurant Paseo Xejasmin Booking Page",
         category: "UI Design",
@@ -49,15 +49,32 @@ const projects = {
         buttonText: 'View Prototype',
     },
     gummies_mockups: {
-    title: 'Gummies Product Mockup', 
-    category: 'Mockups',
-    description: 'I used the provided label design to create a realistic product mockup in Photoshop, applying the label to a 3D-rendered container and refining the look with shadows and reflections. The result is a professional and lifelike representation of the product.',
-    link: './detail_project_gummies_mockup.html',
-    image: './images/portfolio-thumb-14.png',
-    buttonText: 'View Project'},
+        title: 'Gummies Product Mockup',
+        category: 'Mockups',
+        description: 'I used the provided label design to create a realistic product mockup in Photoshop, applying the label to a 3D-rendered container and refining the look with shadows and reflections. The result is a professional and lifelike representation of the product.',
+        link: './detail_project_gummies_mockup.html',
+        image: './images/portfolio-thumb-14.png',
+        buttonText: 'View Project'
+    },
     zoho_google_api: {
-        title:'Zoho Inventory to Google Sheets API',
-        category: 'API',
+        title: 'Zoho Inventory to Google Sheets API',
+        category: 'Javascript',
+        description: 'A company was struggling with managing inventory in Zoho Inventory. I created a JavaScript that pulls new invoices via the Zoho Inventory API and pushes them to Google Sheets, allowing them to easily manage the data.',
+        link: './detail_project_zoho_google_api.html',
+        image: './images/portfolio-thumb-15.png',
+        buttonText: 'View Project',
+    },
+    mwd_branding: {
+        title: 'Mit Was Drin Branding',
+        category: 'Branding',
+        description: 'Mit Was Drin needed an iconic and versatile logo that reflected their core vision and values. Working closely with the CEO, we quickly transformed a sketch into a timeless design. The result is a logo that thrives on both digital platforms and printed merch. This project was one of the most enjoyable and rewarding I haev been a part of.',
+        link: './detail_project_mwd_branding.html',
+        image: './images/portfolio-thumb-16.png',
+        buttonText: 'View Project'
+    },
+    zoho_google_api: {
+        title: 'Zoho Inventory to Google Sheets API',
+        category: 'Javascript',
         description: 'A company was struggling with managing inventory in Zoho Inventory. I created a JavaScript that pulls new invoices via the Zoho Inventory API and pushes them to Google Sheets, allowing them to easily manage the data.',
         link: './detail_project_zoho_google_api.html',
         image: './images/portfolio-thumb-15.png',
@@ -66,7 +83,7 @@ const projects = {
 }
 
 
-const renderProjects = (projects,category) => {
+const renderProjects = (projects, category) => {
 
     let projectsDiv = document.getElementById('portfolio-project');
     projectsDiv.innerHTML = "";
@@ -80,21 +97,21 @@ const renderProjects = (projects,category) => {
     console.log(projectsObj);
 
     let filteredProjects = projectsObj.filter(project => project[1].category === category);
-  
 
 
-//if it shows 2 projects or less
-    if(filteredProjects.length === 2 ) {
+
+    //if it shows 2 projects or less
+    if (filteredProjects.length === 2) {
         workGrid.style.gridRowGap = '0px';
-        for(let i = 0; i < filteredProjects.length; i++){
+        for (let i = 0; i < filteredProjects.length; i++) {
 
-            if(i===1) {
+            if (i === 1) {
                 let project = document.createElement('div');
-            project.setAttribute('class',`projects ${category}`);
-          
-            project.innerHTML = 
-           
-            `<a href="${filteredProjects[i][1].link}" target="_blank" class="work-card-preview w-inline-block">
+                project.setAttribute('class', `projects ${category}`);
+
+                project.innerHTML =
+
+                    `<a href="${filteredProjects[i][1].link}" target="_blank" class="work-card-preview w-inline-block">
                 <div class="card-hover-circle"></div>
                 <div class="overlay" style="display: none; transform: translate3d(150%, -150%, 0px) scale3d(2, 2, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
                 <img src="${filteredProjects[i][1].image}" alt="" class="bg-image absolute" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
@@ -108,17 +125,17 @@ const renderProjects = (projects,category) => {
             ${filteredProjects[i][1].buttonText}
             </a>
             `;
-            
-            projectsDiv.appendChild(project);
+
+                projectsDiv.appendChild(project);
             } else {
                 //add a new grid for the 3rd+ projects
 
                 let project = document.createElement('div');
-            project.setAttribute('class',`projects ${category}`);
-          
-            project.innerHTML = 
-           
-            `<a href="${filteredProjects[i][1].link}" target="_blank" class="work-card-preview w-inline-block">
+                project.setAttribute('class', `projects ${category}`);
+
+                project.innerHTML =
+
+                    `<a href="${filteredProjects[i][1].link}" target="_blank" class="work-card-preview w-inline-block">
                 <div class="card-hover-circle"></div>
                 <div class="overlay" style="display: none; transform: translate3d(150%, -150%, 0px) scale3d(2, 2, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
                 <img src="${filteredProjects[i][1].image}" alt="" class="bg-image absolute" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
@@ -132,20 +149,20 @@ const renderProjects = (projects,category) => {
             ${filteredProjects[i][1].buttonText}
             </a>
             `;
-            
-            workGrid2.appendChild(project);
+
+                workGrid2.appendChild(project);
             }
         }
-    }else if (filteredProjects.length >= 3){
-        for(let i = 0; i < filteredProjects.length; i++){
+    } else if (filteredProjects.length >= 3) {
+        for (let i = 0; i < filteredProjects.length; i++) {
 
-            if(i<2) {
+            if (i < 2) {
                 let project = document.createElement('div');
-            project.setAttribute('class',`projects ${category}`);
-          
-            project.innerHTML = 
-           
-            `<a href="${filteredProjects[i][1].link}" target="_blank" class="work-card-preview w-inline-block">
+                project.setAttribute('class', `projects ${category}`);
+
+                project.innerHTML =
+
+                    `<a href="${filteredProjects[i][1].link}" target="_blank" class="work-card-preview w-inline-block">
                 <div class="card-hover-circle"></div>
                 <div class="overlay" style="display: none; transform: translate3d(150%, -150%, 0px) scale3d(2, 2, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
                 <img src="${filteredProjects[i][1].image}" alt="" class="bg-image absolute" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
@@ -159,17 +176,17 @@ const renderProjects = (projects,category) => {
             ${filteredProjects[i][1].buttonText}
             </a>
             `;
-            
-            projectsDiv.appendChild(project);
+
+                projectsDiv.appendChild(project);
             } else {
                 //add a new grid for the 3rd+ projects
 
                 let project = document.createElement('div');
-            project.setAttribute('class',`projects ${category}`);
-          
-            project.innerHTML = 
-           
-            `<a href="${filteredProjects[i][1].link}" target="_blank" class="work-card-preview w-inline-block">
+                project.setAttribute('class', `projects ${category}`);
+
+                project.innerHTML =
+
+                    `<a href="${filteredProjects[i][1].link}" target="_blank" class="work-card-preview w-inline-block">
                 <div class="card-hover-circle"></div>
                 <div class="overlay" style="display: none; transform: translate3d(150%, -150%, 0px) scale3d(2, 2, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
                 <img src="${filteredProjects[i][1].image}" alt="" class="bg-image absolute" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
@@ -183,20 +200,20 @@ const renderProjects = (projects,category) => {
             ${filteredProjects[i][1].buttonText}
             </a>
             `;
-            
-            workGrid2.appendChild(project);
+
+                workGrid2.appendChild(project);
             }
         }
 
-    }else {
+    } else {
         //if it shows 3 or more projects
-        for(let i = 0; i < filteredProjects.length; i++){
+        for (let i = 0; i < filteredProjects.length; i++) {
             let project = document.createElement('div');
-            project.setAttribute('class',`projects ${category}`);
-          
-            project.innerHTML = 
-           
-            `<a href="${filteredProjects[i][1].link}" target="_blank" class="work-card-preview w-inline-block">
+            project.setAttribute('class', `projects ${category}`);
+
+            project.innerHTML =
+
+                `<a href="${filteredProjects[i][1].link}" target="_blank" class="work-card-preview w-inline-block">
                 <div class="card-hover-circle"></div>
                 <div class="overlay" style="display: none; transform: translate3d(150%, -150%, 0px) scale3d(2, 2, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
                 <img src="${filteredProjects[i][1].image}" alt="" class="bg-image absolute" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
@@ -210,7 +227,7 @@ const renderProjects = (projects,category) => {
             ${filteredProjects[i][1].buttonText}
             </a>
             `;
-            
+
             projectsDiv.appendChild(project);
         }
     }
