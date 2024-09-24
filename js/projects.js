@@ -77,7 +77,7 @@ const projects = {
         category: 'Javascript',
         description: 'A company was struggling with managing inventory in Zoho Inventory. I created a JavaScript that pulls new invoices via the Zoho Inventory API and pushes them to Google Sheets, allowing them to easily manage the data.',
         link: './detail_project_zoho_google_api.html',
-        image: './images/portfolio-thumb-15.png',
+        image: './images/project_zoho_inventory-to-google-sheets-api.png',
         buttonText: 'View Project',
     },
 }
