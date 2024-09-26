@@ -35,9 +35,9 @@ const projects = {
         title: "Coffee Brand UX Research/Design",
         category: "UX Design",
         description: "In this project, I used the Design Thinking approach, starting with Qualitative and Quantitative Research to define User Personas and identify pain points. We then used a User Journey Map to ideate solutions, followed by creating a Wireframe and Prototype in Figma. Finally, we conducted Usability Testing to refine the design based on user feedback.",
-        link: "https://www.figma.com/proto/0Df7gWKIRrghwUBLCBZQvU/Caf%C3%A9-Don-Lucas-Prototype?page-id=0%3A1&node-id=2%3A96&viewport=338%2C290%2C0.11&scaling=scale-down-width&starting-point-node-id=2%3A96",
+        link: "./detail_project_coffee-ux.html",
         image: "images/portfolio-thumb-7.png",
-        buttonText: 'View Prototype',
+        buttonText: 'View Case Study',
 
     },
     lozana: {
