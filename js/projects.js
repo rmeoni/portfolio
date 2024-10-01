@@ -80,6 +80,14 @@ const projects = {
         image: './images/portfolio-thumb-17.png',
         buttonText: 'View Project',
     },
+    whg_design_system: {
+        title: 'Unity Design System',
+        category: 'Design System',
+        description: 'As the UX Designer for Wind Hill Growers, we faced the challenge of creating a cohesive brand experience across multiple international markets. To address this, we developed "Unity", a comprehensive design system that acts as a single source of truth for all design assets. Unity was instrumental in bringing the brand to a new level of consistency, making it easier to manage and scale across various platforms.',
+        link: './detail_project_unity_design_system.html',
+        image: './images/project-unity-design-system.png',
+        buttonText: 'Read more',
+    },
 }
 
 
