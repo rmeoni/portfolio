@@ -221,7 +221,7 @@ const renderProjects = (projects, category) => {
 
             project.innerHTML =
 
-                `<a href="${filteredProjects[i][1].link}" target="_blank" class="work-card-preview w-inline-block">
+                `<a href="${filteredProjects[i][1].link}" class="work-card-preview w-inline-block">
                 <div class="card-hover-circle"></div>
                 <div class="overlay" style="display: none; transform: translate3d(150%, -150%, 0px) scale3d(2, 2, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
                 <img src="${filteredProjects[i][1].image}" alt="" class="bg-image absolute" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
@@ -231,7 +231,7 @@ const renderProjects = (projects, category) => {
                 <p> ${filteredProjects[i][1].description} </p>
             </div>
             
-            <a href="${filteredProjects[i][1].link}" target="_blank" class="portfolio-links">
+            <a href="${filteredProjects[i][1].link}" class="portfolio-links">
             ${filteredProjects[i][1].buttonText}
             </a>
             `;
