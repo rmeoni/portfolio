@@ -66,6 +66,13 @@
 
     gtag('config', 'G-3133EVQ6RF');
   </script>
+  <!-- Bot deterrent click to reveal button -->
+  <script>
+    function revealForm() {
+      document.getElementById('crmWebToEntityForm').style.display = 'block';
+      document.getElementById('reveal-button').style.display = 'none';
+    }
+  </script>
 </head>
 
 <body>
@@ -178,7 +185,7 @@
           <button onclick="renderProjects(projects, 'UX Design')" class="tag-badge activeBtn" id="ux-design-btn">UX
             Design</button>
           <button onclick="renderProjects(projects, 'Design System')" class="tag-badge" id="design-system-btn">Design
-            Systems</button>  
+            Systems</button>
           <button onclick="renderProjects(projects, 'UI Design')" class="tag-badge" id="ui-design-btn">UI
             Design</button>
           <button onclick="renderProjects(projects, 'Prototype Design')" class="tag-badge"
@@ -270,7 +277,8 @@
         <div class="w-layout-grid main-grid">
           <div id="w-node-_139cb275-9518-be80-7bab-eb046a955100-50de703d" class="intro-left sticky">
             <h2>My Experience</h2>
-            <div class="text-grey exp">I'm a User Experience Designer & Developer, continuously refining my skills and striving to reach my full potential.</div>
+            <div class="text-grey exp">I'm a User Experience Designer & Developer, continuously refining my skills and
+              striving to reach my full potential.</div>
             <a href="#contact-sec" class="button w-button">Contact Me</a>
           </div>
           <div id="w-node-_139cb275-9518-be80-7bab-eb046a955105-50de703d">
@@ -364,8 +372,15 @@
    - Code lines with comments Do not remove this code are required for the form to work properly, make sure that you do not remove these lines of code. 
    - The Mandatory check script can modified as to suit your business needs. 
    - It is important that you test the modified form before going live.-->
+      <!-- Reveal button for bot deterrent -->
+      <div style="text-align: center;">
+        <button id="reveal-button" class="button" onclick="revealForm()"
+          style="padding: 10px 20px; font-size: 16px; cursor: pointer; text-align: center; margin:auto;">
+          Click to reveal contact form
+        </button>
+      </div>
       <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm'
-        style='background-color: white;color: black;max-width: 800px;'>
+        style='background-color: white;color: black;max-width: 800px; display:none;'>
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <META HTTP-EQUIV='content-type' CONTENT='text/html;charset=UTF-8'>
 
