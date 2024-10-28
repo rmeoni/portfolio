@@ -7,14 +7,6 @@ const projects = {
         image: 'images/portfolio-thumb-8.png',
         buttonText: 'View Prototype',
     },
-    xejas: {
-        title: "Restaurant Paseo Xejasmin Booking Page",
-        category: "UI Design",
-        description: "One of my first coding projects. For this awesome place I got to build a solution from scratch using <strong>HTML, CSS and Basic Javascript</strong>. This website showcases the attractions from the place, allows customers to download a PDF menu trough a QR code and even book events that go into <strong>Podio CRM</strong> directly from the home page. ",
-        link: "https://www.paseoxejasmin.com/",
-        image: "images/portfolio-thumb-5.png",
-        buttonText: 'Visit Website',
-    },
     windhillgrowers: {
         title: "Wind Hill Growers UI Design",
         category: "UI Design",
