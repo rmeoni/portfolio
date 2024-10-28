@@ -10,7 +10,7 @@ const projects = {
     windhillgrowers: {
         title: "Wind Hill Growers UI Design",
         category: "UI Design",
-        description: "Working in the expansion of the website from this beautiful brand we got to build a <strong>Design System in Figma</strong> to keep all our digital products on brand. I've been lucky enough to be able to collaborate and keep expanding this website. Built on <strong>Squarespace</strong>",
+        description: "As a UX designer, I expanded this beautiful brand's website and built a Design System in Figma to keep all digital products on-brand. Collaborating with the team, I've continued to enhance the Squarespace site.",
         link: "https://www.windhillgrowers.com/",
         image: "images/portfolio-thumb-10.png",
         buttonText: 'Visit Website',
@@ -18,7 +18,7 @@ const projects = {
     whgapp: {
         title: "Cannabis Tester App",
         category: "Javascript",
-        description: "I designed and developed this web application from scratch. The UI was created in Figma, and I built the site using HTML, CSS, and JavaScript. The app uses user inputs to deliver personalized product recommendations for Wind Hill Growers. It was a fun project, packed with Vanilla JavaScript!This Web Application was done from scratch. I designed the UI in <strong>Figma</strong>, and then developed the site with <strong>HTML, CSS and Javascript.</strong> The app takes the users answers to provide a personalized product reocommendation of the Wind Hill Growers products. This was a whole bunch of Vanilla Javascript fun!",
+        description: "I designed and developed this web application from scratch for Wind Hill Growers, crafting the UI in Figma and building the site with HTML, CSS, and Vanilla JavaScript. The app uses user input to provide personalized product recommendations—a fun project that fully leveraged JavaScript!",
         link: "https://try.windhillgrowers.com/",
         image: "images/portfolio-thumb-1.png",
         buttonText: 'Visit Webapp',
@@ -26,7 +26,7 @@ const projects = {
     cafedonlucas: {
         title: "Coffee Brand UX Research/Design",
         category: "UX Design",
-        description: "In this project, I used the Design Thinking approach, starting with Qualitative and Quantitative Research to define User Personas and identify pain points. We then used a User Journey Map to ideate solutions, followed by creating a Wireframe and Prototype in Figma. Finally, we conducted Usability Testing to refine the design based on user feedback.",
+        description: "In this project, I applied the Design Thinking approach, starting with Qualitative and Quantitative Research to define User Personas and identify pain points. We used a User Journey Map to ideate solutions, followed by creating a Wireframe and Prototype in Figma. I then developed the website using React, and we conducted Usability Testing to refine the design based on user feedback.",
         link: "./detail_project_coffee_ux.html",
         image: "images/portfolio-thumb-7.png",
         buttonText: 'View Case Study',
@@ -35,7 +35,7 @@ const projects = {
     lozana: {
         title: 'Lozana Prototype Design',
         category: 'Prototype Design',
-        description: 'In this opportunity I got to design the User Interface of a Real Estate company. Working hand in hand with the client, we designed a <strong>prototype with Figma</strong> to then be <strong>developed in Webflow.</strong> ',
+        description: 'I had the opportunity to design the User Interface for a real estate company, collaborating closely with the client to create a tailored prototype in Figma, which we then brought to life in Webflow.',
         link: 'https://www.figma.com/proto/8X8SJLP7QarDud2e1hDE00/Lozana-Web-Design?page-id=164%3A1650&node-id=164%3A1779&viewport=25%2C72%2C0.08&scaling=scale-down-width&starting-point-node-id=164%3A1779',
         image: './images/portfolio-thumb-2.png',
         buttonText: 'View Prototype',
