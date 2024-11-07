@@ -4905,7 +4905,7 @@ figcaption {
   background-size: cover;
   background-repeat: no-repeat;
   -o-object-fit: cover;
-  object-fit: cover;
+  object-fit: scale-down;
 }
 
 .bg-image.absolute {
