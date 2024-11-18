@@ -1,7 +1,7 @@
 const projects = {
     mwd: {
-        title: 'Mit Was Drin',
-        category: 'Prototype Design',
+        title: 'Mit Was Drin Prototype Design',
+        category: 'UI Design',
         description: 'In this project, I worked on the Research, Design, and Ideation for a cannabis education blog targeting the German market. With the gradual legalization of medicinal cannabis in the EU, the startup aims to inform German patients about the essentials of the cannabis industry.',
         link: 'https://xd.adobe.com/view/93568bae-b1c5-4629-82e5-928b5d19f3fa-c605/',
         image: 'images/portfolio-thumb-8.png',
@@ -33,8 +33,8 @@ const projects = {
 
     },
     lozana: {
-        title: 'Lozana Prototype Design',
-        category: 'Prototype Design',
+        title: 'Lozana Concept Prototype Design',
+        category: 'UI Design',
         description: 'I had the opportunity to design the User Interface for a real estate company, collaborating closely with the client to create a tailored prototype in Figma, which we then brought to life in Webflow.',
         link: 'https://www.figma.com/proto/8X8SJLP7QarDud2e1hDE00/Lozana-Web-Design?page-id=164%3A1650&node-id=164%3A1779&viewport=25%2C72%2C0.08&scaling=scale-down-width&starting-point-node-id=164%3A1779',
         image: './images/portfolio-thumb-2.png',
