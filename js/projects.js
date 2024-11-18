@@ -6,6 +6,7 @@ const projects = {
         link: 'https://xd.adobe.com/view/93568bae-b1c5-4629-82e5-928b5d19f3fa-c605/',
         image: 'images/portfolio-thumb-8.png',
         buttonText: 'View Prototype',
+        target: "_blank"
     },
     windhillgrowers: {
         title: "Wind Hill Growers UI Design",
@@ -14,6 +15,7 @@ const projects = {
         link: "https://www.windhillgrowers.com/",
         image: "images/portfolio-thumb-10.png",
         buttonText: 'Visit Website',
+        target: "_blank"
     },
     whgapp: {
         title: "Cannabis Tester App",
@@ -22,6 +24,7 @@ const projects = {
         link: "https://try.windhillgrowers.com/",
         image: "images/portfolio-thumb-1.png",
         buttonText: 'Visit Webapp',
+        target: "_blank"
     },
     cafedonlucas: {
         title: "Coffee Brand UX Research/Design",
@@ -30,15 +33,17 @@ const projects = {
         link: "./detail_project_coffee_ux.html",
         image: "images/portfolio-thumb-7.png",
         buttonText: 'View Case Study',
+        target: "_self"
 
     },
     lozana: {
         title: 'Lozana Concept Prototype Design',
         category: 'UI Design',
-        description: 'I had the opportunity to design the User Interface for a real estate company, collaborating closely with the client to create a tailored prototype in Figma, which we then brought to life in Webflow.',
-        link: 'https://www.figma.com/proto/8X8SJLP7QarDud2e1hDE00/Lozana-Web-Design?page-id=164%3A1650&node-id=164%3A1779&viewport=25%2C72%2C0.08&scaling=scale-down-width&starting-point-node-id=164%3A1779',
+        description: 'I had the opportunity to design the User Interface for a real estate company, collaborating closely with the client to create a tailored prototype in Figma, which was then brought to life in Webflow.',
+        link: './detail_project_lozana.html',
         image: './images/portfolio-thumb-2.png',
-        buttonText: 'View Prototype',
+        buttonText: 'View Case Study',
+        target: "_self"
     },
     gummies_mockups: {
         title: 'Gummies Product Mockup',
@@ -46,7 +51,8 @@ const projects = {
         description: 'I used the provided label design to create a realistic product mockup in Photoshop, applying the label to a 3D-rendered container and refining the look with shadows and reflections. The result is a professional and lifelike representation of the product.',
         link: './detail_project_gummies_mockup.html',
         image: './images/portfolio-thumb-14.png',
-        buttonText: 'View Project'
+        buttonText: 'View Project',
+        target: "_self"
     },
     zoho_google_api: {
         title: 'Zoho Inventory to Google Sheets API',
@@ -55,6 +61,7 @@ const projects = {
         link: './detail_project_zoho_google_api.html',
         image: './images/portfolio-thumb-15.png',
         buttonText: 'View Project',
+        target: "_self"
     },
     mwd_branding: {
         title: 'Mit Was Drin Branding',
@@ -62,7 +69,8 @@ const projects = {
         description: 'Mit Was Drin needed an iconic and versatile logo that reflected their core vision and values. Working closely with the CEO, we quickly transformed a sketch into a timeless design. The result is a logo that thrives on both digital platforms and printed merch. This project was one of the most enjoyable and rewarding I haev been a part of.',
         link: './detail_project_mwd_branding.html',
         image: './images/portfolio-thumb-16.png',
-        buttonText: 'View Project'
+        buttonText: 'View Project',
+        target: "_blank"
     },
     zoho_google_api: {
         title: 'Zoho Inventory to Google Sheets API',
@@ -71,6 +79,7 @@ const projects = {
         link: './detail_project_zoho_google_api.html',
         image: './images/portfolio-thumb-17.png',
         buttonText: 'View Project',
+        target: "_self"
     },
     whg_design_system: {
         title: 'Unity Design System',
@@ -79,6 +88,7 @@ const projects = {
         link: './detail_project_unity_design_system.html',
         image: './images/project-unity-design-system.png',
         buttonText: 'Read more',
+        target: "_self"
     },
 }
 
@@ -111,7 +121,7 @@ const renderProjects = (projects, category) => {
 
                 project.innerHTML =
 
-                    `<a href="${filteredProjects[i][1].link}" target="_blank" class="work-card-preview w-inline-block">
+                    `<a href="${filteredProjects[i][1].link}" target="${filteredProjects[i][1].target}" class="work-card-preview w-inline-block">
                 <div class="card-hover-circle"></div>
                 <div class="overlay" style="display: none; transform: translate3d(150%, -150%, 0px) scale3d(2, 2, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
                 <img src="${filteredProjects[i][1].image}" alt="" class="bg-image absolute" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
@@ -121,7 +131,7 @@ const renderProjects = (projects, category) => {
                 <p> ${filteredProjects[i][1].description} </p>
             </div>
             
-            <a href="${filteredProjects[i][1].link}" target="_blank" class="portfolio-links">
+            <a href="${filteredProjects[i][1].link}"  class="portfolio-links">
             ${filteredProjects[i][1].buttonText}
             </a>
             `;
@@ -145,7 +155,7 @@ const renderProjects = (projects, category) => {
                 <p> ${filteredProjects[i][1].description} </p>
             </div>
             
-            <a href="${filteredProjects[i][1].link}" target="_blank" class="portfolio-links">
+            <a href="${filteredProjects[i][1].link}" target="${filteredProjects[i][1].target}" class="portfolio-links">
             ${filteredProjects[i][1].buttonText}
             </a>
             `;
@@ -162,7 +172,7 @@ const renderProjects = (projects, category) => {
 
                 project.innerHTML =
 
-                    `<a href="${filteredProjects[i][1].link}" target="_blank" class="work-card-preview w-inline-block">
+                    `<a href="${filteredProjects[i][1].link}" target="${filteredProjects[i][1].target}" class="work-card-preview w-inline-block">
                 <div class="card-hover-circle"></div>
                 <div class="overlay" style="display: none; transform: translate3d(150%, -150%, 0px) scale3d(2, 2, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
                 <img src="${filteredProjects[i][1].image}" alt="" class="bg-image absolute" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
@@ -172,7 +182,7 @@ const renderProjects = (projects, category) => {
                 <p> ${filteredProjects[i][1].description} </p>
             </div>
             
-            <a href="${filteredProjects[i][1].link}" target="_blank" class="portfolio-links">
+            <a href="${filteredProjects[i][1].link}" target="${filteredProjects[i][1].target}" class="portfolio-links">
             ${filteredProjects[i][1].buttonText}
             </a>
             `;
@@ -186,7 +196,7 @@ const renderProjects = (projects, category) => {
 
                 project.innerHTML =
 
-                    `<a href="${filteredProjects[i][1].link}" target="_blank" class="work-card-preview w-inline-block">
+                    `<a href="${filteredProjects[i][1].link}" target="${filteredProjects[i][1].target}" class="work-card-preview w-inline-block">
                 <div class="card-hover-circle"></div>
                 <div class="overlay" style="display: none; transform: translate3d(150%, -150%, 0px) scale3d(2, 2, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
                 <img src="${filteredProjects[i][1].image}" alt="" class="bg-image absolute" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
@@ -196,7 +206,7 @@ const renderProjects = (projects, category) => {
                 <p> ${filteredProjects[i][1].description} </p>
             </div>
             
-            <a href="${filteredProjects[i][1].link}" target="_blank" class="portfolio-links">
+            <a href="${filteredProjects[i][1].link}" target="${filteredProjects[i][1].target}" class="portfolio-links">
             ${filteredProjects[i][1].buttonText}
             </a>
             `;
