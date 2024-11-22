@@ -31,3 +31,7 @@
 .work-card-description {
     margin-bottom: 30px;
 }
+
+.works-grid-1 {
+    grid-row-gap: 0px !important;
+}
