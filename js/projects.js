@@ -130,8 +130,7 @@ const renderProjects = (projects, category) => {
             <div class="work-card-description">
                 <p> ${filteredProjects[i][1].description} </p>
             </div>
-            
-            <a href="${filteredProjects[i][1].link}"  class="portfolio-links">
+            <a href="${filteredProjects[i][1].link}" class="button-secondary">
             ${filteredProjects[i][1].buttonText}
             </a>
             `;
@@ -155,7 +154,7 @@ const renderProjects = (projects, category) => {
                 <p> ${filteredProjects[i][1].description} </p>
             </div>
             
-            <a href="${filteredProjects[i][1].link}" target="${filteredProjects[i][1].target}" class="portfolio-links">
+            <a href="${filteredProjects[i][1].link}" target="${filteredProjects[i][1].target}" class="button-secondary">
             ${filteredProjects[i][1].buttonText}
             </a>
             `;
@@ -182,7 +181,7 @@ const renderProjects = (projects, category) => {
                 <p> ${filteredProjects[i][1].description} </p>
             </div>
             
-            <a href="${filteredProjects[i][1].link}" target="${filteredProjects[i][1].target}" class="portfolio-links">
+            <a href="${filteredProjects[i][1].link}" target="${filteredProjects[i][1].target}" class="button-secondary">
             ${filteredProjects[i][1].buttonText}
             </a>
             `;
@@ -206,7 +205,7 @@ const renderProjects = (projects, category) => {
                 <p> ${filteredProjects[i][1].description} </p>
             </div>
             
-            <a href="${filteredProjects[i][1].link}" target="${filteredProjects[i][1].target}" class="portfolio-links">
+            <a href="${filteredProjects[i][1].link}" target="${filteredProjects[i][1].target}" class="button-secondary">
             ${filteredProjects[i][1].buttonText}
             </a>
             `;
@@ -233,7 +232,7 @@ const renderProjects = (projects, category) => {
                 <p> ${filteredProjects[i][1].description} </p>
             </div>
             
-            <a href="${filteredProjects[i][1].link}" class="portfolio-links">
+            <a href="${filteredProjects[i][1].link}" class="button-secondary">
             ${filteredProjects[i][1].buttonText}
             </a>
             `;
