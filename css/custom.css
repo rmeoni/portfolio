@@ -14,4 +14,16 @@
     border-radius: 40px; 
     font-weight: bold;
     text-transform: capitalize;
+    transition: background .2s;
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
+}
+
+.button-secondary:hover {
+    background: #E8EAF2;
+}
+
+#project-details-inner-button {
+    margin-top: 60px !important;
+    margin-bottom: 60px !important;
 }
