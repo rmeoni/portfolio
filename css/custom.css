@@ -35,3 +35,8 @@
 .works-grid-1 {
     grid-row-gap: 0px !important;
 }
+
+#user-persona {
+    padding-top:32px !important;
+    padding-bottom:32px !important;
+}
