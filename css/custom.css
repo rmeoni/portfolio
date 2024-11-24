@@ -86,3 +86,9 @@
   }
   
   /*End of zoom image on zoom code */
+
+  @media (max-width: 820px) {
+    .zoom-caption {
+        display:none !important;
+    }
+  }
