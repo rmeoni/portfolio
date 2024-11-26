@@ -84,6 +84,18 @@
   .zoomable-image {
     cursor: pointer;
   }
+
+  .video-wrapper {
+    max-width: 1200px;
+  }
+
+  video {
+    display: inline-block;
+    max-width: 1180px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   
   /*End of zoom image on zoom code */
 

@@ -8,6 +8,16 @@ const projects = {
         buttonText: 'View Prototype',
         target: "_blank"
     },
+    coffeereact: {
+        title: "Coffee Shop React Development",
+        category: "Javascript",
+        description: "In this project, I applied the Design Thinking approach, starting with Qualitative and Quantitative Research to define User Personas and identify pain points. We used a User Journey Map to ideate solutions, followed by creating a Wireframe and Prototype in Figma. I then developed the website using React, and we conducted Usability Testing to refine the design based on user feedback.",
+        link: "./detail_project_coffee_ux_dev.html",
+        image: "images/portfolio-thumb-18.png",
+        buttonText: 'View Case Study',
+        target: "_self"
+
+    },
     windhillgrowers: {
         title: "Wind Hill Growers UI Design",
         category: "UI Design",
@@ -27,7 +37,7 @@ const projects = {
         target: "_blank"
     },
     cafedonlucas: {
-        title: "Coffee Brand UX Research/Design",
+        title: "Coffee Shop UX Research/Design",
         category: "UX Design",
         description: "In this project, I applied the Design Thinking approach, starting with Qualitative and Quantitative Research to define User Personas and identify pain points. We used a User Journey Map to ideate solutions, followed by creating a Wireframe and Prototype in Figma. I then developed the website using React, and we conducted Usability Testing to refine the design based on user feedback.",
         link: "./detail_project_coffee_ux.html",
