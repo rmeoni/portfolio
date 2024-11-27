@@ -96,6 +96,12 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  #lozana-video {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   
   /*End of zoom image on zoom code */
 
