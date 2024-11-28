@@ -31,10 +31,10 @@ const projects = {
         title: "Cannabis Tester App",
         category: "Javascript",
         description: "I designed and developed this web application from scratch for Wind Hill Growers, crafting the UI in Figma and building the site with HTML, CSS, and Vanilla JavaScript. The app uses user input to provide personalized product recommendations—a fun project that fully leveraged JavaScript!",
-        link: "https://try.windhillgrowers.com/",
+        link: "./detail_project_tester_app.html",
         image: "images/portfolio-thumb-1.png",
-        buttonText: 'Visit Webapp',
-        target: "_blank"
+        buttonText: 'View Case Study',
+        target: "_self"
     },
     cafedonlucas: {
         title: "Coffee Shop UX Research/Design",
