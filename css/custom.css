@@ -1,118 +1,124 @@
 .zsiq_floatmain.zsiq_theme1.siq_bR {
-    display: none !important;
+  display: none !important;
 }
 
 #contact-sec {
-    text-align: center;
+  text-align: center;
 }
 
 .button-secondary {
-    border: 1.5px solid #153180;
-    color: #153180;
-    background: none;
-    padding: 12px 20px;
-    border-radius: 40px; 
-    font-weight: bold;
-    text-transform: capitalize;
-    transition: background .2s;
-    margin-top: 24px !important;
-    margin-bottom: 24px !important;
+  border: 1.5px solid #153180;
+  color: #153180;
+  background: none;
+  padding: 12px 20px;
+  border-radius: 40px;
+  font-weight: bold;
+  text-transform: capitalize;
+  transition: background .2s;
+  margin-top: 24px !important;
+  margin-bottom: 24px !important;
 }
 
 .button-secondary:hover {
-    background: #E8EAF2;
+  background: #E8EAF2;
 }
 
 .work-card-description {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .works-grid-1 {
-    grid-row-gap: 0px !important;
+  grid-row-gap: 0px !important;
 }
 
 #user-persona {
-    padding-top:32px !important;
-    padding-bottom:32px !important;
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
 }
 
 #project-details-inner-button {
-    margin-top: 48px !important;
-    margin-bottom: 48px !important;
+  margin-top: 48px !important;
+  margin-bottom: 48px !important;
 }
 
 /* Code to handle image zoom on click */
 
 #overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  #overlay.hidden {
-    display: none;
-  }
-  
-  #overlay-content {
-    position: relative;
-    max-width: 90%;
-    max-height: 90%;
-    overflow: auto;
-  }
-  
-  #zoomed-image {
-    max-width: 100%;
-    max-height: 100%;
-  }
-  
-  #close-overlay {
-    position: absolute;
-    top: 0px;
-    right: 24px;
-    background-color: #ffffff;
-    border:none;
-    cursor: pointer;
-  }
-  
-  .zoomable-image {
-    cursor: pointer;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
 
-  .video-wrapper {
-    max-width: 1200px;
-  }
+#overlay.hidden {
+  display: none;
+}
 
-  video {
-    display: inline-block;
-    max-width: 1180px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+#overlay-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+}
 
-  #lozana-video {
-    max-width: 720px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+#zoomed-image {
+  max-width: 100%;
+  max-height: 100%;
+}
 
-  #tester-app-video {
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  /*End of zoom image on zoom code */
+#close-overlay {
+  position: absolute;
+  top: 0px;
+  right: 24px;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
 
-  @media (max-width: 820px) {
-    .zoom-caption {
-        display:none !important;
-    }
+.zoomable-image {
+  cursor: pointer;
+}
+
+.video-wrapper {
+  max-width: 1200px;
+}
+
+video {
+  display: inline-block;
+  max-width: 1180px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#lozana-video {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#tester-app-video {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* For the cover image in project details */
+#project-cover {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+/*End of zoom image on zoom code */
+
+@media (max-width: 820px) {
+  .zoom-caption {
+    display: none !important;
   }
+}
