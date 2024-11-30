@@ -22,10 +22,10 @@ const projects = {
         title: "Wind Hill Growers UI Design",
         category: "UI Design",
         description: "As a UX designer, I expanded this beautiful brand's website and built a Design System in Figma to keep all digital products on-brand. Collaborating with the team, I've continued to enhance the Squarespace site.",
-        link: "https://www.windhillgrowers.com/",
+        link: "./detail_project_whg_ui.html",
         image: "images/portfolio-thumb-10.png",
-        buttonText: 'Visit Website',
-        target: "_blank"
+        buttonText: 'View Case Study',
+        target: "_self"
     },
     whgapp: {
         title: "Cannabis Tester App",
