@@ -73,6 +73,15 @@ const projects = {
         buttonText: 'View Project',
         target: "_self"
     },
+    whg_rebranding: {
+        title: 'Wind Hill Growers Re-branding',
+        category: 'Branding',
+        description: 'Wind Hill Growers detailed logo became blurry on small screens, making the brand less recognizable. The solution was to create a simplified version for smaller displays while retaining the original for large screens and prints, ensuring both functionality and brand consistency.',
+        link: './detail_project_whg_rebrand.html',
+        image: './images/portfolio-thumb-19.png',
+        buttonText: 'View Project',
+        target: "_self"
+    },
     mwd_branding: {
         title: 'Mit Was Drin Branding',
         category: 'Branding',
@@ -80,7 +89,7 @@ const projects = {
         link: './detail_project_mwd_branding.html',
         image: './images/portfolio-thumb-16.png',
         buttonText: 'View Project',
-        target: "_blank"
+        target: "_self"
     },
     zoho_google_api: {
         title: 'Zoho Inventory to Google Sheets API',
