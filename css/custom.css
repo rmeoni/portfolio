@@ -117,6 +117,63 @@ video {
 
 /*End of zoom image on zoom code */
 
+/* Start of Carousel CSS */
+.carousel {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease;
+  margin-bottom: 24px;
+}
+
+.carousel-images img {
+  width: 100%;
+  height: auto;
+}
+
+.prev {
+  left: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  background-color: #D0D6E6;
+  transition: background-color .3s;
+}
+
+.prev .top-button-icon.w-icon-dropdown-toggle {
+  transform: rotate(90deg);
+  color: #ffffff;
+}
+
+.prev:hover {
+  background-color: #F96A4C;
+}
+
+.next {
+  right: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  background-color: #D0D6E6;
+  color: #ffffff;
+  transition: background-color .3s;
+}
+
+.next:hover {
+  background-color: #F96A4C;
+}
+
+.next .top-button-icon.w-icon-dropdown-toggle {
+  transform: rotate(-90deg);
+}
+
+/* End of Carousel CSS */
+
 @media (max-width: 820px) {
   .zoom-caption {
     display: none !important;
