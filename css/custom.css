@@ -172,6 +172,15 @@ video {
   transform: rotate(-90deg);
 }
 
+#carousel-alt-text {
+  position:absolute;
+  right: 0px;
+  bottom: 0px;
+  background: #fff;
+  padding: 8px 6px;
+  color: #666d7a;
+}
+
 /* End of Carousel CSS */
 
 @media (max-width: 820px) {
