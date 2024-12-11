@@ -1,13 +1,4 @@
 const projects = {
-    mwd: {
-        title: 'Mit Was Drin UI/UX Design',
-        category: 'UX Design',
-        description: 'In this project, I worked on the Research, Design, and Ideation for a cannabis education blog targeting the German market. With the gradual legalization of medicinal cannabis in the EU, the startup aims to inform German patients about the essentials of the cannabis industry.',
-        link: './detail_project_mwd.html',
-        image: 'images/portfolio-thumb-8.png',
-        buttonText: 'View Case Study',
-        target: "_self"
-    },
     coffeereact: {
         title: "Coffee Shop React Development",
         category: "Javascript",
@@ -42,6 +33,25 @@ const projects = {
         description: "In this project, I applied the Design Thinking approach, starting with Qualitative and Quantitative Research to define User Personas and identify pain points. We used a User Journey Map to ideate solutions, followed by creating a Wireframe and Prototype in Figma. I then developed the website using React, and we conducted Usability Testing to refine the design based on user feedback.",
         link: "./detail_project_coffee_ux.html",
         image: "images/portfolio-thumb-7.png",
+        buttonText: 'View Case Study',
+        target: "_self"
+
+    },
+    mwd: {
+        title: 'Mit Was Drin UI/UX Design',
+        category: 'UX Design',
+        description: 'In this project, I worked on the Research, Design, and Ideation for a cannabis education blog targeting the German market. With the gradual legalization of medicinal cannabis in the EU, the startup aims to inform German patients about the essentials of the cannabis industry.',
+        link: './detail_project_mwd.html',
+        image: 'images/portfolio-thumb-8.png',
+        buttonText: 'View Case Study',
+        target: "_self"
+    },
+    prestio: {
+        title: "Prestio App 3-Day Challenge: UX Design & Development",
+        category: "UX Design",
+        description: "I was challenged to conduct UX Design and Development in just 3 days for an app that allows users to manage their loans and services in a secure and easy way. I used the Design Thinking approach to empathize with the user, define the problem, ideate solutions, prototype, and test. I then developed the concept using React.js.",
+        link: "./detail_project_prestio.html",
+        image: "images/portfolio-thumb-20.png",
         buttonText: 'View Case Study',
         target: "_self"
 
