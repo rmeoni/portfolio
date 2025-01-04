@@ -37,14 +37,15 @@ const projects = {
         target: "_self"
 
     },
-    mwd: {
-        title: 'Mit Was Drin UI/UX Design',
-        category: 'UX Design',
-        description: 'In this project, I worked on the Research, Design, and Ideation for a cannabis education blog targeting the German market. With the gradual legalization of medicinal cannabis in the EU, the startup aims to inform German patients about the essentials of the cannabis industry.',
-        link: './detail_project_mwd.html',
-        image: 'images/portfolio-thumb-8.png',
+    adoptio: {
+        title: "Adoptio App: UX Design & Development",
+        category: "UX Design",
+        description: "Adoptio began as a practice project for the Google UX Design Certificate but evolved into a real initiative to address the lack of pet adoption apps in developing countries. With a completed, user-centered UX design and plans to develop the app using React, Adoptio aims to launch in 2025, increasing adoption rates and improving animal welfare.",
+        link: "./detail_project_adoptio.html",
+        image: "images/portfolio-thumb-21.png",
         buttonText: 'View Case Study',
         target: "_self"
+
     },
     prestio: {
         title: "Prestio App 3-Day Challenge: UX Design & Development",
@@ -55,6 +56,15 @@ const projects = {
         buttonText: 'View Case Study',
         target: "_self"
 
+    },
+    mwd: {
+        title: 'Mit Was Drin UI/UX Design',
+        category: 'UX Design',
+        description: 'In this project, I worked on the Research, Design, and Ideation for a cannabis education blog targeting the German market. With the gradual legalization of medicinal cannabis in the EU, the startup aims to inform German patients about the essentials of the cannabis industry.',
+        link: './detail_project_mwd.html',
+        image: 'images/portfolio-thumb-8.png',
+        buttonText: 'View Case Study',
+        target: "_self"
     },
     lozana: {
         title: 'Lozana Concept Prototype Design',
