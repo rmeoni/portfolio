@@ -59,7 +59,7 @@ const projects = {
     },
     mwd: {
         title: 'Mit Was Drin UI/UX Design',
-        category: 'UX Design',
+        category: 'UI Design',
         description: 'In this project, I worked on the Research, Design, and Ideation for a cannabis education blog targeting the German market. With the gradual legalization of medicinal cannabis in the EU, the startup aims to inform German patients about the essentials of the cannabis industry.',
         link: './detail_project_mwd.html',
         image: 'images/portfolio-thumb-8.png',
