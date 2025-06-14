@@ -129,6 +129,16 @@ const projects = {
         buttonText: 'Read more',
         target: "_self"
     },
+    akisi_mockup: {
+        title: 'Akisi Mobile POS Mockup',
+        category: 'Mockups',
+        description: 'As a UX Developer for a non-profit in Guatemala, I designed the UI of a mobile POS system that enables small business owners to accept credit card payments directly from their phones. I was also tasked with creating high-fidelity mockups of my designs—along with the provided credit card visuals—to present them in a compelling and polished way to stakeholders.',
+        link: './detail_project_akisi_mockup.html',
+        image: './images/portfolio-thumb-22.png',
+        buttonText: 'Read more',
+        target: "_self"
+
+    }
 }
 
 
