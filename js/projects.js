@@ -9,6 +9,16 @@ const projects = {
         target: "_self"
 
     },
+    akisi_pay: {
+        title: 'Akisi Pay Mobile POS UI Design ',
+        category: 'UI Design',
+        description: 'As a UX Developer for a non-profit in Guatemala, I designed the UI of a mobile POS system that enables small business owners to accept credit card payments directly from their phones.',
+        link: './detail_project_akisi_ui.html',
+        image: './images/portfolio-thumb-23.png',
+        buttonText: 'Read more',
+        target: "_self"
+
+    },
     windhillgrowers: {
         title: "Wind Hill Growers UI Design",
         category: "UI Design",
