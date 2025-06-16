@@ -139,6 +139,15 @@ const projects = {
         buttonText: 'Read more',
         target: "_self"
     },
+        impulso_design_system: {
+        title: 'Impulso Design System',
+        category: 'Design System',
+        description: ' As a UX Developer at a Guatemalan non-profit with over 4,000 employees, I helped create Impulso, a design system aimed at organizing and standardizing all in-house apps used for group-loan operations. Impulso serves as a single source of truth across platforms, managing color tokens, typography scales, spacing systems, light and dark modes, and responsive layouts for mobile, tablet, and desktop. My role included auditing UI patterns, designing reusable components in Figma using Atomic Design principles, and collaborating with dev teams to ensure smooth implementation. The goal was simple: standardize, structure, and ensure brand consistency across the organization.',
+        link: './detail_project_impulso_design_system.html',
+        image: './images/portfolio-thumb-24.png',
+        buttonText: 'Read more',
+        target: "_self"
+    },
     akisi_mockup: {
         title: 'Akisi Mobile POS Mockup',
         category: 'Mockups',

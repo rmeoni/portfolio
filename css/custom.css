@@ -6,6 +6,11 @@ h3 {
   text-transform: capitalize;
 }
 
+#h3-spacing {
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+
 .zsiq_floatmain.zsiq_theme1.siq_bR {
   display: none !important;
 }
