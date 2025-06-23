@@ -40,7 +40,7 @@ const projects = {
     gflow: {
         title: "GFlow: UX Design",
         category: "UX Design",
-        description: "As a UX Developer at a Guatemalan non-profit with over 4,000 employees, I helped redesign their in-house apps using the Design Thinking approach to enhance the user experience for their group-loan operations. My role included conducting organization-wide research to empathize with users, defining key pain points, and ideating solutions with a team of six developers and various stakeholders. I then prototyped and tested the designs with real users. The final solution improved the user experience by 150% according to feedback and saved the company over 1,000 man-hours per month.",
+        description: "As a UX Developer at a Guatemalan non-profit with over 4,000 employees, I helped redesign their in-house apps using the Design Thinking approach to enhance the user experience for their group-loan operations. My role included conducting organization-wide research to empathize with users, defining key pain points, and ideating solutions with a team of six developers and various stakeholders. I then prototyped and tested the designs with real users. The final solution improved the user experience by 150% according to feedback and saved the company over 10,000 man-hours per month.",
         link: "./detail_project_gflow.html",
         image: "images/portfolio-thumb-25.png",
         buttonText: 'View Case Study',
