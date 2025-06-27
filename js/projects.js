@@ -121,7 +121,15 @@ const projects = {
         buttonText: 'View Project',
         target: "_self"
     },
-    whg_rebranding: {
+    gflow_rebranding: {
+        title: 'GFlow Re-branding',
+        category: 'Branding',
+        description: 'A non-profit fintech company in Guatemala with over 4,000 employees needed support rebranding one of their internal loan management apps. The app had accumulated numerous usability issues over the years, and since we were already working on a UX redesign, we saw an opportunity to give it a fresh, modern look. This rebranding marked a new beginning—setting the stage for a more intuitive and efficient user experience.',
+        link: './detail_project_gflow_rebrand.html',
+        image: './images/portfolio-thumb-28.png',
+        buttonText: 'View Project',
+        target: "_self"
+    }, whg_rebranding: {
         title: 'Wind Hill Growers Re-branding',
         category: 'Branding',
         description: 'Wind Hill Growers detailed logo became blurry on small screens, making the brand less recognizable. The solution was to create a simplified version for smaller displays while retaining the original for large screens and prints, ensuring both functionality and brand consistency.',
@@ -181,20 +189,20 @@ const projects = {
 
 
 const renderProjects = (projects, category) => {
-  const workGrid1 = document.getElementById('works-grid-1');
-  const workGrid2 = document.getElementById('works-grid-2');
+    const workGrid1 = document.getElementById('works-grid-1');
+    const workGrid2 = document.getElementById('works-grid-2');
 
-  workGrid1.innerHTML = "";
-  workGrid2.innerHTML = "";
+    workGrid1.innerHTML = "";
+    workGrid2.innerHTML = "";
 
-  const filteredProjects = Object.entries(projects).filter(
-    ([, data]) => data.category === category
-  );
+    const filteredProjects = Object.entries(projects).filter(
+        ([, data]) => data.category === category
+    );
 
-  filteredProjects.forEach(([key, data], index) => {
-    const project = document.createElement('div');
-    project.className = `projects ${category}`;
-    project.innerHTML = `
+    filteredProjects.forEach(([key, data], index) => {
+        const project = document.createElement('div');
+        project.className = `projects ${category}`;
+        project.innerHTML = `
       <a href="${data.link}" target="${data.target}" class="work-card-preview w-inline-block">
         <div class="card-hover-circle"></div>
         <div class="overlay" style="display: none; transform: translate3d(150%, -150%, 0px) scale3d(2, 2, 1);"></div>
@@ -209,13 +217,13 @@ const renderProjects = (projects, category) => {
       </a>
     `;
 
-    // Alternate between the two grids for a 2-column layout
-    if (index % 2 === 0) {
-      workGrid1.appendChild(project);
-    } else {
-      workGrid2.appendChild(project);
-    }
-  });
+        // Alternate between the two grids for a 2-column layout
+        if (index % 2 === 0) {
+            workGrid1.appendChild(project);
+        } else {
+            workGrid2.appendChild(project);
+        }
+    });
 };
 
 renderProjects(projects, "UX Design");
