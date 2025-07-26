@@ -36,6 +36,22 @@ h3 {
   background: #E8EAF2;
 }
 
+.work-card-preview.w-inline-block {
+  border-radius: 48px;
+}
+
+img { 
+  border-radius: 48px !important;
+}
+
+video {
+  border-radius: 48px !important;
+}
+
+.service-icon {
+  border-radius: 0px !important;
+}
+
 .work-card-description {
   margin-bottom: 30px;
 }
