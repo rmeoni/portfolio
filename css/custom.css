@@ -52,6 +52,10 @@ video {
   border-radius: 0px !important;
 }
 
+skill-big-icon {
+  border-radius: 0px !important;
+}
+
 .work-card-description {
   margin-bottom: 30px;
 }
