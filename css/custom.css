@@ -47,6 +47,9 @@ img {
 video {
   border-radius: 48px !important;
 }
+.logo {
+  border-radius: 0px !important;
+}
 
 .service-icon {
   border-radius: 0px !important;
