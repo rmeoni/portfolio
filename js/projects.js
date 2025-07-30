@@ -8,7 +8,7 @@ const projects = {
         buttonText: 'View Case Study',
         target: "_self"
 
-    },
+    }, /*
     akisi_pay: {
         title: 'Akisi Pay Mobile POS UI Design ',
         category: 'UI Design',
@@ -18,7 +18,7 @@ const projects = {
         buttonText: 'Read more',
         target: "_self"
 
-    },
+    }, */
     windhillgrowers: {
         title: "Wind Hill Growers UI Design",
         category: "UI Design",
@@ -36,7 +36,7 @@ const projects = {
         image: "images/portfolio-thumb-1.png",
         buttonText: 'View Case Study',
         target: "_self"
-    },
+    }, /*
     gflow: {
         title: "GFlow: UX Design",
         category: "UX Design",
@@ -45,7 +45,7 @@ const projects = {
         image: "images/portfolio-thumb-25.png",
         buttonText: 'View Case Study',
         target: "_self"
-    },
+    }, */
     yotaxi: {
         title: "YoTaxi of SF App: UX Design",
         category: "UX Design",
@@ -120,7 +120,7 @@ const projects = {
         image: './images/portfolio-thumb-15.png',
         buttonText: 'View Project',
         target: "_self"
-    },
+    },/*
     gflow_rebranding: {
         title: 'GFlow Re-branding',
         category: 'Branding',
@@ -129,7 +129,7 @@ const projects = {
         image: './images/portfolio-thumb-28.png',
         buttonText: 'View Project',
         target: "_self"
-    }, whg_rebranding: {
+    }, */ whg_rebranding: {
         title: 'Wind Hill Growers Re-branding',
         category: 'Branding',
         description: 'Wind Hill Growers detailed logo became blurry on small screens, making the brand less recognizable. The solution was to create a simplified version for smaller displays while retaining the original for large screens and prints, ensuring both functionality and brand consistency.',
@@ -164,7 +164,7 @@ const projects = {
         image: './images/project-unity-design-system.png',
         buttonText: 'Read more',
         target: "_self"
-    },
+    }, /*
     impulso_design_system: {
         title: 'Impulso Design System',
         category: 'Design System',
@@ -173,7 +173,9 @@ const projects = {
         image: './images/portfolio-thumb-24.png',
         buttonText: 'Read more',
         target: "_self"
-    },
+    },*/
+
+    /*
     akisi_mockup: {
         title: 'Akisi Mobile POS Mockup',
         category: 'Mockups',
@@ -184,6 +186,7 @@ const projects = {
         target: "_self"
 
     }
+    */
 }
 
 
