@@ -164,7 +164,7 @@ const projects = {
         image: './images/project-unity-design-system.png',
         buttonText: 'Read more',
         target: "_self"
-    }, /*
+    },
     impulso_design_system: {
         title: 'Impulso Design System',
         category: 'Design System',
@@ -173,7 +173,7 @@ const projects = {
         image: './images/portfolio-thumb-24.png',
         buttonText: 'Read more',
         target: "_self"
-    },*/
+    },
 
     /*
     akisi_mockup: {
