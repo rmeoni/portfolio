@@ -262,68 +262,57 @@ video {
 /* End of Video Pop-up styles */
 
 /* =========================
-   Companies Logos (stable)
+   Companies Logos (GRID)
    ========================= */
 
-/* Wrapper */
 .companies-logos {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 24px;
-
-  /* This creates "space around" by padding on the container,
-     not by distributing leftover space */
-  padding: 12px;
-  box-sizing: border-box;
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 24px !important;
+  margin-top: 24px !important;
 }
 
-/* Each cell */
 .company-logo-item {
-  /* 3 per row */
-  width: 33.3333%;
-  padding: 18px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
   /* space around each logo */
-  box-sizing: border-box;
+  padding: 28px !important;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: #ffffff !important;
+  border-radius: 12px !important;
 
-  background: #ffffff;
-  border-radius: 8px;
-
-  /* prevent any cropping/masking issues */
-  overflow: visible;
+  /* prevent cropping/masking */
+  overflow: visible !important;
 }
 
-/* The actual image */
 .company-logo-img {
-  /* override your global img border-radius */
+  /* override global img rounding */
   border-radius: 0 !important;
 
-  /* prevent circular masks from any inherited styles */
   clip-path: none !important;
   mask-image: none !important;
   -webkit-mask-image: none !important;
 
-  display: block;
-  width: 100%;
-  max-width: 240px;
-  height: 80px;
-  /* fixed height = consistent row alignment */
-  object-fit: contain;
-  /* keeps aspect ratio */
+  display: block !important;
+  width: 100% !important;
+
+  /* consistent sizing */
+  max-width: 260px !important;
+  height: 84px !important;
+  object-fit: contain !important;
 }
 
 /* Mobile: 1 per row */
 @media (max-width: 479px) {
-  .company-logo-item {
-    width: 100%;
+  .companies-logos {
+    grid-template-columns: 1fr !important;
   }
 
   .company-logo-img {
-    max-width: 260px;
-    height: 90px;
+    max-width: 280px !important;
+    height: 92px !important;
   }
 }
 
