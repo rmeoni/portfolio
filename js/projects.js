@@ -36,7 +36,7 @@ const projects = {
         image: "images/portfolio-thumb-1.png",
         buttonText: 'View Case Study',
         target: "_self"
-    }, /*
+    }, 
     gflow: {
         title: "GFlow: UX Design",
         category: "UX Design",
@@ -45,7 +45,7 @@ const projects = {
         image: "images/portfolio-thumb-25.png",
         buttonText: 'View Case Study',
         target: "_self"
-    }, */
+    },
     yotaxi: {
         title: "YoTaxi of SF App: UX Design",
         category: "UX Design",
