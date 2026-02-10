@@ -323,3 +323,11 @@ video {
     display: none !important;
   }
 }
+
+/* Contact form horizontal padding on mobile & tablet */
+@media (max-width: 991px) {
+  #contact-sec {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
