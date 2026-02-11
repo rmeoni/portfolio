@@ -120,7 +120,7 @@ const projects = {
         image: './images/portfolio-thumb-15.png',
         buttonText: 'View Project',
         target: "_self"
-    },/*
+    },
     gflow_rebranding: {
         title: 'GFlow Re-branding',
         category: 'Branding',
@@ -129,7 +129,7 @@ const projects = {
         image: './images/portfolio-thumb-28.png',
         buttonText: 'View Project',
         target: "_self"
-    }, */ whg_rebranding: {
+    }, whg_rebranding: {
         title: 'Wind Hill Growers Re-branding',
         category: 'Branding',
         description: 'Wind Hill Growers detailed logo became blurry on small screens, making the brand less recognizable. The solution was to create a simplified version for smaller displays while retaining the original for large screens and prints, ensuring both functionality and brand consistency.',
