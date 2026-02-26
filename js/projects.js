@@ -37,6 +37,7 @@ const projects = {
         buttonText: 'View Case Study',
         target: "_self"
     }, 
+    /*
     gflow: {
         title: "GFlow: UX Design",
         category: "UX Design",
@@ -46,6 +47,7 @@ const projects = {
         buttonText: 'View Case Study',
         target: "_self"
     },
+    */
     yotaxi: {
         title: "YoTaxi of SF App: UX Design",
         category: "UX Design",
