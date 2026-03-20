@@ -8,7 +8,7 @@ const projects = {
         buttonText: 'View Case Study',
         target: "_self"
 
-    }, /*
+    },
     akisi_pay: {
         title: 'Akisi Pay Mobile POS UI Design ',
         category: 'UI Design',
@@ -18,7 +18,7 @@ const projects = {
         buttonText: 'Read more',
         target: "_self"
 
-    }, */
+    },
     windhillgrowers: {
         title: "Wind Hill Growers UI Design",
         category: "UI Design",
@@ -37,7 +37,6 @@ const projects = {
         buttonText: 'View Case Study',
         target: "_self"
     }, 
-    /*
     gflow: {
         title: "GFlow: UX Design",
         category: "UX Design",
@@ -47,7 +46,6 @@ const projects = {
         buttonText: 'View Case Study',
         target: "_self"
     },
-    */
     yotaxi: {
         title: "YoTaxi of SF App: UX Design",
         category: "UX Design",
@@ -176,8 +174,6 @@ const projects = {
         buttonText: 'Read more',
         target: "_self"
     },
-
-    /*
     akisi_mockup: {
         title: 'Akisi Mobile POS Mockup',
         category: 'Mockups',
@@ -188,7 +184,6 @@ const projects = {
         target: "_self"
 
     }
-    */
 }
 
 
