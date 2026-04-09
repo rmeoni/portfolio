@@ -36,7 +36,7 @@ const projects = {
         image: "images/portfolio-thumb-1.png",
         buttonText: 'View Case Study',
         target: "_self"
-    }, 
+    },
     gflow: {
         title: "GFlow: UX Design",
         category: "UX Design",
@@ -103,6 +103,7 @@ const projects = {
         buttonText: 'View Case Study',
         target: "_self"
     },
+    /*
     gummies_mockups: {
         title: 'Gummies Product Mockup',
         category: 'Mockups',
@@ -112,6 +113,7 @@ const projects = {
         buttonText: 'View Project',
         target: "_self"
     },
+    */
     zoho_google_api: {
         title: 'Zoho Inventory to Google Sheets API',
         category: 'Javascript',
@@ -121,6 +123,7 @@ const projects = {
         buttonText: 'View Project',
         target: "_self"
     },
+    /*
     gflow_rebranding: {
         title: 'GFlow Re-branding',
         category: 'Branding',
@@ -129,15 +132,20 @@ const projects = {
         image: './images/portfolio-thumb-28.png',
         buttonText: 'View Project',
         target: "_self"
-    }, whg_rebranding: {
-        title: 'Wind Hill Growers Re-branding',
-        category: 'Branding',
-        description: 'Wind Hill Growers detailed logo became blurry on small screens, making the brand less recognizable. The solution was to create a simplified version for smaller displays while retaining the original for large screens and prints, ensuring both functionality and brand consistency.',
-        link: './detail_project_whg_rebrand.html',
-        image: './images/portfolio-thumb-19.png',
-        buttonText: 'View Project',
-        target: "_self"
-    },
+    }, 
+    */
+    /*
+     whg_rebranding: {
+         title: 'Wind Hill Growers Re-branding',
+         category: 'Branding',
+         description: 'Wind Hill Growers detailed logo became blurry on small screens, making the brand less recognizable. The solution was to create a simplified version for smaller displays while retaining the original for large screens and prints, ensuring both functionality and brand consistency.',
+         link: './detail_project_whg_rebrand.html',
+         image: './images/portfolio-thumb-19.png',
+         buttonText: 'View Project',
+         target: "_self"
+     },
+     */
+    /*
     mwd_branding: {
         title: 'Mit Was Drin Branding',
         category: 'Branding',
@@ -147,6 +155,7 @@ const projects = {
         buttonText: 'View Project',
         target: "_self"
     },
+    */
     zoho_google_api: {
         title: 'Zoho Inventory to Google Sheets API',
         category: 'Javascript',
@@ -174,6 +183,7 @@ const projects = {
         buttonText: 'Read more',
         target: "_self"
     },
+    /*
     akisi_mockup: {
         title: 'Akisi Mobile POS Mockup',
         category: 'Mockups',
@@ -184,6 +194,7 @@ const projects = {
         target: "_self"
 
     }
+        */
 }
 
 
