@@ -1,4 +1,5 @@
 const projects = {
+    /*
     coffeereact: {
         title: "Coffee Shop React Development",
         category: "Javascript",
@@ -9,9 +10,10 @@ const projects = {
         target: "_self"
 
     },
+    */
     akisi_pay: {
         title: 'Akisi Pay Mobile POS UI Design ',
-        category: 'UI Design',
+        category: 'UX Design',
         description: 'As a UX Developer for a non-profit in Guatemala, I designed the UI of a mobile POS system that enables small business owners to accept credit card payments directly from their phones.',
         link: './detail_project_akisi_ui.html',
         image: './images/portfolio-thumb-23.png',
@@ -19,6 +21,7 @@ const projects = {
         target: "_self"
 
     },
+    /*
     windhillgrowers: {
         title: "Wind Hill Growers UI Design",
         category: "UI Design",
@@ -28,6 +31,8 @@ const projects = {
         buttonText: 'View Case Study',
         target: "_self"
     },
+    */
+   /*
     whgapp: {
         title: "Cannabis Tester App",
         category: "Javascript",
@@ -37,6 +42,7 @@ const projects = {
         buttonText: 'View Case Study',
         target: "_self"
     },
+    */
     gflow: {
         title: "GFlow: UX Design",
         category: "UX Design",
@@ -66,6 +72,7 @@ const projects = {
         target: "_self"
 
     },
+    /*
     prestio: {
         title: "Prestio App 3-Day Challenge: UX Design & Development",
         category: "UX Design",
@@ -76,6 +83,7 @@ const projects = {
         target: "_self"
 
     },
+    */
     cafedonlucas: {
         title: "Coffee Shop UX Research/Design",
         category: "UX Design",
@@ -94,6 +102,7 @@ const projects = {
         buttonText: 'View Case Study',
         target: "_self"
     },
+    /*
     lozana: {
         title: 'Lozana Concept Prototype Design',
         category: 'UI Design',
@@ -103,6 +112,7 @@ const projects = {
         buttonText: 'View Case Study',
         target: "_self"
     },
+    */
     /*
     gummies_mockups: {
         title: 'Gummies Product Mockup',
@@ -114,6 +124,7 @@ const projects = {
         target: "_self"
     },
     */
+   /*
     zoho_google_api: {
         title: 'Zoho Inventory to Google Sheets API',
         category: 'Javascript',
@@ -123,6 +134,7 @@ const projects = {
         buttonText: 'View Project',
         target: "_self"
     },
+    */
     /*
     gflow_rebranding: {
         title: 'GFlow Re-branding',
@@ -156,6 +168,7 @@ const projects = {
         target: "_self"
     },
     */
+   /*
     zoho_google_api: {
         title: 'Zoho Inventory to Google Sheets API',
         category: 'Javascript',
@@ -165,21 +178,22 @@ const projects = {
         buttonText: 'View Project',
         target: "_self"
     },
+    */
+   impulso_design_system: {
+        title: 'Impulso Design System',
+        category: 'Design System',
+        description: ' As a UX Developer at a Guatemalan non-profit with over 4,000 employees, I helped create Impulso, a design system aimed at organizing and standardizing all in-house apps used for group-loan operations. Impulso serves as a single source of truth across platforms, managing color tokens, typography scales, spacing systems, light and dark modes, and responsive layouts for mobile, tablet, and desktop. My role included auditing UI patterns, designing reusable components in Figma using Atomic Design principles, and collaborating with dev teams to ensure smooth implementation. The goal was simple: standardize, structure, and ensure brand consistency across the organization.',
+        link: './detail_project_impulso_design_system.html',
+        image: './images/portfolio-thumb-24.png',
+        buttonText: 'Read more',
+        target: "_self"
+    },
     whg_design_system: {
         title: 'Unity Design System',
         category: 'Design System',
         description: 'As the UX Designer for Wind Hill Growers, we faced the challenge of creating a cohesive brand experience across multiple international markets. To address this, we developed "Unity", a comprehensive design system that acts as a single source of truth for all design assets. Unity was instrumental in bringing the brand to a new level of consistency, making it easier to manage and scale across various platforms.',
         link: './detail_project_unity_design_system.html',
         image: './images/project-unity-design-system.png',
-        buttonText: 'Read more',
-        target: "_self"
-    },
-    impulso_design_system: {
-        title: 'Impulso Design System',
-        category: 'Design System',
-        description: ' As a UX Developer at a Guatemalan non-profit with over 4,000 employees, I helped create Impulso, a design system aimed at organizing and standardizing all in-house apps used for group-loan operations. Impulso serves as a single source of truth across platforms, managing color tokens, typography scales, spacing systems, light and dark modes, and responsive layouts for mobile, tablet, and desktop. My role included auditing UI patterns, designing reusable components in Figma using Atomic Design principles, and collaborating with dev teams to ensure smooth implementation. The goal was simple: standardize, structure, and ensure brand consistency across the organization.',
-        link: './detail_project_impulso_design_system.html',
-        image: './images/portfolio-thumb-24.png',
         buttonText: 'Read more',
         target: "_self"
     },

@@ -19,6 +19,12 @@ h3 {
   text-align: center;
 }
 
+/* Download CV / nav button — consistent blue in both modes */
+.button.nav-button {
+  background-color: #153180;
+  color: #fff;
+}
+
 .button-secondary {
   border: 1.5px solid #153180;
   color: #153180;
@@ -437,7 +443,7 @@ video {
 }
 
 [data-theme="dark"] .dinamic-text-line {
-  color: #e0e0e0;
+  color: #A1ADCC;
 }
 
 /* ==============================================
@@ -505,8 +511,8 @@ video {
 }
 
 [data-theme="dark"] .button.nav-button {
-  background-color: #fff;
-  color: #000;
+  background-color: #153180;
+  color: #fff;
 }
 
 [data-theme="dark"] .button-secondary {
