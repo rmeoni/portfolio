@@ -682,6 +682,11 @@ video {
   color: #fff;
 }
 
+[data-theme="dark"] #contact-form .button {
+  background-color: #153180;
+  color: #fff;
+}
+
 [data-theme="dark"] #contact-form label {
   color: #e8e8e8;
 }
