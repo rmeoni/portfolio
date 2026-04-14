@@ -331,3 +331,397 @@ video {
     padding-right: 16px;
   }
 }
+
+/* ==============================================
+   DARK MODE TOGGLE BUTTON
+   ============================================== */
+.dark-mode-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  margin-left: 12px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+
+.dark-mode-toggle img {
+  display: block;
+  height: 28px;
+  width: auto;
+  border-radius: 0 !important;
+}
+
+.dark-mode-toggle:hover {
+  background: transparent;
+}
+
+/* ==============================================
+   DARK MODE — BASE
+   ============================================== */
+[data-theme="dark"] body {
+  color: #e8e8e8;
+  background-color: #000;
+}
+
+[data-theme="dark"] a {
+  color: #f96a4c;
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
+  color: #fff;
+}
+
+[data-theme="dark"] .text-grey {
+  color: #888;
+}
+
+[data-theme="dark"] .text-label {
+  color: #f96a4c;
+}
+
+[data-theme="dark"] figcaption {
+  color: #777;
+}
+
+/* ==============================================
+   DARK MODE — SECTIONS
+   ============================================== */
+[data-theme="dark"] .section {
+  background-color: #000;
+}
+
+[data-theme="dark"] .section.dark-section {
+  background-color: #0f0f0f;
+}
+
+[data-theme="dark"] .section.border-top {
+  border-top-color: #2a2a2a;
+}
+
+[data-theme="dark"] .top-section {
+  background-color: #0a0a0a;
+}
+
+[data-theme="dark"] .page-wrapper {
+  background-color: #000;
+}
+
+/* ==============================================
+   DARK MODE — HERO
+   ============================================== */
+[data-theme="dark"] .hero-v1-section {
+  background-color: #0a0a0a;
+}
+
+[data-theme="dark"] .hero-v1-angle {
+  background-color: #000;
+}
+
+/* Detail page header angle divider */
+[data-theme="dark"] .angle {
+  background-color: #000;
+}
+
+[data-theme="dark"] .hero-v1-text {
+  color: #e8e8e8;
+}
+
+[data-theme="dark"] .dinamic-text-line {
+  color: #e0e0e0;
+}
+
+/* ==============================================
+   DARK MODE — NAVBAR
+   ============================================== */
+[data-theme="dark"] .navbar {
+  background-color: #000 !important;
+  background: #000 !important;
+}
+
+[data-theme="dark"] .nav-link {
+  color: #e8e8e8;
+}
+
+[data-theme="dark"] .hover-line {
+  background-color: #e8e8e8;
+}
+
+[data-theme="dark"] .logo {
+  filter: brightness(0) invert(1);
+}
+
+[data-theme="dark"] .menu-icon-line-top,
+[data-theme="dark"] .menu-icon-line-middle,
+[data-theme="dark"] .menu-icon-line-bottom {
+  background-color: #e8e8e8;
+}
+
+/* Mobile nav slide-out panel — dark bg only when collapsed (≤991px) */
+@media (max-width: 991px) {
+  [data-theme="dark"] .nav-menu {
+    background-color: #111 !important;
+  }
+}
+
+/* Desktop: nav-menu must stay transparent */
+[data-theme="dark"] .nav-menu {
+  background-color: transparent;
+}
+
+[data-theme="dark"] .nav-menu .nav-link {
+  background-color: transparent !important;
+}
+
+/* Override .w-nav base style and any inline scroll styles Webflow JS may inject */
+[data-theme="dark"] .w-nav {
+  background: #000 !important;
+  background-color: #000 !important;
+}
+
+/* ==============================================
+   DARK MODE — BUTTONS
+   ============================================== */
+[data-theme="dark"] .button.contact-button {
+  background-image: url('../images/email.svg');
+}
+[data-theme="dark"] .button {
+  background-color: #fff;
+  color: #000;
+}
+
+[data-theme="dark"] .button:hover {
+  background-color: #f96a4c;
+  color: #fff;
+}
+
+[data-theme="dark"] .button.nav-button {
+  background-color: #fff;
+  color: #000;
+}
+
+[data-theme="dark"] .button-secondary {
+  border-color: #fff;
+  color: #fff;
+}
+
+[data-theme="dark"] .button-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Back-to-top button */
+[data-theme="dark"] .top-button {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+/* ==============================================
+   DARK MODE — PANEL (services bar)
+   ============================================== */
+[data-theme="dark"] .panel {
+  border-bottom-color: #2a2a2a;
+}
+
+[data-theme="dark"] .panel-contact {
+  color: #e8e8e8;
+}
+
+[data-theme="dark"] .panel-text-label {
+  color: #777;
+}
+
+[data-theme="dark"] .panel-email {
+  color: #e8e8e8;
+}
+
+[data-theme="dark"] .panel-service {
+  color: #e8e8e8;
+}
+
+/* ==============================================
+   DARK MODE — TAG BADGES
+   ============================================== */
+[data-theme="dark"] .tag-badge {
+  background-color: #1e1e1e;
+  color: #e8e8e8;
+}
+
+[data-theme="dark"] .tag-badge:hover {
+  background-color: #f96a4c;
+  color: #fff;
+}
+
+[data-theme="dark"] .tag-badge:focus {
+  background-color: #f96a4c;
+  color: #fff;
+}
+
+[data-theme="dark"] .tag-badge.activeBtn {
+  background-color: #f96a4c;
+  color: #fff;
+}
+
+/* ==============================================
+   DARK MODE — SKILLS
+   ============================================== */
+[data-theme="dark"] .skill-big {
+  background-color: #1a1a1a;
+}
+
+[data-theme="dark"] .skill-text {
+  color: #e8e8e8;
+}
+
+[data-theme="dark"] .skill-progress {
+  background-color: #111;
+  color: #888;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.6);
+}
+
+/* ==============================================
+   DARK MODE — EXPERIENCE / EDUCATION TIMELINE
+   ============================================== */
+[data-theme="dark"] .timeline {
+  background-color: #2a2a2a;
+}
+
+[data-theme="dark"] .timeline-dot {
+  box-shadow: 0 0 0 6px rgba(249, 106, 76, 0.2), 0 0 0 12px #000;
+}
+
+[data-theme="dark"] .career-date {
+  color: #777;
+}
+
+[data-theme="dark"] .job-description {
+  color: #888;
+}
+
+[data-theme="dark"] .job-heading {
+  color: #fff;
+}
+
+/* ==============================================
+   DARK MODE — COUNTERS
+   ============================================== */
+[data-theme="dark"] .counters {
+  border-top-color: #2a2a2a;
+  border-bottom-color: #2a2a2a;
+}
+
+[data-theme="dark"] .counter {
+  box-shadow: 1px 0 0 0 #2a2a2a;
+}
+
+[data-theme="dark"] .counter-number {
+  color: #fff;
+}
+
+[data-theme="dark"] .counter-name {
+  color: #e8e8e8;
+}
+
+[data-theme="dark"] .counter-description {
+  color: #777;
+}
+
+/* ==============================================
+   DARK MODE — PORTFOLIO WORK CARDS
+   ============================================== */
+[data-theme="dark"] .work-card-description {
+  color: #888;
+}
+
+[data-theme="dark"] .dynamic-works-heading {
+  color: #fff;
+}
+
+/* ==============================================
+   DARK MODE — COMPANY LOGOS
+   ============================================== */
+[data-theme="dark"] .company-logo-item {
+  background: #1a1a1a !important;
+  border: 1px solid #2a2a2a;
+}
+
+/* No CSS filter needed — dark variants are swapped via JS */
+[data-theme="dark"] .company-logo-img {
+  filter: none !important;
+}
+
+/* ==============================================
+   DARK MODE — SERVICE ICONS SECTION
+   ============================================== */
+[data-theme="dark"] .service-icon-heading {
+  color: #e8e8e8;
+}
+
+[data-theme="dark"] .service-icon {
+  filter: brightness(0) invert(1);
+}
+
+/* ==============================================
+   DARK MODE — CONTACT FORM
+   ============================================== */
+[data-theme="dark"] #contact-sec h2 {
+  color: #fff;
+}
+
+[data-theme="dark"] #contact-form label {
+  color: #e8e8e8;
+}
+
+[data-theme="dark"] #contact-form input,
+[data-theme="dark"] #contact-form textarea {
+  background-color: #1a1a1a;
+  border-color: #2a2a2a !important;
+  color: #e8e8e8;
+}
+
+[data-theme="dark"] #contact-form input::placeholder,
+[data-theme="dark"] #contact-form textarea::placeholder {
+  color: #555;
+}
+
+/* ==============================================
+   DARK MODE — FOOTER
+   ============================================== */
+[data-theme="dark"] .footer-section {
+  background-color: #0f0f0f;
+  border-top: 1px solid #2a2a2a;
+}
+
+[data-theme="dark"] .footer-heading {
+  color: #fff;
+}
+
+[data-theme="dark"] .footer-contact-text {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+[data-theme="dark"] .footer-nav-link,
+[data-theme="dark"] .footer-link {
+  color: #D0D6E6;
+}
+
+/* ==============================================
+   DARK MODE — VIDEO OVERLAY
+   ============================================== */
+[data-theme="dark"] #video-container {
+  background-color: #111;
+}
+
+[data-theme="dark"] #close-video-overlay,
+[data-theme="dark"] #close-overlay {
+  background-color: #1a1a1a;
+  color: #e8e8e8;
+}
