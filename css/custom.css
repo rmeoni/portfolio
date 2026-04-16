@@ -575,6 +575,35 @@ video {
 }
 
 /* ==============================================
+   TAG BADGES — base styles
+   ============================================== */
+.work-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  width: 100%;
+  flex-basis: 100%;
+}
+
+/* Allow work-intro to wrap so work-tags drops to its own row */
+.work-intro {
+  flex-wrap: wrap;
+}
+
+.tag-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  background-color: #f0f2f7;
+  color: #153180;
+  white-space: nowrap;
+}
+
+/* ==============================================
    DARK MODE — TAG BADGES
    ============================================== */
 [data-theme="dark"] .tag-badge {
