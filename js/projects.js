@@ -11,8 +11,18 @@ const projects = {
 
     },
     */
+     yotaxi: {
+        title: "YoTaxi of SF App: UX Design",
+        category: "UX Design",
+        description: "YoTaxi of San Francisco was facing challenges with their user experience. I supported them by redesigning their app using the Design Thinking methodology. We conducted user research and a foundational usability study, defined key goals, collaborated with stakeholders to ideate solutions, and prototyped a new design in Figma that better meets user needs.",
+        link: "./detail_project_yotaxi.html",
+        image: "images/portfolio-thumb-26.png",
+        buttonText: 'View Case Study',
+        target: "_self"
+
+    },
     akisi_pay: {
-        title: 'Akisi Pay Mobile POS UI Design ',
+        title: 'Akisi Pay POS UI Design ',
         category: 'UX Design',
         description: 'As a UX Developer for a non-profit in Guatemala, I designed the UI of a mobile POS system that enables small business owners to accept credit card payments directly from their phones.',
         link: './detail_project_akisi_ui.html',
@@ -51,16 +61,6 @@ const projects = {
         image: "images/portfolio-thumb-25.png",
         buttonText: 'View Case Study',
         target: "_self"
-    },
-    yotaxi: {
-        title: "YoTaxi of SF App: UX Design",
-        category: "UX Design",
-        description: "YoTaxi of San Francisco was facing challenges with their user experience. I supported them by redesigning their app using the Design Thinking methodology. We conducted user research and a foundational usability study, defined key goals, collaborated with stakeholders to ideate solutions, and prototyped a new design in Figma that better meets user needs.",
-        link: "./detail_project_yotaxi.html",
-        image: "images/portfolio-thumb-26.png",
-        buttonText: 'View Case Study',
-        target: "_self"
-
     },
     adoptio: {
         title: "Adoptio App: UX Design & Development",

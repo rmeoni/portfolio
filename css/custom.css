@@ -31,6 +31,15 @@ h3 {
   color: #fff;
 }
 
+/* Orange hover for all primary buttons */
+.button:hover,
+.button.nav-button:hover,
+.button.contact-button:hover,
+#contact-form .button:hover {
+  background-color: #f96a4c;
+  color: #fff;
+}
+
 .button-secondary {
   border: 1.5px solid #153180;
   color: #153180;
@@ -513,7 +522,11 @@ video {
   color: #000;
 }
 
-[data-theme="dark"] .button:hover {
+/* Orange hover for all primary buttons in dark mode */
+[data-theme="dark"] .button:hover,
+[data-theme="dark"] .button.nav-button:hover,
+[data-theme="dark"] .button.contact-button:hover,
+[data-theme="dark"] #contact-form .button:hover {
   background-color: #f96a4c;
   color: #fff;
 }
