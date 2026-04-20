@@ -138,12 +138,12 @@
       <nav role="navigation" class="nav-menu w-nav-menu">
 
         <a href="#home-sec" aria-current="page" class="nav-link w-inline-block w--current">
-          <div>Home</div>
+          <div data-i18n="nav-home">Home</div>
           <div class="hover-line"></div>
         </a>
 
         <a href="#portfolio-sec" class="nav-link w-inline-block">
-          <div>Portfolio</div>
+          <div data-i18n="nav-portfolio">Portfolio</div>
           <div class="hover-line"></div>
         </a>
 
@@ -155,21 +155,34 @@
       -->
 
         <a href="#about-sec" class="nav-link w-inline-block">
-          <div>About</div>
+          <div data-i18n="nav-about">About</div>
           <div class="hover-line"></div>
         </a>
 
         <a href="#contact-sec" class="nav-link w-inline-block">
-          <div>Contact</div>
+          <div data-i18n="nav-contact">Contact</div>
           <div class="hover-line"></div>
         </a>
+
+        <div class="nav-mobile-extras">
+          <a href="case-study/rodrigo_meono_resume_no_ref_compressed.pdf" download target="_blank"
+            class="nav-mobile-cv" data-i18n="nav-download-cv">Download CV</a>
+          <button class="lang-toggle" aria-label="Switch language" title="Switch language">
+            <img src="images/language.svg" alt="Language" class="lang-icon">
+            <span class="lang-label">ES</span>
+          </button>
+        </div>
 
       </nav>
       <div class="nav-right">
         <a href="case-study/rodrigo_meono_resume_no_ref_compressed.pdf" download target="_blank"
-          class="button nav-button w-button">Download CV</a>
+          class="button nav-button w-button" data-i18n="nav-download-cv">Download CV</a>
         <button class="dark-mode-toggle" id="dark-mode-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
           <img src="images/icon-toggle-dark-mode.svg" alt="Toggle dark mode" id="dark-mode-toggle-icon">
+        </button>
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language" title="Switch language">
+          <img src="images/language.svg" alt="Language" id="lang-toggle-icon" class="lang-icon">
+          <span class="lang-label" id="lang-label">ES</span>
         </button>
         <div class="menu-button w-clearfix w-nav-button">
           <div class="menu-icon">
@@ -195,12 +208,12 @@
         <div class="hero-v1"><img src="images/profile-photo.png" sizes="(max-width: 479px) 40vw, 24vw"
             srcset="images/profile-photo.png 500w, images/profile-photo.png 800w" alt="" class="hero-v1-photo">
           <div class="hero-v1-info">
-            <div class="hero-v1-text">My name is Rodrigo. I&#x27;m a User Experience Developer who loves to design &
+            <div class="hero-v1-text" data-i18n="hero-intro">My name is Rodrigo. I&#x27;m a User Experience Developer who loves to design &
               develop</div>
             <div data-w-id="034f21c7-4dc0-5672-d7bf-e62bb43d0dfd" class="dynamic-text-wrapper">
-              <div class="dinamic-text-line">mobile apps</div>
-              <div class="dinamic-text-line">web apps</div>
-              <div class="dinamic-text-line">communities</div>
+              <div class="dinamic-text-line" data-i18n="hero-line-1">mobile apps</div>
+              <div class="dinamic-text-line" data-i18n="hero-line-2">web apps</div>
+              <div class="dinamic-text-line" data-i18n="hero-line-3">communities</div>
             </div>
           </div>
         </div>
@@ -212,13 +225,13 @@
       <div class="wrapper">
         <div class="panel">
           <div id="w-node-_50e581a0-6d5f-8867-5ee2-447e2a43e317-50de703d" class="panel-services">
-            <div class="panel-service">Design for<br>Web and Mobile</div>
-            <div class="panel-service">HTML, CSS, <br>Javascript, React</div>
-            <div class="panel-service">Product <br>Mockups</div>
+            <div class="panel-service" data-i18n-html="panel-service-1">Design for<br>Web and Mobile</div>
+            <div class="panel-service" data-i18n-html="panel-service-2">HTML, CSS, <br>Javascript, React</div>
+            <div class="panel-service" data-i18n-html="panel-service-3">Product <br>Mockups</div>
           </div>
           <a href="mailto:hello@uxrodrigo.com?subject=hello" target="_blank" class="panel-contact w-inline-block">
             <div class="circle-contact-info">
-              <div class="panel-text-label">Let’s get in touch!</div>
+              <div class="panel-text-label" data-i18n="panel-cta">Let’s get in touch!</div>
               <div class="panel-email">hello@uxrodrigo.com</div>
             </div>
             <div class="circle-wrapper">
@@ -235,12 +248,12 @@
     <div class="section wf-section" id="portfolio-sec">
       <div class="wrapper">
         <div class="dynamic-works-intro">
-          <h2 class="dynamic-works-heading">Recent Works</h2>
+          <h2 class="dynamic-works-heading" data-i18n="portfolio-heading">Recent Works</h2>
         </div>
         <div class="project-categories" id="project-btns">
-          <button onclick="renderProjects(projects, 'UX Design')" class="tag-badge activeBtn" id="ux-design-btn">UX/UI
+          <button onclick="renderProjects(projects, 'UX Design')" class="tag-badge activeBtn" id="ux-design-btn" data-i18n="portfolio-btn-ux">UX/UI
             Design</button>
-          <button onclick="renderProjects(projects, 'Design System')" class="tag-badge" id="design-system-btn">Design
+          <button onclick="renderProjects(projects, 'Design System')" class="tag-badge" id="design-system-btn" data-i18n="portfolio-btn-ds">Design
             Systems</button>
           <!--   
           <button onclick="renderProjects(projects, 'UI Design')" class="tag-badge" id="ui-design-btn">UI
@@ -287,8 +300,8 @@
     <div class="section no-padding-top wf-section" id="about-sec">
       <div class="wrapper">
         <div class="intro margin">
-          <div class="text-label">Professional</div>
-          <h2>My Current Skillset</h2>
+          <div class="text-label" data-i18n="about-label">Professional</div>
+          <h2 data-i18n="about-heading">My Current Skillset</h2>
         </div>
         <div class="skills-big">
           <div class="skill-big"><img src="images/photoshop.png" alt="" class="skill-big-icon">
@@ -360,12 +373,12 @@
       <div class="wrapper">
         <div class="w-layout-grid main-grid">
           <div id="w-node-_139cb275-9518-be80-7bab-eb046a955100-50de703d" class="intro-left sticky">
-            <h2>My Experience</h2>
-            <div class="text-grey exp">Accomplished UX Designer and Developer with over 10 years of expertise in the
+            <h2 data-i18n="exp-heading">My Experience</h2>
+            <div class="text-grey exp" data-i18n="exp-description">Accomplished UX Designer and Developer with over 10 years of expertise in the
               tech industry, specializing in website design and development, design systems, and process automation.
               Proven ability to deliver effective solutions in dynamic, high-demand environments.
             </div>
-            <a href="#contact-sec" class="button-secondary">Contact Me</a>
+            <a href="#contact-sec" class="button-secondary" data-i18n="exp-contact-btn">Contact Me</a>
           </div>
           <div id="w-node-_139cb275-9518-be80-7bab-eb046a955105-50de703d">
             <div class="career-block">
@@ -375,7 +388,7 @@
               </div>
               <div id="w-node-_139cb275-9518-be80-7bab-eb046a955117-50de703d" class="job-info">
                 <h3 class="job-heading">Bareco</h3>
-                <div class="job-description">I worked on a year-long digitization project for Banco Industrial, one of
+                <div class="job-description" data-i18n="job-bareco">I worked on a year-long digitization project for Banco Industrial, one of
                   Guatemala’s
                   largest banks. I was outsourced to help install new hardware for document scanning and update computer
                   and server systems.
@@ -391,7 +404,7 @@
               </div>
               <div id="w-node-_139cb275-9518-be80-7bab-eb046a955117-50de703d" class="job-info">
                 <h3 class="job-heading">Intuitiva, S.A.</h3>
-                <div class="job-description">As an employee at a SaaS startup developing an ERP software for accounting,
+                <div class="job-description" data-i18n="job-intuitiva">As an employee at a SaaS startup developing an ERP software for accounting,
                   inventory, sales,
                   and purchasing solutions across various industries, I contributed to sales, implementation, and
                   support, gaining hands-on
@@ -408,7 +421,7 @@
               </div>
               <div id="w-node-_139cb275-9518-be80-7bab-eb046a955123-50de703d" class="job-info">
                 <h3 class="job-heading">Web Designer/ I.T. Specialist Freelancer</h3>
-                <div class="job-description">As a freelance contractor, I specialized in web design and development
+                <div class="job-description" data-i18n="job-freelancer">As a freelance contractor, I specialized in web design and development
                   for restaurants and hospitality businesses, creating tailored websites to enhance their online
                   presence.
                   Additionally, I implemented software solutions to support their operational needs.
@@ -424,7 +437,7 @@
               </div>
               <div id="w-node-_052dfac7-c590-df2d-21d5-b6092d3a8b64-50de703d" class="job-info">
                 <h3 class="job-heading">Wind Hill Growers</h3>
-                <div class="job-description">I lead UX/UI design and design system development for a U.S.-based company
+                <div class="job-description" data-i18n="job-whg">I lead UX/UI design and design system development for a U.S.-based company
                   targeting the U.S., and German markets. My role includes building a cohesive design system,
                   developing JavaScript solutions, and optimizing an e-commerce and inventory platform to deliver
                   user-centered, efficient experiences.</div>
@@ -439,7 +452,7 @@
               </div>
               <div id="w-node-_052dfac7-c590-df2d-21d5-b6092d3a8b64-50de703d" class="job-info">
                 <h3 class="job-heading">Fundación Génesis Empresarial</h3>
-                <div class="job-description">Responsible for designing, prototyping, and developing websites and digital
+                <div class="job-description" data-i18n="job-fge">Responsible for designing, prototyping, and developing websites and digital
                   interfaces. The goal is to ensure a balance between visual aesthetics, functionality, and user
                   experience, contributing to the creation of innovative and effective digital solutions.</div>
                 <div class="tag-badge job-badge">ux developer</div>
@@ -452,7 +465,7 @@
               </div>
               <div id="w-node-_052dfac7-c590-df2d-21d5-b6092d3a8b64-50de703d" class="job-info">
                 <h3 class="job-heading">Yellow Cab Of San Francisco</h3>
-                <div class="job-description">Led end-to-end UX design and full-stack development of the YoTaxi mobile
+                <div class="job-description" data-i18n="job-yotaxi">Led end-to-end UX design and full-stack development of the YoTaxi mobile
                   app for Yellow Cab of San Francisco, applying Design Thinking to deliver a user-centered, accessible
                   solution. Conducted user research, usability testing, and stakeholder collaboration to inform
                   personas, prototypes, and product decisions, while building the app’s frontend and backend using React
@@ -468,7 +481,7 @@
               </div>
               <div id="w-node-_052dfac7-c590-df2d-21d5-b6092d3a8b64-50de703d" class="job-info">
                 <h3 class="job-heading">IxDF (Interaction Design Foundation)</h3>
-                <div class="job-description">As a Country Manager for IxDF, I’m responsible for overseeing the Local
+                <div class="job-description" data-i18n="job-ixdf">As a Country Manager for IxDF, I’m responsible for overseeing the Local
                   Groups in Guatemala. Each group is supported by Local Leaders in their respective cities. I help
                   ensure that Local Leaders organize meetups where people interested in design can learn, share ideas,
                   and network with one another.</div>
@@ -485,8 +498,8 @@
       <div class="wrapper">
         <div class="w-layout-grid main-grid">
           <div id="w-node-_139cb275-9518-be80-7bab-eb046a955100-50de703d" class="intro-left sticky">
-            <h2>My Education</h2>
-            <div class="text-grey exp">My journey into UX was unconventional—it felt backwards, or as I like to say, "I
+            <h2 data-i18n="edu-heading">My Education</h2>
+            <div class="text-grey exp" data-i18n="edu-description">My journey into UX was unconventional—it felt backwards, or as I like to say, "I
               was reverse engineering it." I began studying networking and telecommunications at Galileo University but
               was more drawn to web development. This led me to learn full-stack development with Ruby on Rails and
               explore React, bridging design and development. My passion for user-centered experiences grew, and I
@@ -508,7 +521,7 @@
               </div>
               <div id="w-node-_139cb275-9518-be80-7bab-eb046a955117-50de703d" class="job-info">
                 <h3 class="job-heading">Networks Professional CCNP</h3>
-                <div class="job-description">This course provided an in-depth understanding of networking principles,
+                <div class="job-description" data-i18n="edu-ccnp">This course provided an in-depth understanding of networking principles,
                   including configuring and managing network infrastructure. Topics covered included routing, switching,
                   and network security, preparing participants for real-world network design and troubleshooting
                   scenarios.
@@ -524,7 +537,7 @@
               </div>
               <div id="w-node-_139cb275-9518-be80-7bab-eb046a955117-50de703d" class="job-info">
                 <h3 class="job-heading">Bachelor in Telecommunications (3rd year)</h3>
-                <div class="job-description">I studied telecommunications with a focus on networking but left in my
+                <div class="job-description" data-i18n="edu-telecom">I studied telecommunications with a focus on networking but left in my
                   third year as I was more interested in fields with visual feedback, like web development and design,
                   which led to my passion for UX and front-end development.
                 </div>
@@ -539,7 +552,7 @@
               </div>
               <div id="w-node-_139cb275-9518-be80-7bab-eb046a955123-50de703d" class="job-info">
                 <h3 class="job-heading">Full-Stack Ruby on Rails</h3>
-                <div class="job-description">I decided to become a programmer after a mentor told me I wasn’t one, which
+                <div class="job-description" data-i18n="edu-rails">I decided to become a programmer after a mentor told me I wasn’t one, which
                   motivated me to prove otherwise. Through this course, I learned full-stack web development, including
                   building dynamic web applications with Ruby on Rails, and it sparked my journey into coding and
                   front-end development.
@@ -555,7 +568,7 @@
               </div>
               <div id="w-node-_052dfac7-c590-df2d-21d5-b6092d3a8b64-50de703d" class="job-info">
                 <h3 class="job-heading">Google UX Design Professional Certificate</h3>
-                <div class="job-description">This certificate provided me with a comprehensive understanding of UX
+                <div class="job-description" data-i18n="edu-google">This certificate provided me with a comprehensive understanding of UX
                   design, including user research, wireframing, prototyping, and usability testing. It solidified my
                   skills in creating user-centered designs and helped me refine my approach to solving real-world design
                   problems.</div>
@@ -570,7 +583,7 @@
               </div>
               <div id="w-node-_052dfac7-c590-df2d-21d5-b6092d3a8b64-50de703d" class="job-info">
                 <h3 class="job-heading">Full-stack React Developer</h3>
-                <div class="job-description">This course deepened my skills in building dynamic web applications using
+                <div class="job-description" data-i18n="edu-react">This course deepened my skills in building dynamic web applications using
                   React. I learned to create reusable components, manage state effectively, and develop responsive,
                   user-centered interfaces, further bridging my design and development expertise.</div>
                 <div class="tag-badge job-badge">Codecademy</div>
@@ -604,22 +617,22 @@
           <div class="counter">
             <div class="counter-number">10+</div>
             <div class="counter-info">
-              <div class="counter-name">Years of Experience</div>
-              <div class="counter-description">Delivering effective solutions across multiple industries.</div>
+              <div class="counter-name" data-i18n="counter-name-1">Years of Experience</div>
+              <div class="counter-description" data-i18n="counter-desc-1">Delivering effective solutions across multiple industries.</div>
             </div>
           </div>
           <div class="counter">
             <div class="counter-number">5+</div>
             <div class="counter-info">
-              <div class="counter-name">Professional certifications</div>
-              <div class="counter-description">Committed to continuous learning and skill advancement.</div>
+              <div class="counter-name" data-i18n="counter-name-2">Professional certifications</div>
+              <div class="counter-description" data-i18n="counter-desc-2">Committed to continuous learning and skill advancement.</div>
             </div>
           </div>
           <div class="counter">
             <div class="counter-number">10+</div>
             <div class="counter-info">
-              <div class="counter-name">Tools mastered</div>
-              <div class="counter-description">From Adobe Suite to GitHub, crafting efficient digital solutions.</div>
+              <div class="counter-name" data-i18n="counter-name-3">Tools mastered</div>
+              <div class="counter-description" data-i18n="counter-desc-3">From Adobe Suite to GitHub, crafting efficient digital solutions.</div>
             </div>
           </div>
         </div>
@@ -630,8 +643,8 @@
     <div class="section no-padding-top wf-section">
       <div class="wrapper">
         <div class="intro wide">
-          <div class="text-label" style="margin-top: 48px;">Companies</div>
-          <h2>Companies who have trusted me</h2>
+          <div class="text-label" style="margin-top: 48px;" data-i18n="companies-label">Companies</div>
+          <h2 data-i18n="companies-heading">Companies who have trusted me</h2>
         </div>
 
         <div class="companies-logos" role="list" aria-label="Companies who have trusted me">
@@ -695,7 +708,7 @@
     <!-- CONTACT (Turnstile + Airtable Worker) -->
     <div id="contact-sec">
       <div style="height: 40px;margin-bottom: 48px;text-align: center;">
-        <h2>Let's get in touch</h2>
+        <h2 data-i18n="contact-heading">Let's get in touch</h2>
       </div>
 
       <!-- Form status messages -->
@@ -704,19 +717,19 @@
 
       <form id="contact-form" style="max-width:520px;margin:0 auto;">
         <div style="margin-bottom: 12px;">
-          <label for="contact-name" style="display:block;margin-bottom:6px;">Name</label>
+          <label for="contact-name" style="display:block;margin-bottom:6px;" data-i18n="contact-name-label">Name</label>
           <input id="contact-name" name="name" type="text" required
             style="width:100%;padding:12px;border:1px solid #ddd;border-radius:8px;" autocomplete="name" />
         </div>
 
         <div style="margin-bottom: 12px;">
-          <label for="contact-email" style="display:block;margin-bottom:6px;">Email</label>
+          <label for="contact-email" style="display:block;margin-bottom:6px;" data-i18n="contact-email-label">Email</label>
           <input id="contact-email" name="email" type="email" required
             style="width:100%;padding:12px;border:1px solid #ddd;border-radius:8px;" autocomplete="email" />
         </div>
 
         <div style="margin-bottom: 16px;">
-          <label for="contact-message" style="display:block;margin-bottom:6px;">Message</label>
+          <label for="contact-message" style="display:block;margin-bottom:6px;" data-i18n="contact-message-label">Message</label>
           <textarea id="contact-message" name="message" rows="5" required
             style="width:100%;padding:12px;border:1px solid #ddd;border-radius:8px;"></textarea>
         </div>
@@ -730,7 +743,7 @@
           data-callback="onTurnstileSuccess" data-expired-callback="onTurnstileExpired"
           data-error-callback="onTurnstileError"></div>
 
-        <button type="submit" class="button w-button" style="max-width:200px;margin:18px auto 0 auto;display:block;">
+        <button type="submit" class="button w-button" style="max-width:200px;margin:18px auto 0 auto;display:block;" data-i18n="contact-submit">
           Send Message
         </button>
       </form>
@@ -741,19 +754,19 @@
   <div class="section no-padding-top wf-section">
     <div class="wrapper">
       <div class="intro wide">
-        <div class="text-label" style="margin-top: 48px;">My Expertise</div>
-        <h2>Focus on design thinking</h2>
-        <div class="text-grey"> Using the design thinking approach we can put our users' needs first in order to bring
+        <div class="text-label" style="margin-top: 48px;" data-i18n="expertise-label">My Expertise</div>
+        <h2 data-i18n="expertise-heading">Focus on design thinking</h2>
+        <div class="text-grey" data-i18n="expertise-description"> Using the design thinking approach we can put our users' needs first in order to bring
           to life breathtaking experiences.</div>
         <div class="service-icons">
           <div class="service-icon-box"><img src="images/icon-responsive.png" alt="" class="service-icon">
-            <h6 class="service-icon-heading">UX Design <br>& Development</h6>
+            <h6 class="service-icon-heading" data-i18n-html="expertise-service-1">UX Design <br>& Development</h6>
           </div>
           <div class="service-icon-box"><img src="images/icon-illustration.png" alt="" class="service-icon">
-            <h6 class="service-icon-heading">Logos<br>and Icons</h6>
+            <h6 class="service-icon-heading" data-i18n-html="expertise-service-2">Logos<br>and Icons</h6>
           </div>
           <div class="service-icon-box"><img src="images/icon-camera.png" alt="" class="service-icon">
-            <h6 class="service-icon-heading">Product <br>Mockups</h6>
+            <h6 class="service-icon-heading" data-i18n-html="expertise-service-3">Product <br>Mockups</h6>
           </div>
         </div>
       </div>
@@ -808,26 +821,26 @@
     <div class="footer">
       <div id="w-node-_039a8aaa-fb17-70ae-93eb-1d914075d988-4075d986" class="footer-nav">
         <a href="#home-sec" aria-current="page" class="footer-nav-link w-inline-block w--current">
-          <div>Home</div>
+          <div data-i18n="footer-home">Home</div>
           <div class="hover-line white"></div>
         </a>
         <a href="#portfolio-sec" class="footer-nav-link w-inline-block">
-          <div>Portfolio</div>
+          <div data-i18n="footer-portfolio">Portfolio</div>
           <div class="hover-line white"></div>
         </a>
 
         <a href="#about-sec" class="footer-nav-link w-inline-block">
-          <div>About</div>
+          <div data-i18n="footer-about">About</div>
           <div class="hover-line white"></div>
         </a>
         <a href="#contact-sec" class="footer-nav-link w-inline-block">
-          <div>Contact</div>
+          <div data-i18n="footer-contact">Contact</div>
           <div class="hover-line white"></div>
         </a>
       </div>
       <div class="footer-contact">
-        <h3 class="footer-heading">Let's Get In Touch</h3>
-        <div class="footer-contact-text">I'd love to hear from you! Please reach out.</div>
+        <h3 class="footer-heading" data-i18n="footer-heading">Let's Get In Touch</h3>
+        <div class="footer-contact-text" data-i18n="footer-text">I'd love to hear from you! Please reach out.</div>
         <div class="footer-contact-item"><img src="images/email-white.svg" alt="" class="footer-contact-icon">
           <div><a href="mailto:hello@uxrodrigo.com" style="color:#fff;">hello@uxrodrigo.com</a></div>
         </div>
@@ -893,6 +906,11 @@
         logos.forEach(function (img) {
           img.src = isDark ? img.dataset.darkSrc : img.dataset.lightSrc;
         });
+
+        // Swap language button icon (all instances — desktop + mobile sidebar)
+        document.querySelectorAll('.lang-icon').forEach(function (icon) {
+          icon.src = isDark ? 'images/language-dark.svg' : 'images/language.svg';
+        });
       }
 
       document.addEventListener('DOMContentLoaded', function () {
@@ -918,6 +936,7 @@
   <script src="js/webflow.js" type="text/javascript"></script>
   <script src="js/projects.js"></script>
   <script src="js/button-active.js"></script>
+  <script src="js/i18n.js"></script>
   <!-- script for video Pop-up -->
   <script src="js/video-popup.js"></script>
 

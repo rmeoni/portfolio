@@ -47,27 +47,40 @@
       </div>
       <nav role="navigation" class="nav-menu w-nav-menu">
         <a href="./index.html#home-sec" class="nav-link w-inline-block">
-          <div>Home</div>
+          <div data-i18n="nav-home">Home</div>
           <div class="hover-line"></div>
         </a>
         <a href="./index.html#portfolio-sec" class="nav-link w-inline-block">
-          <div>Portfolio</div>
+          <div data-i18n="nav-portfolio">Portfolio</div>
           <div class="hover-line"></div>
         </a>
         <a href="./index.html#about-sec" class="nav-link w-inline-block">
-          <div>About</div>
+          <div data-i18n="nav-about">About</div>
           <div class="hover-line"></div>
         </a>
         <a href="./index.html#contact-sec" class="nav-link w-inline-block">
-          <div>Contact</div>
+          <div data-i18n="nav-contact">Contact</div>
           <div class="hover-line"></div>
         </a>
+
+        <div class="nav-mobile-extras">
+          <a href="case-study/rodrigo_meono_resume_no_ref_compressed.pdf" download target="_blank"
+            class="nav-mobile-cv" data-i18n="nav-download-cv">Download CV</a>
+          <button class="lang-toggle" aria-label="Switch language" title="Switch language">
+            <img src="images/language.svg" alt="Language" class="lang-icon">
+            <span class="lang-label">ES</span>
+          </button>
+        </div>
       </nav>
       <div class="nav-right">
         <a href="case-study/rodrigo_meono_resume_no_ref_compressed.pdf" download target="_blank"
-          class="button nav-button w-button">Download CV</a>
+          class="button nav-button w-button" data-i18n="nav-download-cv">Download CV</a>
         <button class="dark-mode-toggle" id="dark-mode-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
           <img src="images/icon-toggle-dark-mode.svg" alt="Toggle dark mode" id="dark-mode-toggle-icon">
+        </button>
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language" title="Switch language">
+          <img src="images/language.svg" alt="Language" id="lang-toggle-icon" class="lang-icon">
+          <span class="lang-label" id="lang-label">ES</span>
         </button>
         <div class="menu-button w-clearfix w-nav-button">
           <div class="menu-icon">
@@ -89,7 +102,7 @@
     <div class="top-section wf-section">
       <div class="wrapper">
         <div class="page-header">
-          <h1 class="page-heading">Adoptio App: UX Design & Development</h1>
+          <h1 class="page-heading" data-i18n="adoptio-title">Adoptio App: UX Design & Development</h1>
         </div>
       </div>
     </div>
@@ -144,15 +157,15 @@
         </div>
         <div class="work-intro">
           <div class="work-decription">
-            <div>Adoptio App: UX Design & Development</div>
+            <div data-i18n="adoptio-title">Adoptio App: UX Design & Development</div>
           </div>
           <div class="work-blocks">
             <div class="work-block">
-              <h6 class="work-block-heading">Client</h6>
+              <h6 class="work-block-heading" data-i18n="detail-client">Client</h6>
               <div class="work-block-info">Adoptio</div>
             </div>
             <div class="work-block">
-              <h6 class="work-block-heading">Release</h6>
+              <h6 class="work-block-heading" data-i18n="detail-release">Release</h6>
               <div class="work-block-info">01/02/2025</div>
             </div>
           </div>
@@ -173,7 +186,7 @@
         </div>
         <br>
         <br>
-        <div class="work w-richtext">Adoptio started as a practice project for the Google UX Design Certificate course.
+        <div class="work w-richtext" data-i18n="adoptio-intro">Adoptio started as a practice project for the Google UX Design Certificate course.
           However, during my research, I realized the lack of adoption apps in developing countries. Inspired by this
           gap
           and my passion for design and social impact, I decided to turn Adoptio into a real project that I plan to
@@ -186,20 +199,20 @@
           Adoptio
           is poised to become a transformative tool for connecting pets with their forever homes.</div>
         <br>
-        <h1>Case Study</h1>
-        <h2>Project Overview</h2>
-        <h3>The Problem</h3>
-        <p>Many pet lovers in developing countries struggle to find reliable, accessible platforms to adopt pets,
+        <h1 data-i18n="cs-case-study">Case Study</h1>
+        <h2 data-i18n="cs-overview">Project Overview</h2>
+        <h3 data-i18n="cs-problem">The Problem</h3>
+        <p data-i18n="adoptio-problem-p">Many pet lovers in developing countries struggle to find reliable, accessible platforms to adopt pets,
           leaving countless
           animals in shelters or on the streets without homes.</p>
-        <h3>The Goal</h3>
-        <p>Design and develop an intuitive mobile application that simplifies the pet adoption process, making it
+        <h3 data-i18n="cs-goal">The Goal</h3>
+        <p data-i18n="adoptio-goal-p">Design and develop an intuitive mobile application that simplifies the pet adoption process, making it
           accessible, engaging,
           and secure for users, while increasing adoption rates and improving animal welfare.</p>
-        <h3>My Role</h3>
-        <p>User Experience (UX) Designer and Developer.</p>
-        <h3> Responsibilities</h3>
-        <ul>
+        <h3 data-i18n="cs-my-role">My Role</h3>
+        <p data-i18n="yotaxi-role-p">User Experience (UX) Designer and Developer.</p>
+        <h3 data-i18n="cs-responsibilities"> Responsibilities</h3>
+        <ul data-i18n-html="adoptio-responsibilities-ul">
           <li>Conduct user research</li>
           <li>Identify pain points</li>
           <li>Ideate solutions</li>
@@ -209,9 +222,9 @@
           <li>Implement in React</li>
         </ul>
         <br>
-        <h2>User Research</h2>
-        <h3>Summary</h3>
-        <p>User research revealed both the scale of the stray pet issue and the needs of potential adopters.
+        <h2 data-i18n="cs-user-research">User Research</h2>
+        <h3 data-i18n="cs-summary">Summary</h3>
+        <p data-i18n="adoptio-summary-p1">User research revealed both the scale of the stray pet issue and the needs of potential adopters.
           Quantitative data highlighted
           the problem: Colombia has an estimated 900,000 stray dogs and cats, while Guatemala and Albania also face
           significant challenges
@@ -219,13 +232,13 @@
           accessible adoption platforms was a barrier, and 70% indicated they would adopt more readily if the process
           were simpler and more transparent.
         </p>
-        <p>
+        <p data-i18n="adoptio-summary-p2">
           Qualitative insights from interviews provided deeper understanding. Participants expressed frustrations with
           delays in communication with adoption centers, insufficient information about pets (such as health and
           behavior), and a lack of real-time updates on availability. Many emphasized the importance of tools that
           encourage responsible pet ownership. These findings directly shaped Adoptio’s user-centered design, ensuring
           the app meets the needs of adopters while addressing the stray pet crisis in these regions.</p>
-        <h3>User Personas</h3>
+        <h3 data-i18n="cs-user-personas">User Personas</h3>
         <div class="section wf-section" id="user-persona">
           <div class="wrapper">
             <div class="main-grid">
@@ -235,24 +248,24 @@
               </div>
               <div id="w-node-_8a706842-2bad-56d1-66a4-ef09ad1ea564-7dde70c3" class="intro-left">
                 <div class="text-label">María</div>
-                <h2>"Adopting is more than giving a home; it’s giving love, hope, and a second chance to those who need
+                <h2 data-i18n="adoptio-persona-h2">"Adopting is more than giving a home; it’s giving love, hope, and a second chance to those who need
                   it most."</h2>
-                <h4>Goals</h4>
+                <h4 data-i18n="cs-goals-h4">Goals</h4>
                 <div class="text-grey">
-                  <ul>
+                  <ul data-i18n-html="adoptio-goals-ul">
                     <li>To adopt pets responsibly and ensure they receive the love and care they need.
                     </li>
                   </ul>
                 </div>
-                <h4>Frustrations</h4>
+                <h4 data-i18n="cs-frustrations-h4">Frustrations</h4>
                 <div class="text-grey">
-                  <ul>
+                  <ul data-i18n-html="adoptio-frustrations-ul">
                     <li>Slow responses when adopting through social media or online platforms.
                     </li>
                     <li>The welfare of the animals post-adoption.</li>
                   </ul>
                 </div>
-                <blockquote>María, a 35 year-old mom, married with two kids. A teacher by heart. She is deeply moved by
+                <blockquote data-i18n="adoptio-persona-blockquote">María, a 35 year-old mom, married with two kids. A teacher by heart. She is deeply moved by
                   the plight of abandoned animals. She sees adopting pets as a way to provide a loving home and to teach
                   her children compassion. She believes every animal, regardless of age, size, or breed, deserves a
                   chance at a better life.
@@ -263,14 +276,14 @@
           </div>
         </div>
         <br>
-        <h3>User Journey Map</h3>
+        <h3 data-i18n="cs-user-journey">User Journey Map</h3>
         <div>
           <image class="zoomable-image" src="./images/project-adoptio-user-journey-map.png
           "></image>
           <p class="text-grey zoom-caption">(Click on image to enlarge)</p>
         </div>
         <br>
-        <h3>User Flow</h3>
+        <h3 data-i18n="cs-user-flow">User Flow</h3>
         <div>
 
           <image class="zoomable-image" src="./images/project-adoptio-user-flow.png"></image>
@@ -278,73 +291,73 @@
         </div>
         <br>
         <!-- 
-        <h3>Story Board</h3>
+        <h3 data-i18n="cs-story-board">Story Board</h3>
         <div>
           <image class="zoomable-image" src="./images/project-coffee-story-board.jpg"></image>
           <p class="text-grey zoom-caption">(Click on image to enlarge)</p>
         </div>
         <br>
         -->
-        <h3>Information Architecture</h3>
+        <h3 data-i18n="cs-info-arch">Information Architecture</h3>
         <div>
           <image class="zoomable-image" src="./images/project-adoptio-ia.png"></image>
           <p class="text-grey zoom-caption">(Click on image to enlarge)</p>
         </div>
         <br>
-        <h3>Paper Wireframe</h3>
+        <h3 data-i18n="cs-paper-wireframe">Paper Wireframe</h3>
         <div>
           <image class="zoomable-image" src="./images/project-adoptio-paper-wireframe.png"></image>
           <p class="text-grey zoom-caption">(Click on image to enlarge)</p>
         </div>
         <br>
-        <h3>Digital Wireframe</h3>
+        <h3 data-i18n="cs-digital-wireframe">Digital Wireframe</h3>
         <div>
           <image class="zoomable-image" src="./images/project-adoptio-digital-wireframe.png"></image>
           <p class="text-grey zoom-caption">(Click on image to enlarge)</p>
         </div>
         <br>
-        <h3>Low-fidelity Prototype</h3>
+        <h3 data-i18n="cs-lofi">Low-fidelity Prototype</h3>
         <div>
           <image class="zoomable-image" src="./images/project-adoptio-lo-fi-prototype.png"></image>
           <p class="text-grey zoom-caption">(Click on image to enlarge)</p>
         </div>
         <br>
-        <h3>High-Fidelity Prototype</h3>
+        <h3 data-i18n="cs-hifi">High-Fidelity Prototype</h3>
         <div>
           <image class="zoomable-image" src="./images/project-adoptio-hi-fi-prototype.png"></image>
           <p class="text-grey zoom-caption">(Click on image to enlarge)</p>
         </div>
         <button class="button-secondary"
           onclick="window.open('https://xd.adobe.com/view/a2324a92-d68e-4c9a-ae13-cbaec1bcdd86-f761/?fullscreen', '_blank');"
-          id="project-details-inner-button">View
+          id="project-details-inner-button" data-i18n="adoptio-btn-xd">View
           Adobe XD Protytpe</button>
-        <h2>Sticker Sheet</h2>
-        <p>I added a Sticker Sheet to make it easy to develop the app's unique components and styles.</p>
+        <h2 data-i18n="cs-sticker-sheet-h2">Sticker Sheet</h2>
+        <p data-i18n="adoptio-sticker-p">I added a Sticker Sheet to make it easy to develop the app's unique components and styles.</p>
         <div>
           <image class="zoomable-image" src="./images/project-adoptio-sticker.png"></image>
           <p class="text-grey zoom-caption">(Click on image to enlarge)</p>
         </div>
         <br>
         <section>
-          <h2>Usability Study</h2>
-          <p>
+          <h2 data-i18n="cs-usability-study">Usability Study</h2>
+          <p data-i18n="adoptio-usability-p1">
             A remote usability study was conducted with five participants from various regions to evaluate the ease of
             use and effectiveness of Adoptio in addressing user needs. The study focused on identifying pain points and
             potential improvements to enhance the adoption process.</p>
-          <p>
+          <p data-i18n="adoptio-usability-p2">
             We gathered and organized the data, which led to the following key insights:
           </p>
-          <h3>Round 1 Findings</h3>
+          <h3 data-i18n="cs-round1">Round 1 Findings</h3>
           <ul>
             <li>Users wanted more options to contact the Adoption Center directly.</li>
             <li>Participants suggested more filters for pet characteristics, such as the amount of hair or maintenance
               required.</li>
           </ul>
-          <h3>Round 2 Findings</h3>
+          <h3 data-i18n="cs-round2">Round 2 Findings</h3>
           <ul>
             <li>Users wanted to see a better description of the pet's medical history before adopting.</li>
           </ul>
-          <h3>Before And After</h3>
+          <h3 data-i18n="cs-before-after">Before And After</h3>
           <div class="carousel">
             <div class="carousel-images">
               <img src="./images/project-adoptio-before-study-1.png" alt="Before Contact Button In Pet Details">
@@ -364,20 +377,20 @@
           </div>
         </section>
         <br>
-        <h2>Accesibility</h2>
-        <p>To prioritize accessibility, the app interface includes options to toggle between languages, making it more
+        <h2 data-i18n="cs-accessibility">Accesibility</h2>
+        <p data-i18n="adoptio-accessibility-p">To prioritize accessibility, the app interface includes options to toggle between languages, making it more
           inclusive for users in different regions. A light and dark mode feature was implemented to accommodate those
           sensitive to screen brightness. Additionally, prominent headers and alternative text (alt) for images were
           added to ensure compatibility with screen readers, improving the experience for visually impaired users. These
           considerations make Adoptio more user-friendly and accessible to a wider audience.</p>
-        <h2>Takeaways</h2>
-        <p>This project taught me the importance of deeply understanding user needs, such as the desire for a
+        <h2 data-i18n="cs-takeaways">Takeaways</h2>
+        <p data-i18n="adoptio-takeaways-p">This project taught me the importance of deeply understanding user needs, such as the desire for a
           streamlined, accessible, and transparent adoption process. User research highlighted that building trust and
           providing clear, intuitive solutions are key to creating meaningful and impactful user experiences. By
           prioritizing accessibility and user-centered design, I gained valuable insights into designing products that
           can drive social change and foster loyalty in underserved markets.</p>
         <br>
-        <h3>Next Steps</h3>
+        <h3 data-i18n="cs-next-steps">Next Steps</h3>
         <ol>
           <li><strong>Developing the app using React:</strong> The next step is to bring Adoptio to life, connecting
             more pets with loving families and addressing the adoption gap in developing countries.</li>
@@ -390,19 +403,19 @@
         </ol>
 
         <br>
-        <h3>Conclusion</h3>
-        <p>
+        <h3 data-i18n="cs-conclusion">Conclusion</h3>
+        <p data-i18n-html="adoptio-conclusion-p">
           Adoptio represents more than just a design project—it’s a tool that has the potential to transform lives by
           connecting pets with loving families, addressing a critical need in developing countries. This experience
           taught me the value of combining user-centered design with social impact, and how thoughtful research and
-          usability can drive meaningful change. If you'd like to discuss this project or future opportunities, feel
+          usability can drive meaningful change. If you’d like to discuss this project or future opportunities, feel
           free to contact me at <a href="mailto:hello@uxrodrigo.com">hello@uxrodrigo.com</a>.
         </p>
 
 
-        <p>Thank you very much!</p>
+        <p data-i18n="cs-thank-you">Thank you very much!</p>
         <a href="case-study/uxrodrigo-case-study-adoptio.pdf" target="_blank">
-          <button class="button-secondary" id="project-details-inner-button">Download Case Study PDF</button>
+          <button class="button-secondary" id="project-details-inner-button" data-i18n="cs-btn-pdf">Download Case Study PDF</button>
         </a>
         <!--
         <button class="button-secondary" onclick="window.open('https://uxcoffee.netlify.app/', '_blank');"
@@ -414,9 +427,9 @@
     <div class="section no-padding-top wf-section">
       <div class="wrapper">
         <div class="intro wide">
-          <div class="text-label">Let&#x27;s get in touch</div>
-          <h2>Have a project in mind? Let&#x27;s build something great together!</h2>
-          <a href="mailto:hello@uxrodrigo.com" class="button contact-button w-button">Email Me</a>
+          <div class="text-label" data-i18n="cs-contact-label">Let&#x27;s get in touch</div>
+          <h2 data-i18n="cs-contact-cta">Have a project in mind? Let&#x27;s build something great together!</h2>
+          <a href="mailto:hello@uxrodrigo.com" class="button contact-button w-button" data-i18n="detail-email-me">Email Me</a>
         </div>
       </div>
     </div>
@@ -457,25 +470,25 @@
     <div class="footer">
       <div id="w-node-_039a8aaa-fb17-70ae-93eb-1d914075d988-4075d986" class="footer-nav">
         <a href="./index.html#home-sec" class="footer-nav-link w-inline-block">
-          <div>Home</div>
+          <div data-i18n="footer-home">Home</div>
           <div class="hover-line white"></div>
         </a>
         <a href="./index.html#portfolio-sec" class="footer-nav-link w-inline-block">
-          <div>Portfolio</div>
+          <div data-i18n="footer-portfolio">Portfolio</div>
           <div class="hover-line white"></div>
         </a>
         <a href="./index.html#about-sec" class="footer-nav-link w-inline-block">
-          <div>About</div>
+          <div data-i18n="footer-about">About</div>
           <div class="hover-line white"></div>
         </a>
         <a href="./index.html#contact-sec" class="footer-nav-link w-inline-block">
-          <div>Contact</div>
+          <div data-i18n="footer-contact">Contact</div>
           <div class="hover-line white"></div>
         </a>
       </div>
       <div class="footer-contact">
-        <h3 class="footer-heading">Let's Get In Touch</h3>
-        <div class="footer-contact-text">I'd love to hear from you! Please reach out.</div>
+        <h3 class="footer-heading" data-i18n="footer-heading">Let's Get In Touch</h3>
+        <div class="footer-contact-text" data-i18n="footer-text">I'd love to hear from you! Please reach out.</div>
         <div class="footer-contact-item"><img src="images/email-white.svg" alt="" class="footer-contact-icon">
           <div><a href="mailto:hello@uxrodrigo.com" style="color:#fff;">hello@uxrodrigo.com</a></div>
         </div>
@@ -524,6 +537,10 @@
           icon.src = isDark ? ICON_TO_LIGHT : ICON_TO_DARK;
           icon.alt = isDark ? 'Switch to light mode' : 'Switch to dark mode';
         }
+        // Swap language button icon (all instances — desktop + mobile sidebar)
+        document.querySelectorAll('.lang-icon').forEach(function (icon) {
+          icon.src = isDark ? 'images/language-dark.svg' : 'images/language.svg';
+        });
       }
 
       document.addEventListener('DOMContentLoaded', function () {
@@ -550,6 +567,7 @@
     <script src="js/carousel.js"></script>
     <script src="js/projects.js"></script>
     <script src="js/project-nav.js"></script>
+    <script src="js/i18n.js"></script>
 </body>
 
 </html>

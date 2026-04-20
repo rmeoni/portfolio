@@ -47,27 +47,40 @@
       </div>
       <nav role="navigation" class="nav-menu w-nav-menu">
         <a href="./index.html#home-sec" class="nav-link w-inline-block">
-          <div>Home</div>
+          <div data-i18n="nav-home">Home</div>
           <div class="hover-line"></div>
         </a>
         <a href="./index.html#portfolio-sec" class="nav-link w-inline-block">
-          <div>Portfolio</div>
+          <div data-i18n="nav-portfolio">Portfolio</div>
           <div class="hover-line"></div>
         </a>
         <a href="./index.html#about-sec" class="nav-link w-inline-block">
-          <div>About</div>
+          <div data-i18n="nav-about">About</div>
           <div class="hover-line"></div>
         </a>
         <a href="./index.html#contact-sec" class="nav-link w-inline-block">
-          <div>Contact</div>
+          <div data-i18n="nav-contact">Contact</div>
           <div class="hover-line"></div>
         </a>
+
+        <div class="nav-mobile-extras">
+          <a href="case-study/rodrigo_meono_resume_no_ref_compressed.pdf" download target="_blank"
+            class="nav-mobile-cv" data-i18n="nav-download-cv">Download CV</a>
+          <button class="lang-toggle" aria-label="Switch language" title="Switch language">
+            <img src="images/language.svg" alt="Language" class="lang-icon">
+            <span class="lang-label">ES</span>
+          </button>
+        </div>
       </nav>
       <div class="nav-right">
         <a href="case-study/rodrigo_meono_resume_no_ref_compressed.pdf" download target="_blank"
-          class="button nav-button w-button">Download CV</a>
+          class="button nav-button w-button" data-i18n="nav-download-cv">Download CV</a>
         <button class="dark-mode-toggle" id="dark-mode-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
           <img src="images/icon-toggle-dark-mode.svg" alt="Toggle dark mode" id="dark-mode-toggle-icon">
+        </button>
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language" title="Switch language">
+          <img src="images/language.svg" alt="Language" id="lang-toggle-icon" class="lang-icon">
+          <span class="lang-label" id="lang-label">ES</span>
         </button>
         <div class="menu-button w-clearfix w-nav-button">
           <div class="menu-icon">
@@ -89,7 +102,7 @@
     <div class="top-section wf-section">
       <div class="wrapper">
         <div class="page-header">
-          <h1 class="page-heading">Unity Design System</h1>
+          <h1 class="page-heading" data-i18n="unity-title">Unity Design System</h1>
         </div>
       </div>
     </div>
@@ -144,47 +157,48 @@
         </div>
         <div class="work-intro">
           <div class="work-decription">
-            <div>Unity Design System</div>
+            <div data-i18n="unity-title">Unity Design System</div>
           </div>
           <div class="work-blocks">
             <div class="work-block">
-              <h6 class="work-block-heading">Client</h6>
+              <h6 class="work-block-heading" data-i18n="detail-client">Client</h6>
               <div class="work-block-info">Wind Hill Growers</div>
             </div>
             <div class="work-block">
-              <h6 class="work-block-heading">Release</h6>
+              <h6 class="work-block-heading" data-i18n="detail-release">Release</h6>
               <div class="work-block-info">03/26/2022</div>
             </div>
           </div>
         </div>
-        <div class="work w-richtext">As the UX Designer for Wind Hill Growers, we faced the challenge of creating
+        <div class="work w-richtext" data-i18n="unity-intro">As the UX Designer for Wind Hill Growers, we faced the challenge of creating
           a cohesive brand experience across multiple international markets. To address this, we developed "Unity",
           a comprehensive design system that acts as a single source of truth for all design assets. Unity was
           instrumental
           in bringing the brand to a new level of consistency, making it easier to manage and scale across various
           platforms.</div>
         <br>
-        <h2>Principles</h2>
+        <h2 data-i18n="cs-principles">Principles</h2>
         <img src="./images/project-unity-design-system-principles.png" />
-        <h2>Color Palette</h2>
+        <h2 data-i18n="cs-color-palette">Color Palette</h2>
         <img src="./images/project-unity-design-system-color-palette.png" />
-        <h2>Layouts</h2>
+        <h2 data-i18n="cs-layouts">Layouts</h2>
         <img src="./images/project-unity-design-system-layouts.png" />
-        <h2>Type Scale</h2>
+        <h2 data-i18n="cs-type-scale">Type Scale</h2>
         <img src="./images/project-unity-design-system-typography.png" />
-        <h2>Elements</h2>
+        <h2 data-i18n="cs-elements">Elements</h2>
         <img src="./images/project-unity-design-elements.png" />
-        <h2>Design Scenarios</h2>
+        <h2 data-i18n="cs-design-scenarios">Design Scenarios</h2>
         <img src="./images/project-unity-design-scenarios.png" />
         <br>
         <br>
         <button class="button-secondary"
-          onclick="window.open('https://www.figma.com/design/WZPeko3HFiHdqgLxNVk4bg/Unity%3A-Design-System-of-WHG-by-UX-Rodrigo?node-id=0-1&t=LfqQceBkeJWMkvTC-1', '_blank');">View
+          onclick="window.open('https://www.figma.com/design/WZPeko3HFiHdqgLxNVk4bg/Unity%3A-Design-System-of-WHG-by-UX-Rodrigo?node-id=0-1&t=LfqQceBkeJWMkvTC-1', '_blank');"
+          data-i18n="unity-btn-figma">View
           Figma File</button>
         <br>
         <br>
-        <h2>Zero Height</h2>
-        <p>The Unity Design System is seamlessly integrated between Figma and ZeroHeight, creating a dynamic workflow
+        <h2 data-i18n="unity-zero-height-h2">Zero Height</h2>
+        <p data-i18n="unity-zero-height-p">The Unity Design System is seamlessly integrated between Figma and ZeroHeight, creating a dynamic workflow
           that evolves alongside the brand. This connection allows the team to continuously update and refine design
           assets in Figma, ensuring that any changes are automatically reflected in ZeroHeight. As the brand grows and
           design scenarios change, this integration helps keep the design system relevant and up-to-date, enabling the
@@ -194,7 +208,8 @@
         <img src="./images/project-unity-zero-height.png" />
         <br>
         <br>
-        <button class="button-secondary" onclick="window.open('https://zeroheight.com/44b91c860', '_blank');">View In Zero
+        <button class="button-secondary" onclick="window.open('https://zeroheight.com/44b91c860', '_blank');"
+          data-i18n="unity-btn-zeroheight">View In Zero
           Height</button>
       </div>
     </div>
@@ -202,9 +217,9 @@
     <div class="section no-padding-top wf-section">
       <div class="wrapper">
         <div class="intro wide">
-          <div class="text-label">Let&#x27;s get in touch</div>
-          <h2>Have a project in mind? Let&#x27;s build something great together!</h2>
-          <a href="mailto:hello@uxrodrigo.com" class="button contact-button w-button">Email Me</a>
+          <div class="text-label" data-i18n="cs-contact-label">Let&#x27;s get in touch</div>
+          <h2 data-i18n="cs-contact-cta">Have a project in mind? Let&#x27;s build something great together!</h2>
+          <a href="mailto:hello@uxrodrigo.com" class="button contact-button w-button" data-i18n="detail-email-me">Email Me</a>
         </div>
       </div>
     </div>
@@ -245,25 +260,25 @@
     <div class="footer">
       <div id="w-node-_039a8aaa-fb17-70ae-93eb-1d914075d988-4075d986" class="footer-nav">
         <a href="./index.html#home-sec" class="footer-nav-link w-inline-block">
-          <div>Home</div>
+          <div data-i18n="footer-home">Home</div>
           <div class="hover-line white"></div>
         </a>
         <a href="./index.html#portfolio-sec" class="footer-nav-link w-inline-block">
-          <div>Portfolio</div>
+          <div data-i18n="footer-portfolio">Portfolio</div>
           <div class="hover-line white"></div>
         </a>
         <a href="./index.html#about-sec" class="footer-nav-link w-inline-block">
-          <div>About</div>
+          <div data-i18n="footer-about">About</div>
           <div class="hover-line white"></div>
         </a>
         <a href="./index.html#contact-sec" class="footer-nav-link w-inline-block">
-          <div>Contact</div>
+          <div data-i18n="footer-contact">Contact</div>
           <div class="hover-line white"></div>
         </a>
       </div>
       <div class="footer-contact">
-        <h3 class="footer-heading">Let's Get In Touch</h3>
-        <div class="footer-contact-text">I'd love to hear from you! Please reach out.</div>
+        <h3 class="footer-heading" data-i18n="footer-heading">Let's Get In Touch</h3>
+        <div class="footer-contact-text" data-i18n="footer-text">I'd love to hear from you! Please reach out.</div>
         <div class="footer-contact-item"><img src="images/email-white.svg" alt="" class="footer-contact-icon">
           <div><a href="mailto:hello@uxrodrigo.com" style="color:#fff;">hello@uxrodrigo.com</a></div>
         </div>
@@ -305,6 +320,10 @@
           icon.src = isDark ? ICON_TO_LIGHT : ICON_TO_DARK;
           icon.alt = isDark ? 'Switch to light mode' : 'Switch to dark mode';
         }
+        // Swap language button icon (all instances — desktop + mobile sidebar)
+        document.querySelectorAll('.lang-icon').forEach(function (icon) {
+          icon.src = isDark ? 'images/language-dark.svg' : 'images/language.svg';
+        });
       }
 
       document.addEventListener('DOMContentLoaded', function () {
@@ -328,6 +347,7 @@
     <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
     <script src="js/projects.js"></script>
     <script src="js/project-nav.js"></script>
+    <script src="js/i18n.js"></script>
 </body>
 
 </html>

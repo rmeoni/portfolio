@@ -47,27 +47,31 @@
       </div>
       <nav role="navigation" class="nav-menu w-nav-menu">
         <a href="./index.html#home-sec" class="nav-link w-inline-block">
-          <div>Home</div>
+          <div data-i18n="nav-home">Home</div>
           <div class="hover-line"></div>
         </a>
         <a href="./index.html#portfolio-sec" class="nav-link w-inline-block">
-          <div>Portfolio</div>
+          <div data-i18n="nav-portfolio">Portfolio</div>
           <div class="hover-line"></div>
         </a>
         <a href="./index.html#about-sec" class="nav-link w-inline-block">
-          <div>About</div>
+          <div data-i18n="nav-about">About</div>
           <div class="hover-line"></div>
         </a>
         <a href="./index.html#contact-sec" class="nav-link w-inline-block">
-          <div>Contact</div>
+          <div data-i18n="nav-contact">Contact</div>
           <div class="hover-line"></div>
         </a>
       </nav>
       <div class="nav-right">
         <a href="case-study/rodrigo_meono_resume_no_ref_compressed.pdf" download target="_blank"
-          class="button nav-button w-button">Download CV</a>
+          class="button nav-button w-button" data-i18n="nav-download-cv">Download CV</a>
         <button class="dark-mode-toggle" id="dark-mode-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
           <img src="images/icon-toggle-dark-mode.svg" alt="Toggle dark mode" id="dark-mode-toggle-icon">
+        </button>
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language" title="Switch language">
+          <img src="images/language.svg" alt="Language" id="lang-toggle-icon" class="lang-icon">
+          <span class="lang-label" id="lang-label">ES</span>
         </button>
         <div class="menu-button w-clearfix w-nav-button">
           <div class="menu-icon">
@@ -147,11 +151,11 @@
           </div>
           <div class="work-blocks">
             <div class="work-block">
-              <h6 class="work-block-heading">Client</h6>
+              <h6 class="work-block-heading" data-i18n="detail-client">Client</h6>
               <div class="work-block-info">Wind Hill Growers</div>
             </div>
             <div class="work-block">
-              <h6 class="work-block-heading">Release</h6>
+              <h6 class="work-block-heading" data-i18n="detail-release">Release</h6>
               <div class="work-block-info">08/11/2024</div>
             </div>
           </div>
@@ -187,7 +191,7 @@
         <div class="intro wide">
           <div class="text-label">Let&#x27;s get in touch</div>
           <h2>Have a project in mind? Let&#x27;s build something great together!</h2>
-          <a href="mailto:hello@uxrodrigo.com" class="button contact-button w-button">Email Me</a>
+          <a href="mailto:hello@uxrodrigo.com" class="button contact-button w-button" data-i18n="detail-email-me">Email Me</a>
         </div>
       </div>
     </div>
@@ -288,6 +292,10 @@
           icon.src = isDark ? ICON_TO_LIGHT : ICON_TO_DARK;
           icon.alt = isDark ? 'Switch to light mode' : 'Switch to dark mode';
         }
+        var langIcon = document.getElementById('lang-toggle-icon');
+        if (langIcon) {
+          langIcon.src = isDark ? 'images/language-dark.svg' : 'images/language.svg';
+        }
       }
 
       document.addEventListener('DOMContentLoaded', function () {
@@ -311,6 +319,7 @@
     <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
     <script src="js/projects.js"></script>
     <script src="js/project-nav.js"></script>
+    <script src="js/i18n.js"></script>
 </body>
 
 </html>

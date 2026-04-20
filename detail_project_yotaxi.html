@@ -47,27 +47,40 @@
       </div>
       <nav role="navigation" class="nav-menu w-nav-menu">
         <a href="./index.html#home-sec" class="nav-link w-inline-block">
-          <div>Home</div>
+          <div data-i18n="nav-home">Home</div>
           <div class="hover-line"></div>
         </a>
         <a href="./index.html#portfolio-sec" class="nav-link w-inline-block">
-          <div>Portfolio</div>
+          <div data-i18n="nav-portfolio">Portfolio</div>
           <div class="hover-line"></div>
         </a>
         <a href="./index.html#about-sec" class="nav-link w-inline-block">
-          <div>About</div>
+          <div data-i18n="nav-about">About</div>
           <div class="hover-line"></div>
         </a>
         <a href="./index.html#contact-sec" class="nav-link w-inline-block">
-          <div>Contact</div>
+          <div data-i18n="nav-contact">Contact</div>
           <div class="hover-line"></div>
         </a>
+
+        <div class="nav-mobile-extras">
+          <a href="case-study/rodrigo_meono_resume_no_ref_compressed.pdf" download target="_blank"
+            class="nav-mobile-cv" data-i18n="nav-download-cv">Download CV</a>
+          <button class="lang-toggle" aria-label="Switch language" title="Switch language">
+            <img src="images/language.svg" alt="Language" class="lang-icon">
+            <span class="lang-label">ES</span>
+          </button>
+        </div>
       </nav>
       <div class="nav-right">
         <a href="case-study/rodrigo_meono_resume_no_ref_compressed.pdf" download target="_blank"
-          class="button nav-button w-button">Download CV</a>
+          class="button nav-button w-button" data-i18n="nav-download-cv">Download CV</a>
         <button class="dark-mode-toggle" id="dark-mode-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
           <img src="images/icon-toggle-dark-mode.svg" alt="Toggle dark mode" id="dark-mode-toggle-icon">
+        </button>
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language" title="Switch language">
+          <img src="images/language.svg" alt="Language" id="lang-toggle-icon" class="lang-icon">
+          <span class="lang-label" id="lang-label">ES</span>
         </button>
         <div class="menu-button w-clearfix w-nav-button">
           <div class="menu-icon">
@@ -89,7 +102,7 @@
     <div class="top-section wf-section">
       <div class="wrapper">
         <div class="page-header">
-          <h1 class="page-heading">YoTaxi App: UX Design</h1>
+          <h1 class="page-heading" data-i18n="yotaxi-title">YoTaxi App: UX Design</h1>
         </div>
       </div>
     </div>
@@ -144,15 +157,15 @@
         </div>
         <div class="work-intro">
           <div class="work-decription">
-            <div>YoTaxi App: UX Design</div>
+            <div data-i18n="yotaxi-title">YoTaxi App: UX Design</div>
           </div>
           <div class="work-blocks">
             <div class="work-block">
-              <h6 class="work-block-heading">Client</h6>
+              <h6 class="work-block-heading" data-i18n="detail-client">Client</h6>
               <div class="work-block-info">Yellow Cab of San Francisco</div>
             </div>
             <div class="work-block">
-              <h6 class="work-block-heading">Release</h6>
+              <h6 class="work-block-heading" data-i18n="detail-release">Release</h6>
               <div class="work-block-info">01/10/2025</div>
             </div>
           </div>
@@ -176,25 +189,25 @@
         </div>
         <br>
         <br>
-        <div class="work w-richtext">YoTaxi of San Francisco was facing challenges with their user experience. I
+        <div class="work w-richtext" data-i18n="yotaxi-intro">YoTaxi of San Francisco was facing challenges with their user experience. I
           supported them by redesigning their app using the Design Thinking methodology. We conducted user research and
           a foundational usability study, defined key goals, collaborated with stakeholders to ideate solutions, and
           prototyped a new design in Figma that better meets user needs.</div>
         <br>
-        <h1>Case Study</h1>
-        <h2>Project Overview</h2>
-        <h3>The Problem</h3>
-        <p>Many passengers in San Francisco found it difficult to access reliable, inclusive, and user-friendly taxi
+        <h1 data-i18n="cs-case-study">Case Study</h1>
+        <h2 data-i18n="cs-overview">Project Overview</h2>
+        <h3 data-i18n="cs-problem">The Problem</h3>
+        <p data-i18n="yotaxi-problem-p">Many passengers in San Francisco found it difficult to access reliable, inclusive, and user-friendly taxi
           services. The existing app lacked clarity, accessibility, and modern functionality—leading to frustration and
           low user satisfaction.</p>
-        <h3>The Goal</h3>
-        <p>Design and develop an intuitive mobile application that simplifies the ride-hailing experience, improves
+        <h3 data-i18n="cs-goal">The Goal</h3>
+        <p data-i18n="yotaxi-goal-p">Design and develop an intuitive mobile application that simplifies the ride-hailing experience, improves
           accessibility for all users (including those with disabilities), and supports the local taxi community by
           making YoTaxi a competitive and easy-to-use alternative.</p>
-        <h3>My Role</h3>
-        <p>User Experience (UX) Designer and Developer.</p>
-        <h3> Responsibilities</h3>
-        <ul>
+        <h3 data-i18n="cs-my-role">My Role</h3>
+        <p data-i18n="yotaxi-role-p">User Experience (UX) Designer and Developer.</p>
+        <h3 data-i18n="cs-responsibilities"> Responsibilities</h3>
+        <ul data-i18n-html="yotaxi-responsibilities-ul">
           <li>Conduct user research</li>
           <li>Identify pain points</li>
           <li>Ideate solutions</li>
@@ -203,14 +216,14 @@
           <li>Develop prototypes</li>
         </ul>
         <br>
-        <h2>User Research</h2>
-        <h3>Summary</h3>
-        <p>User research with over 50 participants revealed that riders wanted more control and personalization in their
+        <h2 data-i18n="cs-user-research">User Research</h2>
+        <h3 data-i18n="cs-summary">Summary</h3>
+        <p data-i18n="yotaxi-summary-p">User research with over 50 participants revealed that riders wanted more control and personalization in their
           experience. Key requested features included: the ability to add a stop during a ride, set accessibility and
           payment preferences, choose music and conversation settings, message the driver, and receive real-time
           notifications about their ride status.
         </p>
-        <h3>User Personas</h3>
+        <h3 data-i18n="cs-user-personas">User Personas</h3>
         <div class="section wf-section" id="user-persona">
           <div class="wrapper">
             <div class="main-grid">
@@ -220,27 +233,27 @@
               </div>
               <div id="w-node-_8a706842-2bad-56d1-66a4-ef09ad1ea564-7dde70c3" class="intro-left">
                 <div class="text-label">Linda</div>
-                <h2>"I just want to feel safe and know that my ride is reliable. I rely on these services to get
+                <h2 data-i18n="yotaxi-persona-h2">"I just want to feel safe and know that my ride is reliable. I rely on these services to get
                   around."
                 </h2>
-                <h4>Goals</h4>
+                <h4 data-i18n="cs-goals-h4">Goals</h4>
                 <div class="text-grey">
-                  <ul>
+                  <ul data-i18n-html="yotaxi-goals-ul">
                     <li>Get to medical appointments and run errands efficiently.
                     </li>
                     <li>Ensure the ride is affordable and safe.
                     </li>
                   </ul>
                 </div>
-                <h4>Frustrations</h4>
+                <h4 data-i18n="cs-frustrations-h4">Frustrations</h4>
                 <div class="text-grey">
-                  <ul>
+                  <ul data-i18n-html="yotaxi-frustrations-ul">
                     <li>Inconsistent driver professionalism.
                     </li>
                     <li>Difficulty navigating the app to book a ride.</li>
                   </ul>
                 </div>
-                <blockquote>Linda relies on YoTaxi for doctor visits and errands. She appreciates scheduling rides but
+                <blockquote data-i18n="yotaxi-persona-blockquote">Linda relies on YoTaxi for doctor visits and errands. She appreciates scheduling rides but
                   struggles with the app’s interface and has missed rides due to booking errors. She values kind drivers
                   and would feel safer with an emergency feature.
                 </blockquote>
@@ -251,54 +264,54 @@
         <br>
         <br>
         <!-- 
-        <h3>Story Board</h3>
+        <h3 data-i18n="cs-story-board">Story Board</h3>
         <div>
           <image class="zoomable-image" src="./images/project-coffee-story-board.jpg"></image>
           <p class="text-grey zoom-caption">(Click on image to enlarge)</p>
         </div>
         <br>
         -->
-        <h3>Information Architecture</h3>
+        <h3 data-i18n="cs-info-arch">Information Architecture</h3>
         <div>
           <image class="zoomable-image" src="./images/projects-yotaxi-ia.png"></image>
           <p class="text-grey zoom-caption">(Click on image to enlarge)</p>
         </div>
         <br>
-        <h3>Paper Wireframe</h3>
+        <h3 data-i18n="cs-paper-wireframe">Paper Wireframe</h3>
         <div>
           <image class="zoomable-image" src="./images/project-yotaxi-paper-wireframe.png"></image>
           <p class="text-grey zoom-caption">(Click on image to enlarge)</p>
         </div>
         <br>
-        <h3>Low-fidelity Prototype</h3>
+        <h3 data-i18n="cs-lofi">Low-fidelity Prototype</h3>
         <div>
           <image class="zoomable-image" src="./images/project-yotaxi-digital-wireframe.png"></image>
           <p class="text-grey zoom-caption">(Click on image to enlarge)</p>
         </div>
         <br>
-        <h3>High-Fidelity Prototype</h3>
+        <h3 data-i18n="cs-hifi">High-Fidelity Prototype</h3>
         <div>
           <image class="zoomable-image" src="./images/project-yotaxi-hi-fi-prototype.png"></image>
           <p class="text-grey zoom-caption">(Click on image to enlarge)</p>
         </div>
-        <h2>Sticker Sheet</h2>
-        <p>I added a Sticker Sheet to make it easy to develop the app's unique components and styles.</p>
+        <h2 data-i18n="cs-sticker-sheet-h2">Sticker Sheet</h2>
+        <p data-i18n="yotaxi-sticker-p">I added a Sticker Sheet to make it easy to develop the app's unique components and styles.</p>
         <div>
           <image class="zoomable-image" src="./images/project-yotaxi-sticker-sheet.png"></image>
           <p class="text-grey zoom-caption">(Click on image to enlarge)</p>
         </div>
         <br>
         <br>
-        <h2>Accesibility</h2>
-        <p>To prioritize accessibility, YoTaxi includes language toggle options to support users from different regions,
+        <h2 data-i18n="cs-accessibility">Accesibility</h2>
+        <p data-i18n="yotaxi-accessibility-p">To prioritize accessibility, YoTaxi includes language toggle options to support users from different regions,
           as well as light and dark modes for visual comfort. The interface features prominent headers and alt text for
           images to ensure screen reader compatibility, enhancing usability for visually impaired users. These features
           make the app more inclusive and user-friendly for a broader audience.</p>
 
-        <p>Thank you very much!</p>
+        <p data-i18n="cs-thank-you">Thank you very much!</p>
         <br>
         <a href="https://apps.apple.com/gt/app/yotaxi-of-sf/id6504701475?l=en-GB" target="_blank">
-          <button class="button-secondary" id="project-details-inner-button">View In App Store</button>
+          <button class="button-secondary" id="project-details-inner-button" data-i18n="yotaxi-btn-appstore">View In App Store</button>
         </a>
       </div>
     </div>
@@ -306,9 +319,9 @@
     <div class="section no-padding-top wf-section">
       <div class="wrapper">
         <div class="intro wide">
-          <div class="text-label">Let&#x27;s get in touch</div>
-          <h2>Have a project in mind? Let&#x27;s build something great together!</h2>
-          <a href="mailto:hello@uxrodrigo.com" class="button contact-button w-button">Email Me</a>
+          <div class="text-label" data-i18n="cs-contact-label">Let&#x27;s get in touch</div>
+          <h2 data-i18n="cs-contact-cta">Have a project in mind? Let&#x27;s build something great together!</h2>
+          <a href="mailto:hello@uxrodrigo.com" class="button contact-button w-button" data-i18n="detail-email-me">Email Me</a>
         </div>
       </div>
     </div>
@@ -349,25 +362,25 @@
     <div class="footer">
       <div id="w-node-_039a8aaa-fb17-70ae-93eb-1d914075d988-4075d986" class="footer-nav">
         <a href="./index.html#home-sec" class="footer-nav-link w-inline-block">
-          <div>Home</div>
+          <div data-i18n="footer-home">Home</div>
           <div class="hover-line white"></div>
         </a>
         <a href="./index.html#portfolio-sec" class="footer-nav-link w-inline-block">
-          <div>Portfolio</div>
+          <div data-i18n="footer-portfolio">Portfolio</div>
           <div class="hover-line white"></div>
         </a>
         <a href="./index.html#about-sec" class="footer-nav-link w-inline-block">
-          <div>About</div>
+          <div data-i18n="footer-about">About</div>
           <div class="hover-line white"></div>
         </a>
         <a href="./index.html#contact-sec" class="footer-nav-link w-inline-block">
-          <div>Contact</div>
+          <div data-i18n="footer-contact">Contact</div>
           <div class="hover-line white"></div>
         </a>
       </div>
       <div class="footer-contact">
-        <h3 class="footer-heading">Let's Get In Touch</h3>
-        <div class="footer-contact-text">I'd love to hear from you! Please reach out.</div>
+        <h3 class="footer-heading" data-i18n="footer-heading">Let's Get In Touch</h3>
+        <div class="footer-contact-text" data-i18n="footer-text">I'd love to hear from you! Please reach out.</div>
         <div class="footer-contact-item"><img src="images/email-white.svg" alt="" class="footer-contact-icon">
           <div><a href="mailto:hello@uxrodrigo.com" style="color:#fff;">hello@uxrodrigo.com</a></div>
         </div>
@@ -416,6 +429,10 @@
           icon.src = isDark ? ICON_TO_LIGHT : ICON_TO_DARK;
           icon.alt = isDark ? 'Switch to light mode' : 'Switch to dark mode';
         }
+        // Swap language button icon (all instances — desktop + mobile sidebar)
+        document.querySelectorAll('.lang-icon').forEach(function (icon) {
+          icon.src = isDark ? 'images/language-dark.svg' : 'images/language.svg';
+        });
       }
 
       document.addEventListener('DOMContentLoaded', function () {
@@ -442,6 +459,7 @@
     <script src="js/carousel.js"></script>
     <script src="js/projects.js"></script>
     <script src="js/project-nav.js"></script>
+    <script src="js/i18n.js"></script>
 </body>
 
 </html>

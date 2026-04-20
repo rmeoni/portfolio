@@ -47,27 +47,40 @@
       </div>
       <nav role="navigation" class="nav-menu w-nav-menu">
         <a href="./index.html#home-sec" class="nav-link w-inline-block">
-          <div>Home</div>
+          <div data-i18n="nav-home">Home</div>
           <div class="hover-line"></div>
         </a>
         <a href="./index.html#portfolio-sec" class="nav-link w-inline-block">
-          <div>Portfolio</div>
+          <div data-i18n="nav-portfolio">Portfolio</div>
           <div class="hover-line"></div>
         </a>
         <a href="./index.html#about-sec" class="nav-link w-inline-block">
-          <div>About</div>
+          <div data-i18n="nav-about">About</div>
           <div class="hover-line"></div>
         </a>
         <a href="./index.html#contact-sec" class="nav-link w-inline-block">
-          <div>Contact</div>
+          <div data-i18n="nav-contact">Contact</div>
           <div class="hover-line"></div>
         </a>
+
+        <div class="nav-mobile-extras">
+          <a href="case-study/rodrigo_meono_resume_no_ref_compressed.pdf" download target="_blank"
+            class="nav-mobile-cv" data-i18n="nav-download-cv">Download CV</a>
+          <button class="lang-toggle" aria-label="Switch language" title="Switch language">
+            <img src="images/language.svg" alt="Language" class="lang-icon">
+            <span class="lang-label">ES</span>
+          </button>
+        </div>
       </nav>
       <div class="nav-right">
         <a href="case-study/rodrigo_meono_resume_no_ref_compressed.pdf" download target="_blank"
-          class="button nav-button w-button">Download CV</a>
+          class="button nav-button w-button" data-i18n="nav-download-cv">Download CV</a>
         <button class="dark-mode-toggle" id="dark-mode-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
           <img src="images/icon-toggle-dark-mode.svg" alt="Toggle dark mode" id="dark-mode-toggle-icon">
+        </button>
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language" title="Switch language">
+          <img src="images/language.svg" alt="Language" id="lang-toggle-icon" class="lang-icon">
+          <span class="lang-label" id="lang-label">ES</span>
         </button>
         <div class="menu-button w-clearfix w-nav-button">
           <div class="menu-icon">
@@ -89,7 +102,7 @@
     <div class="top-section wf-section">
       <div class="wrapper">
         <div class="page-header">
-          <h1 class="page-heading">Coffee Shop UX Research/Design</h1>
+          <h1 class="page-heading" data-i18n="coffee-title">Coffee Shop UX Research/Design</h1>
         </div>
       </div>
     </div>
@@ -144,15 +157,15 @@
         </div>
         <div class="work-intro">
           <div class="work-decription">
-            <div>Coffee Shop UX Research/Design</div>
+            <div data-i18n="coffee-title">Coffee Shop UX Research/Design</div>
           </div>
           <div class="work-blocks">
             <div class="work-block">
-              <h6 class="work-block-heading">Client</h6>
+              <h6 class="work-block-heading" data-i18n="detail-client">Client</h6>
               <div class="work-block-info">Café Don Lucas</div>
             </div>
             <div class="work-block">
-              <h6 class="work-block-heading">Release</h6>
+              <h6 class="work-block-heading" data-i18n="detail-release">Release</h6>
               <div class="work-block-info">05/19/2024</div>
             </div>
           </div>
@@ -174,46 +187,46 @@
         </div>
         <br>
         <br>
-        <div class="work w-richtext">In this project, I followed the Design Thinking approach. I began with qualitative
+        <div class="work w-richtext" data-i18n="coffee-intro">In this project, I followed the Design Thinking approach. I began with qualitative
           and quantitative research to define user personas and identify pain points. Next, I used a user journey map to
           ideate solutions and created wireframes and prototypes in Figma. Finally, I conducted usability testing to
           refine
           the design based on user feedback. Once the design was finalized, I developed the site using React.</div>
         <br>
-        <h1>Case Study</h1>
-        <h2>Project Overview</h2>
-        <h3>The Problem</h3>
-        <p>The company faced significant challenges managing orders from their business-to-business (B2B) customers
+        <h1 data-i18n="cs-case-study">Case Study</h1>
+        <h2 data-i18n="cs-overview">Project Overview</h2>
+        <h3 data-i18n="cs-problem">The Problem</h3>
+        <p data-i18n="coffee-problem-p">The company faced significant challenges managing orders from their business-to-business (B2B) customers
           without an online store. Additionally, they were uncertain about the viability of transitioning to a
           subscription-based model for retail customers.</p>
-        <h3>The Goal</h3>
-        <p>To conduct in-depth research to understand the coffee market landscape in the country, along with the
+        <h3 data-i18n="cs-goal">The Goal</h3>
+        <p data-i18n="coffee-goal-p">To conduct in-depth research to understand the coffee market landscape in the country, along with the
           specific needs of end users. The objective was to design a seamless online ordering system that would be
           accessible to a wide range of users while also gathering the insights needed to evaluate the feasibility of a
           subscription model.</p>
-        <h3>My Role</h3>
-        <p>As a User Experience Designer and Developer, I led the project’s research and design process by conducting
+        <h3 data-i18n="cs-my-role">My Role</h3>
+        <p data-i18n="coffee-role-p">As a User Experience Designer and Developer, I led the project’s research and design process by conducting
           both
           quantitative and qualitative studies. My responsibilities included prototyping solutions, running usability
           tests,
           and ensuring the final design provided an intuitive and efficient user experience. I also developed the app in
           React,
           ensuring every feature functioned seamlessly.</p>
-        <h3> Responsibilities</h3>
-        <p>I was tasked with researching user behaviors and business needs, synthesizing that data into actionable
+        <h3 data-i18n="cs-responsibilities"> Responsibilities</h3>
+        <p data-i18n="coffee-responsibilities-p">I was tasked with researching user behaviors and business needs, synthesizing that data into actionable
           insights, and translating them into a functional, user-friendly solution. This solution not only streamlined
           the company’s order-taking process but also provided the necessary data to assess whether a subscription model
           was viable for their retail customers.</p>
         <br>
-        <h2>User Research</h2>
-        <h3>Summary</h3>
-        <p>This research on coffee consumption in Guatemala combined quantitative data with interviews from 50
+        <h2 data-i18n="cs-user-research">User Research</h2>
+        <h3 data-i18n="cs-summary">Summary</h3>
+        <p data-i18n="coffee-summary-p">This research on coffee consumption in Guatemala combined quantitative data with interviews from 50
           participants aged 25-45. It highlighted a strong coffee culture, with an average consumption of 2-4 cups per
           day, and revealed a preference for convenience, such as online shopping to save time and avoid traffic. Many
           participants showed interest in subscription services for potential cost savings. Insights from the
           International Coffee Organization and Anacafé complemented the findings, guiding the development of a
           user-friendly online coffee store.</p>
-        <h3>User Personas</h3>
+        <h3 data-i18n="cs-user-personas">User Personas</h3>
         <div class="section wf-section" id="user-persona">
           <div class="wrapper">
             <div class="main-grid">
@@ -223,25 +236,25 @@
               </div>
               <div id="w-node-_8a706842-2bad-56d1-66a4-ef09ad1ea564-7dde70c3" class="intro-left">
                 <div class="text-label">Sara L</div>
-                <h2>“I love drinking coffee to wake up in the mornings. I like ordering online because I save time and
+                <h2 data-i18n=”coffee-persona-h2”>”I love drinking coffee to wake up in the mornings. I like ordering online because I save time and
                   avoid traffic from going to the store.”</h2>
-                <h4>Goals</h4>
+                <h4 data-i18n="cs-goals-h4">Goals</h4>
                 <div class="text-grey">
-                  <ul>
+                  <ul data-i18n-html="coffee-goals-ul">
                     <li>Avoiding traffic and lines by ordering online.</li>
                     <li>Saving money on everyday consumer products.</li>
                     <li>Waking up with a cup of coffee.</li>
                   </ul>
                 </div>
-                <h4>Frustrations</h4>
+                <h4 data-i18n="cs-frustrations-h4">Frustrations</h4>
                 <div class="text-grey">
-                  <ul>
+                  <ul data-i18n-html="coffee-frustrations-ul">
                     <li>Forgetting to buy coffee.</li>
                     <li>Standing in line to pay for coffee at checkout.</li>
                     <li>Waking up late or without energy.</li>
                   </ul>
                 </div>
-                <blockquote>Sara is a 28-year-old marketer and business owner from Guatemala. She loves waking up with a
+                <blockquote data-i18n="coffee-persona-blockquote">Sara is a 28-year-old marketer and business owner from Guatemala. She loves waking up with a
                   cup of coffee. She
                   likes to save money on everyday consumables and avoid spending time in traffic to go shopping.
                 </blockquote>
@@ -250,79 +263,79 @@
           </div>
         </div>
         <br>
-        <h3>User Flow</h3>
+        <h3 data-i18n="cs-user-flow">User Flow</h3>
         <div>
           <image class="zoomable-image" src="./images/project-coffee-user-flow.png"></image>
           <p class="text-grey zoom-caption">(Click on image to enlarge)</p>
         </div>
         <br>
-        <h3>Story Board</h3>
+        <h3 data-i18n="cs-story-board">Story Board</h3>
         <div>
           <image class="zoomable-image" src="./images/project-coffee-story-board.jpg"></image>
           <p class="text-grey zoom-caption">(Click on image to enlarge)</p>
         </div>
         <br>
-        <h3>Information Architecture</h3>
+        <h3 data-i18n="cs-info-arch">Information Architecture</h3>
         <div>
           <image class="zoomable-image" src="./images/project-coffee-ia.png"></image>
           <p class="text-grey zoom-caption">(Click on image to enlarge)</p>
         </div>
         <br>
-        <h3>Paper Wireframe</h3>
+        <h3 data-i18n="cs-paper-wireframe">Paper Wireframe</h3>
         <div>
           <image class="zoomable-image" src="./images/project-coffee-paper-wireframe.jpg"></image>
           <p class="text-grey zoom-caption">(Click on image to enlarge)</p>
         </div>
         <br>
-        <h3>Low-fidelity Prototype</h3>
+        <h3 data-i18n="cs-lofi">Low-fidelity Prototype</h3>
         <div>
           <image class="zoomable-image" src="./images/project-coffee-lo-fi-prototype.png"></image>
           <p class="text-grey zoom-caption">(Click on image to enlarge)</p>
         </div>
         <br>
-        <h3>High-Fidelity Prototype</h3>
+        <h3 data-i18n="cs-hifi">High-Fidelity Prototype</h3>
         <div>
           <image class="zoomable-image" src="./images/project-coffee-prototype-screen.png"></image>
           <p class="text-grey zoom-caption">(Click on image to enlarge)</p>
         </div>
         <button class="button-secondary"
           onclick="window.open('https://www.figma.com/proto/0Df7gWKIRrghwUBLCBZQvU/Caf%C3%A9-Don-Lucas-Prototype?node-id=884-2438&node-type=canvas&t=d8vjdHqvLMOKLTHt-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A96', '_blank');"
-          id="project-details-inner-button">View
+          id="project-details-inner-button" data-i18n="coffee-btn-figma">View
           Figma Protytpe</button>
-        <h2>Development</h2>
-        <p>The web app was then developed using React, and it is still under active development.</p>
+        <h2 data-i18n="coffee-dev-h2">Development</h2>
+        <p data-i18n="coffee-dev-p">The web app was then developed using React, and it is still under active development.</p>
         <div>
           <image class="zoomable-image" src="./images/project-coffee-development.png"></image>
           <p class="text-grey zoom-caption">(Click on image to enlarge)</p>
         </div>
         <button class="button-secondary" onclick="window.open('https://github.com/rmeoni/coffee-shop', '_blank');"
-          id="project-details-inner-button">View Github Project</button>
+          id="project-details-inner-button" data-i18n="coffee-btn-github">View Github Project</button>
         <br>
         <section>
-          <h2>Post-launch Usability Study</h2>
-          <p>
+          <h2 data-i18n="coffee-postlaunch-h2">Post-launch Usability Study</h2>
+          <p data-i18n="coffee-usability-p1">
             We conducted a Usability Study to figure out what specific difficulties users encountered when they tried to
             complete the core tasks of the Café Don Lucas’ app: Product selection, ordering, and in-app navigation.
           </p>
-          <p>
+          <p data-i18n="coffee-usability-p2">
             We conducted an unmoderated usability study with participants in Guatemala (remote), where participants went
             through the usability study in their own homes. We interviewed 5 people from mixed backgrounds, genders, and
             abilities.
           </p>
-          <p>
+          <p data-i18n="coffee-usability-p3">
             We then gathered the data and organized it to identify themes, which resulted in the following insights:
           </p>
-          <h3>Round 1 Findings</h3>
+          <h3 data-i18n="cs-round1">Round 1 Findings</h3>
           <ul>
             <li>Users recommended adding a Notes field before placing an order.</li>
             <li>Users suggested having the option for a single coffee bag selection, and not just boxes.</li>
             <li>Users had trouble seeing the mobile menu, since the background of the page was distracting them.</li>
           </ul>
-          <p>
+          <p data-i18n="coffee-usability-p4">
             Given the insights we found through our Usability Study, we adapted the design to improve the user
             experience and make the web app easier to use.
           </p>
-          <h3>Before And After</h3>
+          <h3 data-i18n="cs-before-after">Before And After</h3>
           <div class="carousel">
             <div class="carousel-images">
               <img src="./images/project-coffee-before-study-1.png" alt="Before Notes At Checkout">
@@ -342,13 +355,13 @@
           </div>
         </section>
         <br>
-        <h2>Accesibility</h2>
-        <p>The website was designed for accessibility with Spanish and English language options, ensuring seamless
+        <h2 data-i18n="cs-accessibility">Accesibility</h2>
+        <p data-i18n="coffee-accessibility-p">The website was designed for accessibility with Spanish and English language options, ensuring seamless
           navigation for all users. Dark and Light modes were added to accommodate visual preferences and improve
           usability in different lighting conditions, creating a more inclusive and adaptable user experience.</p>
         <button class="button-secondary" onclick="window.open('https://uxcoffee.netlify.app/', '_blank');"
-          id="project-details-inner-button">View Website</button>
-        <h2>Takeaways</h2>
+          id="project-details-inner-button" data-i18n="coffee-btn-website">View Website</button>
+        <h2 data-i18n="cs-takeaways">Takeaways</h2>
         <p></p>
         <ol>
           <li><strong>User Preferences:</strong> The research highlighted that customers value quality over price when
@@ -376,7 +389,7 @@
         </ol>
         </p>
         <a href="case-study/ux-rodrigo-case-study-cafe-don-lucas.pdf" target="_blank">
-          <button class="button-secondary" id="project-details-inner-button">Download Case Study PDF</button>
+          <button class="button-secondary" id="project-details-inner-button" data-i18n="cs-btn-pdf">Download Case Study PDF</button>
         </a>
       </div>
     </div>
@@ -384,9 +397,9 @@
     <div class="section no-padding-top wf-section">
       <div class="wrapper">
         <div class="intro wide">
-          <div class="text-label">Let&#x27;s get in touch</div>
-          <h2>Have a project in mind? Let&#x27;s build something great together!</h2>
-          <a href="mailto:hello@uxrodrigo.com" class="button contact-button w-button">Email Me</a>
+          <div class="text-label" data-i18n="cs-contact-label">Let&#x27;s get in touch</div>
+          <h2 data-i18n="cs-contact-cta">Have a project in mind? Let&#x27;s build something great together!</h2>
+          <a href="mailto:hello@uxrodrigo.com" class="button contact-button w-button" data-i18n="detail-email-me">Email Me</a>
         </div>
       </div>
     </div>
@@ -427,25 +440,25 @@
     <div class="footer">
       <div id="w-node-_039a8aaa-fb17-70ae-93eb-1d914075d988-4075d986" class="footer-nav">
         <a href="./index.html#home-sec" class="footer-nav-link w-inline-block">
-          <div>Home</div>
+          <div data-i18n="footer-home">Home</div>
           <div class="hover-line white"></div>
         </a>
         <a href="./index.html#portfolio-sec" class="footer-nav-link w-inline-block">
-          <div>Portfolio</div>
+          <div data-i18n="footer-portfolio">Portfolio</div>
           <div class="hover-line white"></div>
         </a>
         <a href="./index.html#about-sec" class="footer-nav-link w-inline-block">
-          <div>About</div>
+          <div data-i18n="footer-about">About</div>
           <div class="hover-line white"></div>
         </a>
         <a href="./index.html#contact-sec" class="footer-nav-link w-inline-block">
-          <div>Contact</div>
+          <div data-i18n="footer-contact">Contact</div>
           <div class="hover-line white"></div>
         </a>
       </div>
       <div class="footer-contact">
-        <h3 class="footer-heading">Let's Get In Touch</h3>
-        <div class="footer-contact-text">I'd love to hear from you! Please reach out.</div>
+        <h3 class="footer-heading" data-i18n="footer-heading">Let's Get In Touch</h3>
+        <div class="footer-contact-text" data-i18n="footer-text">I'd love to hear from you! Please reach out.</div>
         <div class="footer-contact-item"><img src="images/email-white.svg" alt="" class="footer-contact-icon">
           <div><a href="mailto:hello@uxrodrigo.com" style="color:#fff;">hello@uxrodrigo.com</a></div>
         </div>
@@ -494,6 +507,10 @@
           icon.src = isDark ? ICON_TO_LIGHT : ICON_TO_DARK;
           icon.alt = isDark ? 'Switch to light mode' : 'Switch to dark mode';
         }
+        // Swap language button icon (all instances — desktop + mobile sidebar)
+        document.querySelectorAll('.lang-icon').forEach(function (icon) {
+          icon.src = isDark ? 'images/language-dark.svg' : 'images/language.svg';
+        });
       }
 
       document.addEventListener('DOMContentLoaded', function () {
@@ -520,6 +537,7 @@
     <script src="js/carousel.js"></script>
     <script src="js/projects.js"></script>
     <script src="js/project-nav.js"></script>
+    <script src="js/i18n.js"></script>
 </body>
 
 </html>

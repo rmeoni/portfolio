@@ -382,6 +382,96 @@ video {
 }
 
 /* ==============================================
+   LANGUAGE TOGGLE BUTTON
+   ============================================== */
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  margin-left: 4px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+
+.lang-toggle img.lang-icon {
+  display: block;
+  height: 22px;
+  width: auto;
+  border-radius: 0 !important;
+}
+
+.lang-toggle .lang-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #153180;
+  line-height: 1;
+}
+
+.lang-toggle:hover {
+  background: transparent;
+}
+
+[data-theme="dark"] .lang-toggle .lang-label {
+  color: #fff;
+}
+
+/* ==============================================
+   MOBILE SIDEBAR EXTRAS (CV + language toggle)
+   ============================================== */
+.nav-mobile-extras {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  /* Hide lang toggle from top bar — it lives in the sidebar instead */
+  .nav-right .lang-toggle {
+    display: none;
+  }
+
+  .nav-mobile-extras {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px 20px 0;
+    border-top: 1px solid rgba(21, 49, 128, 0.12);
+    margin-top: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  [data-theme="dark"] .nav-mobile-extras {
+    border-top-color: rgba(255, 255, 255, 0.12);
+  }
+
+  .nav-mobile-cv {
+    display: block;
+    background-color: #153180;
+    color: #fff !important;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 0.02em;
+  }
+
+  .nav-mobile-cv:hover {
+    background-color: #1a3d9e;
+    color: #fff !important;
+  }
+}
+
+/* ==============================================
    DARK MODE — BASE
    ============================================== */
 [data-theme="dark"] body {
