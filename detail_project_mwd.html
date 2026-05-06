@@ -151,7 +151,9 @@
             style="display:block;-webkit-transform:translate3d(0, 0, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(45DEG) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(45DEG) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(45DEG) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(45DEG) skew(0, 0)"
             class="overlay"></div><img
             style="-webkit-transform:translate3d(0, 0, 0) scale3d(1.26, 1.26, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1.26, 1.26, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1.26, 1.26, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1.26, 1.26, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-            src="./images/project-cover-mwd.png" alt="" class="bg-image" id="project-cover">
+            src="./images/project-cover-mwd.png" alt="" class="bg-image" id="project-cover"
+            data-light-src="./images/project-cover-mwd.png"
+            data-dark-src="./images/project-cover-mwd-dark.png">
           <!-- <a data-w-id="648427ad-7c5f-693c-a567-fe8be4140a79" style="opacity:0"
             href="https://www.uxrodrigo.com/project-coffee-jumbo.png" class="work-link-button w-inline-block"></a> -->
         </div>
@@ -379,6 +381,10 @@
         document.querySelectorAll('.lang-icon').forEach(function (icon) {
           icon.src = isDark ? 'images/language-dark.svg' : 'images/language.svg';
         });
+        var cover = document.getElementById('project-cover');
+        if (cover) {
+          cover.src = isDark ? cover.getAttribute('data-dark-src') : cover.getAttribute('data-light-src');
+        }
       }
 
       document.addEventListener('DOMContentLoaded', function () {
