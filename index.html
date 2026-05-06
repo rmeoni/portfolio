@@ -911,6 +911,11 @@
         document.querySelectorAll('.lang-icon').forEach(function (icon) {
           icon.src = isDark ? 'images/language-dark.svg' : 'images/language.svg';
         });
+
+        // Swap project thumbnail images
+        if (typeof window.__updateProjectThumbs === 'function') {
+          window.__updateProjectThumbs(isDark);
+        }
       }
 
       document.addEventListener('DOMContentLoaded', function () {

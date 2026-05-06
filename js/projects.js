@@ -10,6 +10,7 @@ const projects = {
         description_es: "YoTaxi de San Francisco enfrentaba desafíos con su experiencia de usuario. Los apoyé rediseñando su app mediante Design Thinking. Realizamos investigación de usuarios, un estudio de usabilidad, definimos objetivos clave, colaboramos con stakeholders para idear soluciones y prototipamos un nuevo diseño en Figma.",
         link: "./detail_project_yotaxi.html",
         image: "images/portfolio-thumb-26.png",
+        image_dark: "images/portfolio-thumb-26-dark.png",
         buttonText: 'View Case Study',
         buttonText_es: 'Ver Caso de Estudio',
         target: "_self"
@@ -23,6 +24,7 @@ const projects = {
         description_es: 'Como Desarrollador UX en una organización sin fines de lucro en Guatemala, diseñé la UI de un sistema POS móvil que permite a pequeños empresarios aceptar pagos con tarjeta de crédito directamente desde sus teléfonos.',
         link: './detail_project_akisi_ui.html',
         image: './images/portfolio-thumb-23.png',
+        image_dark: './images/portfolio-thumb-23-dark.png',
         buttonText: 'Read more',
         buttonText_es: 'Leer más',
         target: "_self"
@@ -42,6 +44,7 @@ const projects = {
         description_es: "Como Desarrollador UX en una ONG guatemalteca con más de 4,000 empleados, ayudé a rediseñar sus apps internas con Design Thinking. Mi rol incluyó investigación organizacional, definición de puntos de dolor e ideación con un equipo de seis desarrolladores. La solución final mejoró la experiencia en un 150% y ahorró más de 10,000 horas-hombre al mes.",
         link: "./detail_project_gflow.html",
         image: "images/portfolio-thumb-25.png",
+        image_dark: "images/portfolio-thumb-25-dark.png",
         buttonText: 'View Case Study',
         buttonText_es: 'Ver Caso de Estudio',
         target: "_self"
@@ -54,6 +57,7 @@ const projects = {
         description_es: "Adoptio comenzó como práctica para el Certificado de Diseño UX de Google, pero evolucionó en una iniciativa real para abordar la falta de apps de adopción en países en desarrollo. Con un diseño centrado en el usuario y planes de desarrollo en React, Adoptio busca aumentar las tasas de adopción y mejorar el bienestar animal.",
         link: "./detail_project_adoptio.html",
         image: "images/portfolio-thumb-21.png",
+        image_dark: "images/portfolio-thumb-21-dark.png",
         buttonText: 'View Case Study',
         buttonText_es: 'Ver Caso de Estudio',
         target: "_self"
@@ -70,6 +74,7 @@ const projects = {
         description_es: "En este proyecto apliqué Design Thinking, comenzando con Investigación Cualitativa y Cuantitativa para definir User Personas e identificar puntos de dolor. Usamos un User Journey Map para idear soluciones, creamos Wireframes y Prototipos en Figma, desarrollamos el sitio con React y realizamos Pruebas de Usabilidad.",
         link: "./detail_project_coffee_ux.html",
         image: "images/portfolio-thumb-7.png",
+        image_dark: "images/portfolio-thumb-7-dark.png",
         buttonText: 'View Case Study',
         buttonText_es: 'Ver Caso de Estudio',
         target: "_self"
@@ -82,6 +87,7 @@ const projects = {
         description_es: 'En este proyecto trabajé en Investigación, Diseño e Ideación para un blog educativo sobre cannabis dirigido al mercado alemán. Con la legalización gradual del cannabis medicinal en la UE, la startup busca informar a pacientes alemanes sobre los fundamentos de la industria.',
         link: './detail_project_mwd.html',
         image: 'images/portfolio-thumb-8.png',
+        image_dark: 'images/portfolio-thumb-8-dark.png',
         buttonText: 'View Case Study',
         buttonText_es: 'Ver Caso de Estudio',
         target: "_self"
@@ -102,6 +108,7 @@ const projects = {
         description_es: 'Como Desarrollador UX en una ONG guatemalteca con más de 4,000 empleados, ayudé a crear Impulso, un sistema de diseño para organizar y estandarizar todas las apps internas de operaciones de préstamos grupales. Impulso es la única fuente de verdad entre plataformas, gestionando tokens de color, tipografía, espaciado, modos claro/oscuro y diseños responsivos.',
         link: './detail_project_impulso_design_system.html',
         image: './images/portfolio-thumb-24.png',
+        image_dark: './images/portfolio-thumb-24-dark.png',
         buttonText: 'Read more',
         buttonText_es: 'Leer más',
         target: "_self"
@@ -114,6 +121,7 @@ const projects = {
         description_es: 'Como Diseñador UX para Wind Hill Growers, desarrollamos "Unity", un sistema de diseño integral que actúa como única fuente de verdad para todos los activos de diseño en múltiples mercados internacionales. Unity llevó la marca a un nuevo nivel de consistencia, facilitando su gestión y escalabilidad.',
         link: './detail_project_unity_design_system.html',
         image: './images/project-unity-design-system.png',
+        image_dark: './images/project-unity-design-system-dark.png',
         buttonText: 'Read more',
         buttonText_es: 'Leer más',
         target: "_self"
@@ -132,6 +140,7 @@ const renderProjects = (projects, category) => {
     _currentCategory = category;
 
     const lang = localStorage.getItem('language') || 'en';
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
     const workGrid1 = document.getElementById('works-grid-1');
     const workGrid2 = document.getElementById('works-grid-2');
 
@@ -146,6 +155,8 @@ const renderProjects = (projects, category) => {
         const title       = lang === 'es' && data.title_es       ? data.title_es       : data.title;
         const description = lang === 'es' && data.description_es ? data.description_es : data.description;
         const buttonText  = lang === 'es' && data.buttonText_es  ? data.buttonText_es  : data.buttonText;
+        const imgSrc      = isDark && data.image_dark ? data.image_dark : data.image;
+        const imgDark     = data.image_dark || data.image;
 
         const project = document.createElement('div');
         project.className = `projects ${category}`;
@@ -153,7 +164,7 @@ const renderProjects = (projects, category) => {
       <a href="${data.link}" target="${data.target}" class="work-card-preview w-inline-block">
         <div class="card-hover-circle"></div>
         <div class="overlay" style="display: none; transform: translate3d(150%, -150%, 0px) scale3d(2, 2, 1);"></div>
-        <img src="${data.image}" alt="" class="bg-image absolute">
+        <img src="${imgSrc}" data-light-src="${data.image}" data-dark-src="${imgDark}" alt="" class="bg-image absolute">
       </a>
       <h4>${title}</h4>
       <div class="work-card-description">
@@ -169,6 +180,12 @@ const renderProjects = (projects, category) => {
         } else {
             workGrid2.appendChild(project);
         }
+    });
+};
+
+window.__updateProjectThumbs = function (isDark) {
+    document.querySelectorAll('.bg-image.absolute[data-dark-src]').forEach(function (img) {
+        img.src = isDark ? img.getAttribute('data-dark-src') : img.getAttribute('data-light-src');
     });
 };
 
