@@ -153,8 +153,7 @@
             class="overlay"></div><img
             style="-webkit-transform:translate3d(0, 0, 0) scale3d(1.26, 1.26, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1.26, 1.26, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1.26, 1.26, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1.26, 1.26, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
             src="./images/project-cover-yotaxi.png" alt="" class="bg-image" id="project-cover"
-            data-light-src="./images/project-cover-yotaxi.png"
-            data-dark-src="./images/project-cover-yotaxi-dark.png">
+            data-light-src="./images/project-cover-yotaxi.png" data-dark-src="./images/project-cover-yotaxi-dark.png">
           <!-- <a data-w-id="648427ad-7c5f-693c-a567-fe8be4140a79" style="opacity:0"
             href="https://www.uxrodrigo.com/project-coffee-jumbo.png" class="work-link-button w-inline-block"></a> -->
         </div>
@@ -194,7 +193,8 @@
         <br>
         <div class="work w-richtext" data-i18n="yotaxi-intro">I designed, prototyped, and developed the new YoTaxi app
           while improving the user experience through Design Thinking methodologies. I collaborated closely with
-          stakeholders and other developers to align solutions with both user and business needs, and conducted remote usability studies, led
+          stakeholders and other developers to align solutions with both user and business needs, and conducted remote
+          usability studies, led
           user research, and developed personas. I also ensured accessibility best practices across all products,
           created low- and high-fidelity prototypes using Figma, and handled both front-end and back-end development
           using React Native, TypeScript, Express.js, and AWS.</div>
@@ -320,7 +320,20 @@
           images to ensure screen reader compatibility, enhancing usability for visually impaired users. These features
           make the app more inclusive and user-friendly for a broader audience.</p>
 
-        <p data-i18n="cs-thank-you">Thank you very much!</p>
+        <h2 data-i18n="cs-before-after">Before And After</h2>
+        <div class="carousel">
+          <div class="carousel-images">
+            <img src="./images/project-yotaxi-before.png" alt="Before redesign">
+            <img src="./images/project-yotaxi-after.png" alt="After redesign">
+          </div>
+          <p id="carousel-alt-text"></p>
+          <button class="prev" onclick="moveSlide(-1)">
+            <div class="top-button-icon w-icon-dropdown-toggle"></div>
+          </button>
+          <button class="next" onclick="moveSlide(1)">
+            <div class="top-button-icon w-icon-dropdown-toggle"></div>
+          </button>
+        </div>
         <br>
         <a href="https://apps.apple.com/gt/app/yotaxi-of-sf/id6504701475?l=en-GB" target="_blank">
           <button class="button-secondary" id="project-details-inner-button" data-i18n="yotaxi-btn-appstore">View In App
