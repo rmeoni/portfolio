@@ -875,3 +875,19 @@ video {
   background-color: #1a1a1a;
   color: #e8e8e8;
 }
+
+/* ==============================================
+   DARK MODE — BREADCRUMBS
+   ============================================== */
+[data-theme="dark"] .breadcrumbs-link {
+  color: #8FD3F7;
+}
+
+/* ==============================================
+   MOBILE — PROJECT NAV
+   ============================================== */
+@media screen and (max-width: 479px) {
+  .work-nav-button {
+    justify-self: center;
+  }
+}
