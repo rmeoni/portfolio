@@ -62,6 +62,15 @@
           <div data-i18n="nav-contact">Contact</div>
           <div class="hover-line"></div>
         </a>
+
+        <div class="nav-mobile-extras">
+          <a href="case-study/rodrigo_meono_resume_no_ref_compressed.pdf" download target="_blank" class="nav-mobile-cv"
+            data-i18n="nav-download-cv">Download CV</a>
+          <button class="lang-toggle" aria-label="Switch language" title="Switch language">
+            <img src="images/language.svg" alt="Language" class="lang-icon">
+            <span class="lang-label">ES</span>
+          </button>
+        </div>
       </nav>
       <div class="nav-right">
         <a href="case-study/rodrigo_meono_resume_no_ref_compressed.pdf" download target="_blank"
@@ -93,7 +102,7 @@
     <div class="top-section wf-section">
       <div class="wrapper">
         <div class="page-header">
-          <h1 class="page-heading">Wind Hill Growers UI Design</h1>
+          <h1 class="page-heading" data-i18n="whg-ui-title">Wind Hill Growers UI Design</h1>
         </div>
       </div>
     </div>
@@ -142,13 +151,15 @@
             style="display:block;-webkit-transform:translate3d(0, 0, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(45DEG) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(45DEG) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(45DEG) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(45DEG) skew(0, 0)"
             class="overlay"></div><img
             style="-webkit-transform:translate3d(0, 0, 0) scale3d(1.26, 1.26, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1.26, 1.26, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1.26, 1.26, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1.26, 1.26, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-            src="./images/project-cover-whg-ui.png" alt="" class="bg-image" id="project-cover">
+            src="./images/project-cover-whg-ui.png" alt="" class="bg-image" id="project-cover"
+            data-light-src="./images/project-cover-whg-ui.png"
+            data-dark-src="./images/project-cover-whg-ui-dark.png">
           <!-- <a data-w-id="648427ad-7c5f-693c-a567-fe8be4140a79" style="opacity:0"
             href="https://www.uxrodrigo.com/project-coffee-jumbo.png" class="work-link-button w-inline-block"></a> -->
         </div>
         <div class="work-intro">
           <div class="work-decription">
-            <div>Wind Hill Growers UI Design</div>
+            <div data-i18n="whg-ui-title">Wind Hill Growers UI Design</div>
           </div>
           <div class="work-blocks">
             <div class="work-block">
@@ -160,6 +171,19 @@
               <div class="work-block-info">13/11/2021</div>
             </div>
           </div>
+          <div class="work-tags">
+            <div class="tag-badge job-badge">UI Design</div>
+            <div class="tag-badge job-badge">Figma</div>
+            <div class="tag-badge job-badge">Design System</div>
+            <div class="tag-badge job-badge">Squarespace</div>
+            <div class="tag-badge job-badge">Zoho</div>
+            <div class="tag-badge job-badge">CRO</div>
+            <div class="tag-badge job-badge">A/B Testing</div>
+            <div class="tag-badge job-badge">Google Analytics 4</div>
+            <div class="tag-badge job-badge">Hotjar</div>
+            <div class="tag-badge job-badge">DTC</div>
+            <div class="tag-badge job-badge">B2B</div>
+          </div>
         </div>
         <div class="video-wrapper" id="lozana-video">
           <video controls muted playsinline>
@@ -169,34 +193,35 @@
         </div>
         <br>
         <br>
-        <div class="work w-richtext">As a UX designer, I expanded this beautiful brand's website and built a Design
+        <div class="work w-richtext" data-i18n="whg-ui-intro">As a UX designer, I expanded this beautiful brand's website and built a Design
           System in Figma to keep all digital products on-brand. Collaborating with the team, I've continued to enhance
-          the Squarespace site, and created a store to take orders through Zoho.</div>
+          the Squarespace site, created a store to take orders through Zoho, and applied Conversion Rate Optimization (CRO) strategies to improve the customer journey and increase wholesale sign-ups.</div>
         <br>
-        <h3>The Problem</h3>
-        <p>
+        <h3 data-i18n="cs-problem">The Problem</h3>
+        <p data-i18n="whg-ui-problem-p1">
           When I joined Wind Hill Growers, they only had a public-facing website. However, they were taking orders via
           email and managing everything through Excel. They wanted a wholesaler store that would hide prices and display
           them only to invited users.
         </p>
-        <p>
+        <p data-i18n="whg-ui-problem-p2">
           The challenge was that their Squarespace website showcased their brand but lacked a Design System. I started
           by creating a Design System to maintain brand consistency and establish a single source of truth. Then, I
           developed a webstore using Zoho to allow wholesalers to place orders. The Design System brought the brand into
           consistency, and the Zoho webstore streamlined online ordering processes.
         </p>
 
-        <h3>The Goal</h3>
-        <p>
+        <h3 data-i18n="cs-goal">The Goal</h3>
+        <p data-i18n="whg-ui-goal-p">
           The goal was to create an online webstore that would hide prices and display them only to invited wholesalers
-          while maintaining brand consistency.
+          while maintaining brand consistency. A secondary goal was to apply CRO (Conversion Rate Optimization) principles
+          to the storefront and public site to reduce friction in the wholesale sign-up flow and turn more visitors into customers.
         </p>
 
-        <h3>My Role</h3>
-        <p>
+        <h3 data-i18n="cs-my-role">My Role</h3>
+        <p data-i18n="whg-ui-role-p">
           As the UX Designer and Developer, I handled the project from start to finish:
         </p>
-        <ul>
+        <ul data-i18n-html="whg-ui-role-ul">
           <li>
             <strong>Design:</strong> I created a Design System to unify the brand and serve as a single source of truth.
             I designed Figma prototypes for the online store and developed them using Zoho.
@@ -208,24 +233,95 @@
           <li>
             <strong>Functionality:</strong> Once the webstore adhered to the brand guidelines, the company started
             accepting online orders through Zoho Commerce. This enabled automated reporting, streamlined processes, and
-            better stock management.
+            better stock management. We also applied CRO techniques — optimizing CTAs, simplifying the sign-up form, and
+            improving page layout — to increase the wholesale conversion rate.
           </li>
         </ul>
 
-        <h3>Responsibilities</h3>
-        <ul>
+        <h3 data-i18n="cs-responsibilities">Responsibilities</h3>
+        <ul data-i18n-html="whg-ui-responsibilities-ul">
           <li>Created a Design System for the brand to ensure cohesion using Figma and Zeroheight.</li>
           <li>Designed the UI in Figma to align with the brand’s identity.</li>
           <li>Developed the site in Zoho Commerce using Custom CSS to adhere to the brand's guidelines.</li>
         </ul>
 
-        <p>
+        <p data-i18n="whg-ui-collab-p">
           The final product enabled Wind Hill Growers to take online orders while maintaining a consistent brand across
-          all platforms and delivering a great customer experience.
+          all platforms and delivering a great customer experience. The CRO improvements reduced drop-off in the
+          wholesale sign-up flow and contributed to a measurable increase in online order volume.
         </p>
         <br>
+        <section>
+          <h2 data-i18n="whg-ui-cro-h2">Conversion Rate Optimization (CRO)</h2>
+          <p data-i18n-html="whg-ui-cro-intro-p">
+            Wind Hill Growers operates across two distinct channels — a <strong>DTC</strong> public-facing storefront
+            serving end consumers, and a <strong>B2B</strong> wholesale portal for invited trade buyers. Each channel
+            has different conversion goals, user behaviors, and friction points, so we treated them separately in our
+            CRO strategy.
+          </p>
+
+          <h3>Hotjar</h3>
+          <p data-i18n="whg-ui-hotjar-p">
+            Hotjar was the primary qualitative tool for understanding how real users moved through both the DTC and B2B
+            experiences. We used four of its core features:
+          </p>
+          <ul data-i18n-html="whg-ui-hotjar-ul">
+            <li>
+              <strong>Session Replay:</strong> Watching actual user sessions revealed unexpected behavior — DTC
+              visitors were repeatedly scrolling back to the product description before adding to cart, signaling the
+              need for clearer benefit copy above the fold. B2B users, on the other hand, were abandoning the sign-up
+              form mid-way, which we traced to a confusing "Business Type" field.
+            </li>
+            <li>
+              <strong>Heatmaps:</strong> Click and scroll heatmaps showed that most DTC visitors never reached the
+              subscription CTA at the bottom of the homepage. This drove the decision to move key conversion elements
+              higher on the page. For the B2B landing page, heatmaps confirmed that the "Request Access" button was
+              being overlooked in favor of the main navigation.
+            </li>
+            <li>
+              <strong>Funnels:</strong> We built separate Hotjar funnels for the DTC checkout and the B2B wholesale
+              application flow. The DTC funnel exposed a significant drop-off between the cart and the shipping step,
+              while the B2B funnel showed the biggest leak at the account approval confirmation screen — leading us to
+              redesign both those steps.
+            </li>
+            <li>
+              <strong>Surveys:</strong> Short on-exit surveys were deployed on both sites. DTC users who abandoned
+              cart most commonly cited uncertainty about shipping times. B2B users who left the sign-up page said the
+              approval process felt unclear. These direct quotes were used to rewrite microcopy in both flows.
+            </li>
+          </ul>
+
+          <h3>Google Analytics 4</h3>
+          <p data-i18n="whg-ui-ga4-p">
+            GA4 was set up with separate data streams for the DTC Squarespace site and the B2B Zoho Commerce portal,
+            allowing us to track conversion metrics independently. Key events — product views, add-to-cart, checkout
+            starts, and order completions — were instrumented across both. GA4's funnel exploration reports confirmed
+            the drop-off patterns surfaced by Hotjar and gave us a quantitative baseline to measure the impact of
+            every design change.
+          </p>
+
+          <h3>A/B Testing</h3>
+          <p data-i18n="whg-ui-ab-intro-p">
+            With both qualitative and quantitative data in hand, we ran targeted A/B tests across two areas:
+          </p>
+          <ul data-i18n-html="whg-ui-ab-ul">
+            <li>
+              <strong>Product pages:</strong> We tested two layouts for the DTC product cards — one leading with
+              origin story and tasting notes, another leading with pack size and price. The story-first variant
+              increased add-to-cart rate, aligning with the brand's premium positioning.
+            </li>
+            <li>
+              <strong>Landing pages:</strong> The DTC homepage was tested with two hero variants — a lifestyle
+              photograph vs. a product close-up. The lifestyle image produced a higher scroll depth and more
+              clicks to the shop. For the B2B landing page, we tested a short-form "Request Access" page against a
+              longer page explaining wholesale benefits; the longer variant converted better, confirming that trade
+              buyers needed more context before committing.
+            </li>
+          </ul>
+        </section>
         <br>
-        <button class="button-secondary" onclick="window.open('https://www.windhillgrowers.com/', '_blank');">View
+        <br>
+        <button class="button-secondary" onclick="window.open('https://www.windhillgrowers.com/', '_blank');" data-i18n="whg-ui-btn-website">View
           Website</button>
       </div>
     </div>
@@ -234,8 +330,8 @@
   <div class="section no-padding-top wf-section">
     <div class="wrapper">
       <div class="intro wide">
-        <div class="text-label">Let&#x27;s get in touch</div>
-        <h2>Have a project in mind? Let&#x27;s build something great together!</h2>
+        <div class="text-label" data-i18n="cs-contact-label">Let&#x27;s get in touch</div>
+        <h2 data-i18n="cs-contact-cta">Have a project in mind? Let&#x27;s build something great together!</h2>
         <a href="mailto:hello@uxrodrigo.com" class="button contact-button w-button" data-i18n="detail-email-me">Email Me</a>
       </div>
     </div>
@@ -294,8 +390,8 @@
         </a>
       </div>
       <div class="footer-contact">
-        <h3 class="footer-heading">Let's Get In Touch</h3>
-        <div class="footer-contact-text">I'd love to hear from you! Please reach out.</div>
+        <h3 class="footer-heading" data-i18n="footer-heading">Let's Get In Touch</h3>
+        <div class="footer-contact-text" data-i18n="footer-text">I'd love to hear from you! Please reach out.</div>
         <div class="footer-contact-item"><img src="images/email-white.svg" alt="" class="footer-contact-icon">
           <div><a href="mailto:hello@uxrodrigo.com" style="color:#fff;">hello@uxrodrigo.com</a></div>
         </div>
@@ -340,6 +436,10 @@
         var langIcon = document.getElementById('lang-toggle-icon');
         if (langIcon) {
           langIcon.src = isDark ? 'images/language-dark.svg' : 'images/language.svg';
+        }
+        var cover = document.getElementById('project-cover');
+        if (cover) {
+          cover.src = isDark ? cover.getAttribute('data-dark-src') : cover.getAttribute('data-light-src');
         }
       }
 

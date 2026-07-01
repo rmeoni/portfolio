@@ -181,6 +181,7 @@
             <div class="tag-badge job-badge">Node.js</div>
             <div class="tag-badge job-badge">Express.js</div>
             <div class="tag-badge job-badge">PostgreSQL</div>
+            <div class="tag-badge job-badge">Sentry</div>
           </div>
         </div>
         <div class="video-wrapper">
@@ -334,6 +335,43 @@
             <div class="top-button-icon w-icon-dropdown-toggle"></div>
           </button>
         </div>
+        <br>
+        <section>
+          <h2 data-i18n="yotaxi-sentry-h2">Sentry: Error Monitoring &amp; Event Tracking</h2>
+          <p data-i18n="yotaxi-sentry-intro-p">Sentry was integrated into the YoTaxi app to monitor real-time errors
+            and track key user events across both iOS and Android platforms. Rather than guessing what broke or why users
+            abandoned a flow, Sentry provided direct visibility into the app's behavior in production — giving the team
+            a data-driven foundation for every improvement cycle.</p>
+          <h3 data-i18n="yotaxi-sentry-metrics-h3">Key Metrics Tracked</h3>
+          <ul data-i18n-html="yotaxi-sentry-metrics-ul">
+            <li>
+              <strong>Ride Creation:</strong> Custom Sentry events were instrumented at each step of the booking flow —
+              location selection, pickup confirmation, driver matching, and ride start — broken down by platform. On iOS,
+              a timing issue during driver matching caused a brief screen freeze. On Android, a geolocation permission
+              error was silently blocking ride creation for a subset of users.
+            </li>
+            <li>
+              <strong>Ride Cancellation:</strong> Cancellation events were tracked with context — user-initiated, driver
+              cancellation, or system timeout. Comparing cancellation rates by platform revealed that Android users were
+              dropping off significantly more at the driver-matching step, which led to a redesign of the waiting screen
+              with clearer status feedback and an estimated wait time.
+            </li>
+            <li>
+              <strong>Ride Duration:</strong> Session duration was tracked from ride start to completion per platform.
+              Android sessions averaged 15% shorter than iOS — a pattern that correlated with a higher rate of premature
+              app closures. Sentry breadcrumbs traced this to a background process killing the app on lower-end Android
+              devices.
+            </li>
+          </ul>
+          <h3 data-i18n="yotaxi-sentry-improvements-h3">Improvements Driven by Sentry Data</h3>
+          <ul data-i18n-html="yotaxi-sentry-improvements-ul">
+            <li>Fixed a driver-matching freeze on iOS that reduced the crash rate by 40%.</li>
+            <li>Redesigned the Android waiting screen after identifying high cancellation drop-off at that step.</li>
+            <li>Resolved a background process bug on Android causing premature session termination.</li>
+            <li>Prioritized accessibility fixes on Android after Sentry revealed higher error rates for users with screen
+              readers enabled.</li>
+          </ul>
+        </section>
         <br>
         <a href="https://apps.apple.com/gt/app/yotaxi-of-sf/id6504701475?l=en-GB" target="_blank">
           <button class="button-secondary" id="project-details-inner-button" data-i18n="yotaxi-btn-appstore">View In App
