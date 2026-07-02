@@ -152,7 +152,7 @@
             class="overlay"></div><img
             style="-webkit-transform:translate3d(0, 0, 0) scale3d(1.26, 1.26, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1.26, 1.26, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1.26, 1.26, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1.26, 1.26, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
             src="./images/project-cover-gflow-rebrand.png" alt="Image of GFlow Rebrand" class="bg-image"
-            id="project-cover">
+            id="project-cover" data-light-src="./images/project-cover-gflow-rebrand.png" data-dark-src="./images/project-cover-gflow-rebrand-dark.png">
           <!--<a data-w-id="648427ad-7c5f-693c-a567-fe8be4140a79" style="opacity:0" href="https://www.uxrodrigo.com/detail_project_gummies_mockup.html" class="work-link-button w-inline-block"></a>-->
         </div>
         <div class="work-intro">
@@ -341,6 +341,10 @@
         var langIcon = document.getElementById('lang-toggle-icon');
         if (langIcon) {
           langIcon.src = isDark ? 'images/language-dark.svg' : 'images/language.svg';
+        }
+        var cover = document.getElementById('project-cover');
+        if (cover) {
+          cover.src = isDark ? cover.getAttribute('data-dark-src') : cover.getAttribute('data-light-src');
         }
       }
 

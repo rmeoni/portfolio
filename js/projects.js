@@ -180,6 +180,7 @@ const projects = {
         description_es: 'Una empresa fintech sin fines de lucro en Guatemala con más de 4,000 empleados necesitaba apoyo para rediseñar la marca de una de sus apps internas de gestión de préstamos. La app había acumulado numerosos problemas de usabilidad, y dado que ya trabajábamos en un rediseño UX, aprovechamos la oportunidad para darle un aspecto fresco y moderno.',
         link: './detail_project_gflow_rebrand.html',
         image: './images/portfolio-thumb-28.png',
+        image_dark: './images/portfolio-thumb-28-dark.png',
         buttonText: 'View Project',
         buttonText_es: 'Ver Proyecto',
         target: "_self"
@@ -192,6 +193,7 @@ const projects = {
         description_es: 'El detallado logo de Wind Hill Growers se veía borroso en pantallas pequeñas, haciendo que la marca fuera menos reconocible. La solución fue crear una versión simplificada para pantallas pequeñas, conservando el original para pantallas grandes e impresión, garantizando tanto la funcionalidad como la coherencia de la marca.',
         link: './detail_project_whg_rebrand.html',
         image: './images/portfolio-thumb-19.png',
+        image_dark: './images/portfolio-thumb-19-dark.png',
         buttonText: 'View Project',
         buttonText_es: 'Ver Proyecto',
         target: "_self"
