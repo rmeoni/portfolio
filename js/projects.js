@@ -248,6 +248,25 @@ const projects = {
         buttonText: 'Read more',
         buttonText_es: 'Leer más',
         target: "_self"
+    },
+    ixdf_meet4: {
+        title: 'Interaction Design Foundation (IxDF) Guatemala City Meet #4: The Accessibility Challenge in Guatemala',
+        title_es: 'Interaction Design Foundation (IxDF) Guatemala City Meet #4: El Reto de la Accesibilidad en Guatemala',
+        category: 'Masterclasses',
+        description: 'Diseñar para más de 25 culturas: el reto de la accesibilidad en Guatemala - Masterclass Virtual por Rodrigo Meoño. Senior UX Developer with over 12 years of experience in Tech.',
+        description_es: 'Diseñar para más de 25 culturas: el reto de la accesibilidad en Guatemala - Masterclass Virtual por Rodrigo Meoño. Senior UX Developer con más de 12 años de experiencia en Tecnología.',
+        link: './videos/ixdf-meet-4/',
+        image: './images/portfolio-thumb-29.png',
+        image_dark: './images/portfolio-thumb-29-dark.png',
+        buttonText: 'Watch Video',
+        buttonText_es: 'Ver Video',
+        target: "_self",
+        video: {
+            src: './videos/ixdf-meet-4/ixdf-meet-4-espanol.mp4',
+            vtt: './videos/ixdf-meet-4/ixdf-meet-4-espanol.vtt',
+            lang: 'es',
+            label: 'Español'
+        }
     }
 }
 
@@ -276,10 +295,17 @@ const renderProjects = (projects, category) => {
         const imgSrc = isDark && data.image_dark ? data.image_dark : data.image;
         const imgDark = data.image_dark || data.image;
 
+        const linkHref = data.video ? '#' : data.link;
+        const linkTarget = data.video ? '' : ` target="${data.target}"`;
+        const linkClass = data.video ? ' project-video-trigger' : '';
+        const videoData = data.video
+            ? ` data-video-src="${data.video.src}" data-video-vtt="${data.video.vtt || ''}" data-video-lang="${data.video.lang || ''}" data-video-label="${data.video.label || ''}"`
+            : '';
+
         const project = document.createElement('div');
         project.className = `projects ${category}`;
         project.innerHTML = `
-      <a href="${data.link}" target="${data.target}" class="work-card-preview w-inline-block">
+      <a href="${linkHref}"${linkTarget} class="work-card-preview w-inline-block${linkClass}"${videoData}>
         <div class="card-hover-circle"></div>
         <div class="overlay" style="display: none; transform: translate3d(150%, -150%, 0px) scale3d(2, 2, 1);"></div>
         <img src="${imgSrc}" data-light-src="${data.image}" data-dark-src="${imgDark}" alt="" class="bg-image absolute">
@@ -288,7 +314,7 @@ const renderProjects = (projects, category) => {
       <div class="work-card-description">
         <p>${description}</p>
       </div>
-      <a href="${data.link}" target="${data.target}" class="button-secondary">
+      <a href="${linkHref}"${linkTarget} class="button-secondary${linkClass}"${videoData}>
         ${buttonText}
       </a>
     `;

@@ -241,7 +241,8 @@ video {
 /* End of Carousel CSS */
 
 /* Start of Video Pop-up styles */
-#video-overlay {
+#video-overlay,
+.video-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -254,14 +255,16 @@ video {
   z-index: 1000;
 }
 
-#video-container {
+#video-container,
+.video-popup-container {
   max-width: 90%;
   max-height: 90%;
   padding: 1em;
   border-radius: 8px;
 }
 
-#video-container video {
+#video-container video,
+.video-popup-container video {
   width: 100%;
   height: auto;
 }
@@ -270,7 +273,8 @@ video {
   display: none !important;
 }
 
-#close-video-overlay {
+#close-video-overlay,
+.video-popup-close {
   position: absolute;
   top: 0px;
   right: 24px;
@@ -866,12 +870,14 @@ video {
 /* ==============================================
    DARK MODE — VIDEO OVERLAY
    ============================================== */
-[data-theme="dark"] #video-container {
+[data-theme="dark"] #video-container,
+[data-theme="dark"] .video-popup-container {
   background-color: #111;
 }
 
 [data-theme="dark"] #close-video-overlay,
-[data-theme="dark"] #close-overlay {
+[data-theme="dark"] #close-overlay,
+[data-theme="dark"] .video-popup-close {
   background-color: #1a1a1a;
   color: #e8e8e8;
 }

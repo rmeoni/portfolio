@@ -272,6 +272,8 @@
 
           <button onclick="renderProjects(projects, 'Branding')" class="tag-badge" id="javascript-btn">Branding</button>
 
+          <button onclick="renderProjects(projects, 'Masterclasses')" class="tag-badge" id="javascript-btn">Masterclasses</button>
+
         </div>
       </div>
       <div class="wrapper">
@@ -896,6 +898,19 @@
   </div>
   <!-- End of About Me Video Pop-up -->
 
+  <!-- Project Video Pop-up (generic, used by portfolio grid items) -->
+  <div id="project-video-overlay" class="video-overlay hidden">
+    <div class="video-popup-container">
+      <video id="project-video-player" controls playsinline>
+        <source id="project-video-source" src="" type="video/mp4">
+        <track id="project-video-track" kind="subtitles" default>
+        Your browser does not support the video tag.
+      </video>
+      <button class="button-secondary video-popup-close" id="close-project-video-overlay">X Close</button>
+    </div>
+  </div>
+  <!-- End of Project Video Pop-up -->
+
   <!-- Dark mode toggle -->
   <script>
     (function () {
@@ -954,6 +969,7 @@
   <script src="js/i18n.js"></script>
   <!-- script for video Pop-up -->
   <script src="js/video-popup.js"></script>
+  <script src="js/project-video-popup.js"></script>
 
   <!-- Contact form handler -->
   <script>
