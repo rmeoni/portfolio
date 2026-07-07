@@ -262,10 +262,8 @@ const projects = {
         buttonText_es: 'Ver Video',
         target: "_self",
         video: {
-            src: './videos/ixdf-meet-4/ixdf-meet-4-espanol.mp4',
-            vtt: './videos/ixdf-meet-4/ixdf-meet-4-espanol.vtt',
-            lang: 'es',
-            label: 'Español'
+            embed: 'https://player.vimeo.com/video/1207583663?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1',
+            title: 'IxDF Guatemala City Meet #4: The Accessibility Challenge in Guatemala - Masterclass by Rodrigo Meoño'
         }
     }
 }
@@ -299,7 +297,7 @@ const renderProjects = (projects, category) => {
         const linkTarget = data.video ? '' : ` target="${data.target}"`;
         const linkClass = data.video ? ' project-video-trigger' : '';
         const videoData = data.video
-            ? ` data-video-src="${data.video.src}" data-video-vtt="${data.video.vtt || ''}" data-video-lang="${data.video.lang || ''}" data-video-label="${data.video.label || ''}"`
+            ? ` data-video-embed="${data.video.embed}" data-video-title="${data.video.title || ''}"`
             : '';
 
         const project = document.createElement('div');

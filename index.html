@@ -901,11 +901,11 @@
   <!-- Project Video Pop-up (generic, used by portfolio grid items) -->
   <div id="project-video-overlay" class="video-overlay hidden">
     <div class="video-popup-container">
-      <video id="project-video-player" controls playsinline>
-        <source id="project-video-source" src="" type="video/mp4">
-        <track id="project-video-track" kind="subtitles" default>
-        Your browser does not support the video tag.
-      </video>
+      <div class="video-popup-embed-wrapper">
+        <iframe id="project-video-iframe" src="" frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          allowfullscreen></iframe>
+      </div>
       <button class="button-secondary video-popup-close" id="close-project-video-overlay">X Close</button>
     </div>
   </div>
