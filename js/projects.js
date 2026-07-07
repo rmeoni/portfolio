@@ -250,8 +250,8 @@ const projects = {
         target: "_self"
     },
     ixdf_meet4: {
-        title: 'Interaction Design Foundation (IxDF) Guatemala City Meet #4: The Accessibility Challenge in Guatemala',
-        title_es: 'Interaction Design Foundation (IxDF) Guatemala City Meet #4: El Reto de la Accesibilidad en Guatemala',
+        title: 'Interaction Design Foundation (IxDF) Guatemala City Meet #4: The Accessibility Challenge in Guatemala - Masterclass by Rodrigo Meoño',
+        title_es: 'Interaction Design Foundation (IxDF) Guatemala City Meet #4: El Reto de la Accesibilidad en Guatemala - Masterclass por Rodrigo Meoño',
         category: 'Masterclasses',
         description: 'Designing for more than 25 cultures: the accessibility challenge in Guatemala - Virtual Masterclass by Rodrigo Meoño, Senior UX Developer with over 12 years of experience in Tech.',
         description_es: 'Diseñar para más de 25 culturas: el reto de la accesibilidad en Guatemala - Masterclass Virtual por Rodrigo Meoño, Senior UX Developer con más de 12 años de experiencia en Tecnología.',
