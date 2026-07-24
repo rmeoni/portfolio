@@ -105,6 +105,7 @@ const projects = {
         buttonText_es: 'Ver Caso de Estudio',
         target: "_self"
     },
+    /* 
      windhillgrowers: {
         title: "Wind Hill Growers UI Design",
         title_es: "Diseño UI para Wind Hill Growers",
@@ -118,6 +119,7 @@ const projects = {
         buttonText_es: 'Ver Caso de Estudio',
         target: "_self"
     },
+    */
     mwd: {
         title: 'Mit Was Drin UI/UX Design',
         title_es: 'Mit Was Drin: Diseño UI/UX',
