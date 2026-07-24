@@ -272,6 +272,8 @@
 
           <button onclick="renderProjects(projects, 'Branding')" class="tag-badge" id="javascript-btn">Branding</button>
 
+          <button onclick="renderProjects(projects, 'Masterclasses')" class="tag-badge" id="javascript-btn">Masterclasses</button>
+
         </div>
       </div>
       <div class="wrapper">
@@ -896,6 +898,19 @@
   </div>
   <!-- End of About Me Video Pop-up -->
 
+  <!-- Project Video Pop-up (generic, used by portfolio grid items) -->
+  <div id="project-video-overlay" class="video-overlay hidden">
+    <div class="video-popup-container">
+      <div class="video-popup-embed-wrapper">
+        <iframe id="project-video-iframe" src="" frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          allowfullscreen></iframe>
+      </div>
+      <button class="button-secondary video-popup-close" id="close-project-video-overlay">X Close</button>
+    </div>
+  </div>
+  <!-- End of Project Video Pop-up -->
+
   <!-- Dark mode toggle -->
   <script>
     (function () {
@@ -954,6 +969,7 @@
   <script src="js/i18n.js"></script>
   <!-- script for video Pop-up -->
   <script src="js/video-popup.js"></script>
+  <script src="js/project-video-popup.js"></script>
 
   <!-- Contact form handler -->
   <script>
