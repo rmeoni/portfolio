@@ -1,59 +1,68 @@
-document.addEventListener('DOMContentLoaded', function () {
-  if (typeof projects === 'undefined') return;
+(function () {
+  var CURRENT_SCRIPT = document.currentScript;
+  var BASE_PATH = CURRENT_SCRIPT ? CURRENT_SCRIPT.src.replace(/js\/project-nav\.js(?:\?.*)?$/, '') : '';
 
-  // Order comes directly from the projects object — no separate array to maintain
-  const projectOrder = Object.keys(projects);
-  const currentFile = window.location.pathname.split('/').pop();
-  const currentKey = projectOrder.find(key => projects[key].link.includes(currentFile));
-  const currentIndex = projectOrder.indexOf(currentKey);
+  function resolveAsset(path) {
+    return BASE_PATH + path.replace(/^\.\//, '');
+  }
 
-  if (currentIndex === -1) return;
+  document.addEventListener('DOMContentLoaded', function () {
+    if (typeof projects === 'undefined') return;
 
-  // Wrap around: last project loops back to first, first loops back to last
-  const prevIndex = (currentIndex - 1 + projectOrder.length) % projectOrder.length;
-  const nextIndex = (currentIndex + 1) % projectOrder.length;
+    // Order comes directly from the projects object — no separate array to maintain
+    const projectOrder = Object.keys(projects);
+    const currentFile = window.location.pathname.split('/').pop();
+    const currentKey = projectOrder.find(key => projects[key].link.includes(currentFile));
+    const currentIndex = projectOrder.indexOf(currentKey);
 
-  const prevProject = projects[projectOrder[prevIndex]];
-  const nextProject = projects[projectOrder[nextIndex]];
+    if (currentIndex === -1) return;
 
-  const projectNav = document.getElementById('project-nav');
-  if (!projectNav) return;
+    // Wrap around: last project loops back to first, first loops back to last
+    const prevIndex = (currentIndex - 1 + projectOrder.length) % projectOrder.length;
+    const nextIndex = (currentIndex + 1) % projectOrder.length;
 
-  projectNav.innerHTML = `
-    <div class="section no-padding-top wf-section">
-      <div class="wrapper">
-        <div class="work-nav">
-          <a id="work-nav-prev" href="${prevProject.link}" class="work-nav-link w-inline-block">
-            <div class="work-nav-preview">
-              <div class="work-nav-hover">
-                <div class="w-icon-slider-left"></div>
+    const prevProject = projects[projectOrder[prevIndex]];
+    const nextProject = projects[projectOrder[nextIndex]];
+
+    const projectNav = document.getElementById('project-nav');
+    if (!projectNav) return;
+
+    projectNav.innerHTML = `
+      <div class="section no-padding-top wf-section">
+        <div class="wrapper">
+          <div class="work-nav">
+            <a id="work-nav-prev" href="${resolveAsset(prevProject.link)}" class="work-nav-link w-inline-block">
+              <div class="work-nav-preview">
+                <div class="work-nav-hover">
+                  <div class="w-icon-slider-left"></div>
+                </div>
+                <img src="${resolveAsset(prevProject.image)}" alt="${prevProject.title}" class="work-nav-image">
               </div>
-              <img src="${prevProject.image}" alt="${prevProject.title}" class="work-nav-image">
-            </div>
-            <div class="work-nav-info">
-              <div class="work-nav-text">Previous</div>
-              <h3 class="work-nav-name">${prevProject.title}</h3>
-            </div>
-          </a>
-          <a id="work-nav-center" href="./index.html#portfolio-sec" class="work-nav-button w-inline-block">
-            <div class="circle"><img src="images/portfolio-dots-white.svg" alt="" class="work-nav-icon"></div>
-            <div class="circle-wave-1"></div>
-            <div class="circle-wave-2"></div>
-          </a>
-          <a id="work-nav-next" href="${nextProject.link}" class="work-nav-link right w-inline-block">
-            <div class="work-nav-info">
-              <div class="work-nav-text">Next</div>
-              <h3 class="work-nav-name">${nextProject.title}</h3>
-            </div>
-            <div class="work-nav-preview">
-              <div class="work-nav-hover">
-                <div class="w-icon-slider-right"></div>
+              <div class="work-nav-info">
+                <div class="work-nav-text">Previous</div>
+                <h3 class="work-nav-name">${prevProject.title}</h3>
               </div>
-              <img src="${nextProject.image}" alt="${nextProject.title}" class="work-nav-image">
-            </div>
-          </a>
+            </a>
+            <a id="work-nav-center" href="${BASE_PATH}index.html#portfolio-sec" class="work-nav-button w-inline-block">
+              <div class="circle"><img src="${resolveAsset('images/portfolio-dots-white.svg')}" alt="" class="work-nav-icon"></div>
+              <div class="circle-wave-1"></div>
+              <div class="circle-wave-2"></div>
+            </a>
+            <a id="work-nav-next" href="${resolveAsset(nextProject.link)}" class="work-nav-link right w-inline-block">
+              <div class="work-nav-info">
+                <div class="work-nav-text">Next</div>
+                <h3 class="work-nav-name">${nextProject.title}</h3>
+              </div>
+              <div class="work-nav-preview">
+                <div class="work-nav-hover">
+                  <div class="w-icon-slider-right"></div>
+                </div>
+                <img src="${resolveAsset(nextProject.image)}" alt="${nextProject.title}" class="work-nav-image">
+              </div>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  `;
-});
+    `;
+  });
+})();

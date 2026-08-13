@@ -257,7 +257,7 @@ const projects = {
         category: 'Masterclasses',
         description: 'Designing for more than 25 cultures: the accessibility challenge in Guatemala - Virtual Masterclass by Rodrigo Meoño, Senior UX Developer with over 12 years of experience in Tech.',
         description_es: 'Diseñar para más de 25 culturas: el reto de la accesibilidad en Guatemala - Masterclass Virtual por Rodrigo Meoño, Senior UX Developer con más de 12 años de experiencia en Tecnología.',
-        link: './videos/ixdf-meet-4/',
+        link: './videos/ixdf-meet-4/index.html',
         image: './images/portfolio-thumb-29.png',
         image_dark: './images/portfolio-thumb-29-dark.png',
         buttonText: 'Watch Video',

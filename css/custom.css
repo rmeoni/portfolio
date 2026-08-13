@@ -715,6 +715,13 @@ video {
   flex-wrap: wrap;
 }
 
+/* ==============================================
+   DARK MODE — WORK/PROJECT TITLE
+   ============================================== */
+[data-theme="dark"] .work-decription {
+  color: #e8e8e8;
+}
+
 .tag-badge {
   display: inline-block;
   padding: 4px 12px;
