@@ -718,7 +718,8 @@ video {
 /* ==============================================
    DARK MODE — WORK/PROJECT TITLE
    ============================================== */
-[data-theme="dark"] .work-decription {
+[data-theme="dark"] .work-decription,
+[data-theme="dark"] .work-block-info {
   color: #e8e8e8;
 }
 
