@@ -13,6 +13,19 @@ const projects = {
         target: "_self"
     },
     */
+    n2: {
+        title: 'N2 Medical Billing Platform: UX Design',
+        title_es: 'N2 Plataforma de Facturación Médica: Diseño UX',
+        category: 'UX Design',
+        description: 'N2 is a centralized billing and claims platform for the medical industry, built for Non-Emergency Medical Transportation (NEMT/NMT) providers. Over 8 months, I led the UX Design of the platform and the UI Design of its landing page using Design Thinking — mapping the medical billing workflow, running a competitive audit of the NEMT market, and prototyping a single place to correct, reconcile, submit, and track claims. Client details are kept confidential.',
+        description_es: 'N2 es una plataforma centralizada de facturación y reclamos para la industria médica, creada para proveedores de Transporte Médico No Urgente (NEMT/NMT). Durante 8 meses lideré el Diseño UX de la plataforma y el Diseño UI de su landing page con Design Thinking — mapeando el flujo de facturación médica, realizando una auditoría competitiva del mercado NEMT y prototipando un solo lugar para corregir, conciliar, enviar y dar seguimiento a reclamos. Los detalles del cliente se mantienen confidenciales.',
+        link: './detail_project_n2.html',
+        image: 'images/portfolio-thumb-30.png',
+        image_dark: 'images/portfolio-thumb-30-dark.png',
+        buttonText: 'View Case Study',
+        buttonText_es: 'Ver Caso de Estudio',
+        target: '_self'
+    },
     yotaxi: {
         title: 'YoTaxi of SF App: UX Design',
         title_es: 'YoTaxi de SF App: Diseño UX',
