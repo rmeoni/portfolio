@@ -153,10 +153,10 @@
 
       /* ── N2 ── */
       'n2-title': "N2 Medical Billing Platform: UX Design",
-      'n2-client': "Confidential · Medical Industry (NEMT)",
+      'n2-client': "IQBC · Medical Industry (NEMT)",
       'n2-duration': "8 Months",
       'n2-intro': "N2 is a centralized billing and claims platform designed for the medical industry — specifically for Non-Emergency Medical Transportation (NEMT/NMT) providers that bill health plans for every patient trip. Over 8 months, I led the UX Design of the N2 platform and the UI Design of its marketing landing page, applying the Design Thinking methodology to turn a fragmented, spreadsheet-heavy medical billing workflow into a single, guided process — from dispatch to final payment.",
-      'n2-confidential': "This project is under a confidentiality agreement. The client's name, partner systems, account numbers, and any personal data have been anonymized or blurred. All patient and claim data shown is fictional.",
+      'n2-confidential': "This project is under a confidentiality agreement. Partner systems, account numbers, and any personal data have been anonymized or blurred. All patient and claim data shown is fictional.",
       'n2-problem-p': "In the medical industry, every NEMT trip becomes a claim that has to be corrected, reconciled, submitted, and paid. The client's billing team relied on five disconnected tools — dispatch systems, healthcare provider records, a clearinghouse, health plan portals, and spreadsheets — to close a single trip. Data had to be exported, cleaned, and matched by hand every week, which led to mismatches, rework, missed underpayments, and very little visibility into claim status.",
       'n2-goal-p': "Design a single source of truth for medical billing that lets claims and accounting teams correct, validate, reconcile, and submit claims in one place — reducing mismatches and rework, surfacing payment discrepancies automatically, and improving payment accuracy for a medical transportation provider. In parallel, design a landing page that clearly communicates N2's value to the NEMT market.",
       'n2-role-p': "Lead UX Designer for the N2 platform and UI Designer for the N2 landing page. The scope of this engagement was research and design; development was not part of this phase.",
@@ -543,10 +543,10 @@
 
       /* ── N2 ── */
       'n2-title': "N2 Plataforma de Facturación Médica: Diseño UX",
-      'n2-client': "Confidencial · Industria Médica (NEMT)",
+      'n2-client': "IQBC · Industria Médica (NEMT)",
       'n2-duration': "8 Meses",
       'n2-intro': "N2 es una plataforma centralizada de facturación y reclamos diseñada para la industria médica — específicamente para proveedores de Transporte Médico No Urgente (NEMT/NMT) que facturan a los planes de salud cada viaje de pacientes. Durante 8 meses lideré el Diseño UX de la plataforma N2 y el Diseño UI de su landing page, aplicando la metodología de Design Thinking para transformar un flujo de facturación médica fragmentado y dependiente de hojas de cálculo en un proceso único y guiado — desde el despacho hasta el pago final.",
-      'n2-confidential': "Este proyecto está bajo un acuerdo de confidencialidad. El nombre del cliente, los sistemas asociados, los números de cuenta y cualquier dato personal han sido anonimizados o difuminados. Todos los datos de pacientes y reclamos mostrados son ficticios.",
+      'n2-confidential': "Este proyecto está bajo un acuerdo de confidencialidad. Los sistemas asociados, los números de cuenta y cualquier dato personal han sido anonimizados o difuminados. Todos los datos de pacientes y reclamos mostrados son ficticios.",
       'n2-problem-p': "En la industria médica, cada viaje NEMT se convierte en un reclamo que debe corregirse, conciliarse, enviarse y pagarse. El equipo de facturación del cliente dependía de cinco herramientas desconectadas — sistemas de despacho, registros de proveedores de salud, un clearinghouse, portales de planes de salud y hojas de cálculo — para cerrar un solo viaje. Cada semana los datos debían exportarse, limpiarse y cruzarse a mano, lo que generaba discrepancias, retrabajo, pagos incompletos sin detectar y muy poca visibilidad del estado de los reclamos.",
       'n2-goal-p': "Diseñar una única fuente de verdad para la facturación médica que permita a los equipos de reclamos y contabilidad corregir, validar, conciliar y enviar reclamos en un solo lugar — reduciendo discrepancias y retrabajo, detectando automáticamente diferencias en los pagos y mejorando la precisión de los pagos para un proveedor de transporte médico. En paralelo, diseñar una landing page que comunique claramente el valor de N2 al mercado NEMT.",
       'n2-role-p': "Diseñador UX Líder de la plataforma N2 y Diseñador UI de la landing page de N2. El alcance de este proyecto fue investigación y diseño; el desarrollo no formó parte de esta fase.",
