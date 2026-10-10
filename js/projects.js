@@ -275,11 +275,7 @@ const projects = {
         image_dark: './images/portfolio-thumb-29-dark.png',
         buttonText: 'Watch Video',
         buttonText_es: 'Ver Video',
-        target: "_self",
-        video: {
-            embed: 'https://player.vimeo.com/video/1207583663?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1',
-            title: 'IxDF Guatemala City Meet #4: The Accessibility Challenge in Guatemala - Masterclass by Rodrigo Meoño'
-        }
+        target: "_self"
     }
 }
 
