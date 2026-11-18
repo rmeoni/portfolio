@@ -1,0 +1,137 @@
+/* ── Story World: scroll-driven 3D section (index.html #story-sec, js/story-world.js) ──
+   Everything is scoped to .story-world so it can't leak into the rest of the site.
+   Colors are tokens that flip with the site's [data-theme="dark"]; the 3D lighting
+   flips in js/story-world.js. Typography follows the site's h2 / body / .text-label. */
+
+.story-world {
+  --sw-title: #162971;
+  --sw-body: #3C4F8B;
+  --sw-kicker: #f96a4c;
+  --sw-accent: #F86348;
+  --sw-track: #CAD0E1;
+  --sw-hint: #3C4F8B;
+  --sw-bg: #fff;
+  --sw-view: #fff;
+  --sw-fade-rgb: 255, 255, 255;
+  --sw-chip-bg: #fff;
+  --sw-chip-fg: #162971;
+  --sw-chip-dot: #6877A7;
+  --sw-chip-muted: #6877A7;
+  --sw-chip-shadow: 0 6px 18px rgba(22,41,113,0.14);
+
+  position: relative;
+  /* JS sets the exact height on load; this matches it to avoid a layout jump */
+  height: calc(9954px + 100vh);
+  background: var(--sw-bg);
+  color: var(--sw-body);
+}
+
+[data-theme="dark"] .story-world {
+  --sw-title: #fff;
+  --sw-body: #b4bbcf;
+  --sw-track: #2a3150;
+  --sw-hint: #b4bbcf;
+  --sw-bg: #000;
+  --sw-view: #000;
+  --sw-fade-rgb: 0, 0, 0;
+  --sw-chip-bg: #161B30;
+  --sw-chip-fg: #fff;
+  --sw-chip-dot: #97A3C3;
+  --sw-chip-muted: #97A3C3;
+  --sw-chip-shadow: 0 6px 18px rgba(0,0,0,0.5);
+}
+
+.story-world .sw-sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100svh;
+  overflow: hidden;
+}
+
+.story-world .sw-view {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: var(--sw-view);
+  transition: background 0.3s ease;
+}
+
+.story-world .sw-stage canvas { position: absolute; inset: 0; display: block; }
+
+.story-world .sw-fade {
+  position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(90deg,
+    rgba(var(--sw-fade-rgb), 0.97) 0%,
+    rgba(var(--sw-fade-rgb), 0.9) 26%,
+    rgba(var(--sw-fade-rgb), 0) 46%);
+}
+
+/* floating 3D labels */
+.story-world .sw-labels { position: absolute; inset: 0; pointer-events: none; }
+.story-world .lbl {
+  position: absolute; left: 0; top: 0; white-space: nowrap;
+  background: var(--sw-chip-bg); color: var(--sw-chip-fg);
+  font-weight: 600; font-size: 13px; line-height: 16px;
+  padding: 7px 12px 7px 10px; border-radius: 999px;
+  box-shadow: var(--sw-chip-shadow);
+  display: flex; align-items: center; gap: 7px; opacity: 0;
+}
+.story-world .lbl i { width: 8px; height: 8px; border-radius: 50%; background: var(--sw-chip-dot); display: block; }
+.story-world .lbl.coral { background: var(--sw-accent); color: #fff; }
+.story-world .lbl.coral i { background: #fff; }
+.story-world .lbl.small { font-size: 11px; padding: 5px 10px; }
+.story-world .lbl.muted { color: var(--sw-chip-muted); }
+
+
+/* chapter copy — sizes come from the site's own h2 / body / .text-label rules */
+.story-world .sw-text { position: absolute; left: 96px; top: 0; bottom: 0; width: 480px; text-align: left; }
+.story-world .blk { position: absolute; top: 50%; transform: translateY(-46%); width: 100%; }
+.story-world .blk > * { opacity: 0; }
+.story-world .blk .k {
+  /* mirrors .text-label */
+  color: var(--sw-kicker); font-size: 11px; line-height: 16px; font-weight: 600;
+  letter-spacing: 0.8px; text-transform: uppercase; margin: 0 0 12px;
+}
+.story-world .blk h2 { color: var(--sw-title); margin: 0 0 16px; text-transform: none; }
+.story-world .blk p { color: var(--sw-body); margin: 0; }
+
+/* progress */
+.story-world .sw-footer {
+  position: absolute; left: 96px; right: 56px; bottom: 40px;
+  display: flex; align-items: center; gap: 22px;
+}
+.story-world .sw-counter {
+  font-size: 11px; line-height: 16px; font-weight: 600; letter-spacing: 0.8px;
+  color: var(--sw-title); width: 60px;
+}
+.story-world .sw-track { width: 220px; height: 3px; background: var(--sw-track); border-radius: 3px; overflow: hidden; }
+.story-world .sw-bar { height: 100%; background: var(--sw-accent); transform-origin: left; transform: scaleX(0); }
+
+.story-world .sw-hint {
+  position: absolute; left: 50%; bottom: 34px; transform: translateX(-50%);
+  width: 24px; height: 38px; border: 2px solid var(--sw-hint); border-radius: 14px;
+}
+.story-world .sw-hint::after {
+  content: ""; position: absolute; left: 50%; top: 7px; width: 4px; height: 8px;
+  margin-left: -2px; border-radius: 2px; background: var(--sw-accent);
+}
+
+@media (max-width: 991px) {
+  .story-world .sw-text { left: 56px; width: 420px; }
+  .story-world .sw-footer { left: 56px; }
+}
+
+@media (max-width: 900px) {
+  .story-world .sw-text { left: 24px; right: 24px; width: auto; top: auto; bottom: 90px; height: 40%; }
+  .story-world .blk { top: auto; bottom: 0; transform: none; }
+  .story-world .blk h2 { margin-bottom: 12px; }
+  .story-world .sw-fade {
+    background: linear-gradient(0deg,
+      rgba(var(--sw-fade-rgb), 0.97) 0%,
+      rgba(var(--sw-fade-rgb), 0.85) 42%,
+      rgba(var(--sw-fade-rgb), 0) 60%);
+  }
+  .story-world .sw-footer { left: 24px; }
+  .story-world .lbl { font-size: 11px; padding: 5px 9px; }
+}
