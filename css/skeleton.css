@@ -1,0 +1,153 @@
+/* ==============================================
+   SKELETON LOADING — image placeholders
+   The .img-skeleton class is added/removed by js/skeleton.js
+   while an image is still loading.
+   ============================================== */
+
+:root {
+  --skeleton-base: #e9ebee;
+  --skeleton-highlight: #f6f7f8;
+  --skeleton-line-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Crect y='15%25' width='100%25' height='70%25' rx='8' ry='8'/%3E%3C/svg%3E");
+}
+
+[data-theme="dark"] {
+  --skeleton-base: #1c1c1e;
+  --skeleton-highlight: #2c2c2e;
+}
+
+img.img-skeleton {
+  /* hide alt text / broken-image glyph while loading */
+  color: transparent;
+  /* push the image's own pixels out of view so the skeleton shows,
+     even when the image has already loaded from cache */
+  object-position: -99999px 0;
+  background-color: var(--skeleton-base);
+  background-image: linear-gradient(
+    100deg,
+    var(--skeleton-base) 20%,
+    var(--skeleton-highlight) 50%,
+    var(--skeleton-base) 80%
+  );
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  animation: img-skeleton-shimmer 1.4s ease-in-out infinite;
+}
+
+/* Icons that only define a height collapse to 0 width before load */
+img.img-skeleton.skill-big-icon,
+img.img-skeleton.service-icon {
+  aspect-ratio: 1 / 1;
+  min-width: 44px;
+  border-radius: 12px !important;
+}
+
+img.img-skeleton.service-icon {
+  min-width: 48px;
+}
+
+/* Logos are drawn square-cornered; soften the placeholder */
+img.img-skeleton.company-logo-img {
+  border-radius: 12px !important;
+}
+
+/* Profile photo: circular placeholder */
+img.img-skeleton.hero-v1-photo {
+  border-radius: 50% !important;
+}
+
+/* ----------------------------------------------
+   TEXT SKELETON
+   While html.skeleton-text-loading is set (js/skeleton.js), text in the
+   page sections is hidden and drawn as shimmering line bars instead.
+   The mask cuts the shimmer into one bar per line of text.
+   ---------------------------------------------- */
+html.skeleton-text-loading .wf-section:not(.footer-section) :is(h1, h2, h3, h4, h5, h6, p, li, figcaption, .hero-v1-text, .dynamic-text-wrapper, .skill-text, .text-label, .panel-service, .panel-text-label, .panel-email) {
+  color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
+  background-color: var(--skeleton-base);
+  background-image: linear-gradient(
+    100deg,
+    var(--skeleton-base) 20%,
+    var(--skeleton-highlight) 50%,
+    var(--skeleton-base) 80%
+  );
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  animation: img-skeleton-shimmer 1.4s ease-in-out infinite;
+  /* one rounded bar per line: a rounded-rect tile, one line-height tall */
+  -webkit-mask-image: var(--skeleton-line-mask);
+  mask-image: var(--skeleton-line-mask);
+  -webkit-mask-size: 100% 1lh;
+  mask-size: 100% 1lh;
+  -webkit-mask-repeat: repeat-y;
+  mask-repeat: repeat-y;
+  border-radius: 8px;
+}
+
+html.skeleton-text-loading .wf-section:not(.footer-section) :is(h1, h2, h3, h4, h5, h6, p, li, figcaption, .hero-v1-text, .dynamic-text-wrapper, .skill-text, .text-label, .panel-service, .panel-text-label, .panel-email) * {
+  color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+/* Category buttons under "Recent Works": whole pill becomes a skeleton */
+html.skeleton-text-loading #project-btns .tag-badge,
+html.skeleton-text-loading #project-btns .tag-badge:hover,
+html.skeleton-text-loading #project-btns .tag-badge:focus,
+html.skeleton-text-loading #project-btns .tag-badge.activeBtn {
+  color: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  background-color: var(--skeleton-base) !important;
+  background-image: linear-gradient(
+    100deg,
+    var(--skeleton-base) 20%,
+    var(--skeleton-highlight) 50%,
+    var(--skeleton-base) 80%
+  ) !important;
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  animation: img-skeleton-shimmer 1.4s ease-in-out infinite;
+  border-radius: 999px;
+  pointer-events: none;
+}
+
+/* Email icon in the contact panel: circle becomes a skeleton */
+html.skeleton-text-loading .panel-contact .circle {
+  border-radius: 50% !important;
+  background-color: var(--skeleton-base) !important;
+  background-image: linear-gradient(
+    100deg,
+    var(--skeleton-base) 20%,
+    var(--skeleton-highlight) 50%,
+    var(--skeleton-base) 80%
+  ) !important;
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  animation: img-skeleton-shimmer 1.4s ease-in-out infinite;
+}
+
+html.skeleton-text-loading .panel-contact .panel-contact-icon,
+html.skeleton-text-loading .panel-contact .circle-wave-1,
+html.skeleton-text-loading .panel-contact .circle-wave-2 {
+  visibility: hidden;
+}
+
+@keyframes img-skeleton-shimmer {
+  0%   { background-position: 100% 0; }
+  100% { background-position: -100% 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  img.img-skeleton,
+  html.skeleton-text-loading .panel-contact .circle,
+  html.skeleton-text-loading #project-btns .tag-badge,
+  html.skeleton-text-loading .wf-section:not(.footer-section) :is(h1, h2, h3, h4, h5, h6, p, li, figcaption, .hero-v1-text, .dynamic-text-wrapper, .skill-text, .text-label, .panel-service, .panel-text-label, .panel-email) {
+    animation: img-skeleton-pulse 1.6s ease-in-out infinite;
+    background-image: none !important;
+  }
+
+  @keyframes img-skeleton-pulse {
+    0%, 100% { opacity: 1; }
+    50%      { opacity: 0.6; }
+  }
+}
