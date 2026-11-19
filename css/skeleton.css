@@ -15,6 +15,14 @@
   --skeleton-highlight: #2c2c2e;
 }
 
+/* Webflow's "Preloader" interaction keeps .page-wrapper at opacity 0
+   until window load, which hid the skeletons on a first (uncached) visit.
+   Show the page immediately; the skeletons are the loading state now.
+   !important beats the inline opacity Webflow sets. */
+.page-wrapper {
+  opacity: 1 !important;
+}
+
 img.img-skeleton {
   /* hide alt text / broken-image glyph while loading */
   color: transparent;
