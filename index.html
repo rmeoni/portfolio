@@ -303,7 +303,7 @@
     <!-- portfolio section end-->
 
     <!-- story world section start (scroll animation: css/story-world.css, js/story-world.js) -->
-    <section class="story-world" id="story-sec" aria-label="My story, told as an interactive scroll animation">
+    <section class="story-world" id="story-sec" data-nav-offset="0" aria-label="My story, told as an interactive scroll animation">
       <div class="sw-sticky">
         <div class="sw-view">
           <div class="sw-stage" aria-hidden="true"></div>
@@ -361,6 +361,16 @@
             <div class="sw-track"><div class="sw-bar"></div></div>
           </div>
           <div class="sw-hint" aria-hidden="true"></div>
+          <div class="sw-controls">
+            <button type="button" class="sw-btn sw-play" aria-label="Play story" data-i18n-aria="story-play">
+              <svg class="i-play" viewBox="0 0 16 16" aria-hidden="true"><path d="M4.5 2.8v10.4a.6.6 0 0 0 .9.5l8.2-5.2a.6.6 0 0 0 0-1L5.4 2.3a.6.6 0 0 0-.9.5z"/></svg>
+              <svg class="i-pause" viewBox="0 0 16 16" aria-hidden="true"><rect x="3.5" y="2.5" width="3" height="11" rx=".8"/><rect x="9.5" y="2.5" width="3" height="11" rx=".8"/></svg>
+            </button>
+            <button type="button" class="sw-btn sw-skip" aria-label="Skip the story" data-i18n-aria="story-skip-aria">
+              <span data-i18n="story-skip">Skip</span>
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 3.2v9.6a.5.5 0 0 0 .8.4L9.5 8.4a.5.5 0 0 0 0-.8L3.3 2.8a.5.5 0 0 0-.8.4z"/><rect x="11" y="2.8" width="2.4" height="10.4" rx=".7"/></svg>
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -1044,6 +1054,8 @@
   <script src="js/projects.js"></script>
   <script src="js/button-active.js"></script>
   <script src="js/i18n.js"></script>
+  <script src="js/smooth-nav.js"></script>
+  <script src="js/story-controls.js"></script>
   <script>
     // Lazy-load the story-world animation (bundles three.js) when its section gets close
     (function () {
@@ -1057,7 +1069,12 @@
         sc.src = 'js/story-world.js';
         document.body.appendChild(sc);
       }
+      window.__swPreload = load;
       if (!('IntersectionObserver' in window)) return load();
+      // Also load once the page is idle, so a nav jump never waits on it mid-scroll
+      addEventListener('load', function () {
+        (window.requestIdleCallback || function (f) { setTimeout(f, 1500); })(load, { timeout: 4000 });
+      });
       var io = new IntersectionObserver(function (entries) {
         if (entries[0].isIntersecting) { io.disconnect(); load(); }
       }, { rootMargin: '1500px 0px' });

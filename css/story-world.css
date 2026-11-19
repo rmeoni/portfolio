@@ -135,3 +135,39 @@
   .story-world .sw-footer { left: 24px; }
   .story-world .lbl { font-size: 11px; padding: 5px 9px; }
 }
+
+/* play / pause / skip */
+.story-world .sw-controls {
+  /* right: clears the site's fixed back-to-top button (44px at right 12px) */
+  position: absolute; right: 72px; bottom: 32px;
+  display: flex; align-items: center; gap: 8px;
+}
+.story-world .sw-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  height: 36px; min-width: 36px; padding: 0; border: 0; border-radius: 999px;
+  background: var(--sw-chip-bg); color: var(--sw-title);
+  box-shadow: var(--sw-chip-shadow); cursor: pointer;
+  font: inherit; font-size: 11px; line-height: 16px; font-weight: 600;
+  letter-spacing: 0.8px; text-transform: uppercase;
+  transition: transform 0.15s ease, background 0.3s ease, color 0.3s ease;
+}
+.story-world .sw-btn:hover { transform: translateY(-1px); }
+.story-world .sw-btn:focus-visible { outline: 2px solid var(--sw-accent); outline-offset: 2px; }
+.story-world .sw-btn svg { width: 14px; height: 14px; fill: currentColor; display: block; }
+.story-world .sw-skip { padding: 0 14px 0 16px; }
+.story-world .sw-play { background: var(--sw-accent); color: #fff; }
+.story-world .sw-play .i-pause,
+.story-world.sw-playing .sw-play .i-play { display: none; }
+.story-world.sw-playing .sw-play .i-pause { display: block; }
+
+@media (max-width: 900px) {
+  .story-world .sw-controls { bottom: 30px; }
+  .story-world .sw-footer { right: auto; gap: 14px; }
+  .story-world .sw-track { width: 96px; }
+  .story-world .sw-hint { display: none; }
+}
+
+/* the back-to-top button is hidden from 767px down */
+@media (max-width: 767px) {
+  .story-world .sw-controls { right: 24px; }
+}
