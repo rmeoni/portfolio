@@ -151,7 +151,7 @@ html.skeleton-nav-loading .navbar .nav-button,
 html.skeleton-nav-loading .navbar .nav-mobile-cv,
 html.skeleton-nav-loading .navbar .dark-mode-toggle,
 html.skeleton-nav-loading .navbar .lang-toggle,
-html.skeleton-nav-loading .navbar .menu-button {
+html.skeleton-nav-loading .navbar .menu-button .menu-icon {
   color: transparent !important;
   -webkit-text-fill-color: transparent !important;
   border-color: transparent !important;
@@ -182,7 +182,7 @@ html.skeleton-nav-loading .navbar .nav-button,
 html.skeleton-nav-loading .navbar .nav-mobile-cv,
 html.skeleton-nav-loading .navbar .dark-mode-toggle,
 html.skeleton-nav-loading .navbar .lang-toggle,
-html.skeleton-nav-loading .navbar .menu-button {
+html.skeleton-nav-loading .navbar .menu-button .menu-icon {
   border-radius: 999px !important;
 }
 
@@ -190,8 +190,19 @@ html.skeleton-nav-loading .navbar .menu-button {
 html.skeleton-nav-loading .navbar .nav-link .hover-line,
 html.skeleton-nav-loading .navbar .dark-mode-toggle > *,
 html.skeleton-nav-loading .navbar .lang-toggle > *,
-html.skeleton-nav-loading .navbar .menu-button > * {
+html.skeleton-nav-loading .navbar .menu-button .menu-icon > * {
   visibility: hidden;
+}
+
+/* The hamburger icon is only 20px wide: pad it out sideways (negative
+   margins cancel the padding so nothing shifts) so it reads as a pill */
+html.skeleton-nav-loading .navbar .menu-button .menu-icon {
+  box-sizing: border-box;
+  width: 40px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  margin-left: -10px !important;
+  margin-right: -10px !important;
 }
 
 @keyframes img-skeleton-shimmer {
@@ -207,7 +218,7 @@ html.skeleton-nav-loading .navbar .menu-button > * {
   html.skeleton-nav-loading .navbar .nav-mobile-cv,
   html.skeleton-nav-loading .navbar .dark-mode-toggle,
   html.skeleton-nav-loading .navbar .lang-toggle,
-  html.skeleton-nav-loading .navbar .menu-button,
+  html.skeleton-nav-loading .navbar .menu-button .menu-icon,
   html.skeleton-text-loading .panel-contact .circle,
   html.skeleton-text-loading #project-btns .tag-badge,
   html.skeleton-text-loading .wf-section:not(.footer-section) :is(h1, h2, h3, h4, h5, h6, p, li, figcaption, .hero-v1-text, .dynamic-text-wrapper, .skill-text, .text-label, .panel-service, .panel-text-label, .panel-email) {

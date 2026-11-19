@@ -134,6 +134,13 @@
   }
   .story-world .sw-footer { left: 24px; }
   .story-world .lbl { font-size: 11px; padding: 5px 9px; }
+  /* On mobile the copy sits at the bottom, under the fade gradient. Floating
+     3D labels that drift into that area show through the fade as ghosted
+     text behind the headings, so fade the label layer out above the copy. */
+  .story-world .sw-labels {
+    -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 36%, transparent 46%);
+    mask-image: linear-gradient(to bottom, #000 0%, #000 36%, transparent 46%);
+  }
 }
 
 /* play / pause / skip */
