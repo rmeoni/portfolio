@@ -205,6 +205,15 @@ html.skeleton-nav-loading .navbar .menu-button .menu-icon {
   margin-right: -10px !important;
 }
 
+/* Small phones: the logo placeholder (200px) leaves no room, so shrink the
+   button pills visually (transform doesn't affect layout) to keep a gap */
+@media (max-width: 479px) {
+  html.skeleton-nav-loading .navbar .dark-mode-toggle,
+  html.skeleton-nav-loading .navbar .menu-button .menu-icon {
+    transform: scale(0.78);
+  }
+}
+
 @keyframes img-skeleton-shimmer {
   0%   { background-position: 100% 0; }
   100% { background-position: -100% 0; }
