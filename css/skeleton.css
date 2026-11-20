@@ -69,7 +69,7 @@ img.img-skeleton.hero-v1-photo {
    page sections is hidden and drawn as shimmering line bars instead.
    The mask cuts the shimmer into one bar per line of text.
    ---------------------------------------------- */
-html.skeleton-text-loading .wf-section:not(.footer-section) :is(h1, h2, h3, h4, h5, h6, p, li, figcaption, .hero-v1-text, .dynamic-text-wrapper, .skill-text, .text-label, .panel-service, .panel-text-label, .panel-email) {
+html.skeleton-text-loading .wf-section:not(.footer-section) :is(h1, h2, h3, h4, h5, h6, p, li, figcaption, .hero-v1-text, .dynamic-text-wrapper, .skill-text, .text-label, .panel-service, .panel-text-label, .panel-email, .work-decription, .work-block-info, .w-richtext, .breadcrumbs-link > div:first-child) {
   color: transparent !important;
   -webkit-text-fill-color: transparent !important;
   background-color: var(--skeleton-base);
@@ -92,12 +92,13 @@ html.skeleton-text-loading .wf-section:not(.footer-section) :is(h1, h2, h3, h4, 
   border-radius: 8px;
 }
 
-html.skeleton-text-loading .wf-section:not(.footer-section) :is(h1, h2, h3, h4, h5, h6, p, li, figcaption, .hero-v1-text, .dynamic-text-wrapper, .skill-text, .text-label, .panel-service, .panel-text-label, .panel-email) * {
+html.skeleton-text-loading .wf-section:not(.footer-section) :is(h1, h2, h3, h4, h5, h6, p, li, figcaption, .hero-v1-text, .dynamic-text-wrapper, .skill-text, .text-label, .panel-service, .panel-text-label, .panel-email, .work-decription, .work-block-info, .w-richtext, .breadcrumbs-link > div:first-child) * {
   color: transparent !important;
   -webkit-text-fill-color: transparent !important;
 }
 
 /* Category buttons under "Recent Works": whole pill becomes a skeleton */
+html.skeleton-text-loading .wf-section .tag-badge.job-badge,
 html.skeleton-text-loading #project-btns .tag-badge,
 html.skeleton-text-loading #project-btns .tag-badge:hover,
 html.skeleton-text-loading #project-btns .tag-badge:focus,
@@ -229,8 +230,9 @@ html.skeleton-nav-loading .navbar .menu-button .menu-icon {
   html.skeleton-nav-loading .navbar .lang-toggle,
   html.skeleton-nav-loading .navbar .menu-button .menu-icon,
   html.skeleton-text-loading .panel-contact .circle,
+  html.skeleton-text-loading .wf-section .tag-badge.job-badge,
   html.skeleton-text-loading #project-btns .tag-badge,
-  html.skeleton-text-loading .wf-section:not(.footer-section) :is(h1, h2, h3, h4, h5, h6, p, li, figcaption, .hero-v1-text, .dynamic-text-wrapper, .skill-text, .text-label, .panel-service, .panel-text-label, .panel-email) {
+  html.skeleton-text-loading .wf-section:not(.footer-section) :is(h1, h2, h3, h4, h5, h6, p, li, figcaption, .hero-v1-text, .dynamic-text-wrapper, .skill-text, .text-label, .panel-service, .panel-text-label, .panel-email, .work-decription, .work-block-info, .w-richtext, .breadcrumbs-link > div:first-child) {
     animation: img-skeleton-pulse 1.6s ease-in-out infinite;
     background-image: none !important;
   }

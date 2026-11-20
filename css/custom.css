@@ -562,7 +562,8 @@ video {
 
 /* Recent Works thumbnails: the reveal wipe overlay is white by default;
    match the dark page background instead */
-[data-theme="dark"] .work-card-preview .overlay {
+[data-theme="dark"] .work-card-preview .overlay,
+[data-theme="dark"] .work-main-preview .overlay {
   background-color: #000;
 }
 

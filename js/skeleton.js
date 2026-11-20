@@ -12,7 +12,9 @@
     '.instagram-preview img',
     '.skill-big-icon',
     '.service-icon',
-    '.company-logo-img'
+    '.company-logo-img',
+    // Project detail pages (and any other content image in a page section)
+    '.wf-section:not(.footer-section) img'
   ].join(',');
 
   function isLoaded(img) {
