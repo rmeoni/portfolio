@@ -25,7 +25,7 @@
     workerUrl: 'https://soft-hill-c327.silent-king-b9bb.workers.dev/',
     // Booking Worker URL, e.g. 'https://uxrodrigo-booking.<subdomain>.workers.dev'
     // Leave empty to keep the request-by-email flow.
-    bookingApiUrl: ''
+    bookingApiUrl: 'https://uxrodrigo-booking.silent-king-b9bb.workers.dev'
   };
   var LIVE = !!CONFIG.bookingApiUrl;
 

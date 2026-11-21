@@ -59,20 +59,18 @@ h3 {
   }
 }
 
-/* "Book a call" is hidden from the nav for now (the page itself stays live).
-   Delete this rule to bring the button back in the top bar and mobile menu. */
-.button.nav-button[href$="book-a-call.html"],
-.nav-mobile-book {
-  display: none !important;
-}
-
-.button-secondary.nav-button-secondary {
-  margin-right: 0 !important;
-}
-
-/* Phones: Download CV lives in the mobile menu */
-@media screen and (max-width: 767px) {
+/* Below this only the primary button fits in the top bar
+   (Download CV stays available in the mobile menu) */
+@media screen and (max-width: 1279px) {
   .button-secondary.nav-button-secondary {
+    display: none;
+  }
+}
+
+/* Spanish labels ("Descargar CV", "Agendar llamada") are wider, so both
+   buttons only fit on wider screens (i18n.js sets html[lang]) */
+@media screen and (max-width: 1599px) {
+  html[lang="es"] .button-secondary.nav-button-secondary {
     display: none;
   }
 }
