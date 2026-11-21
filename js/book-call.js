@@ -51,6 +51,10 @@
     meet: document.getElementById('bc-meet'),
     note: document.getElementById('bc-note'),
     again: document.getElementById('bc-again'),
+    snackbar: document.getElementById('bc-snackbar'),
+    snackbarText: document.getElementById('bc-snackbar-text'),
+    snackbarAction: document.getElementById('bc-snackbar-action'),
+    snackbarClose: document.getElementById('bc-snackbar-close'),
     name: document.getElementById('bc-name'),
     email: document.getElementById('bc-email'),
     message: document.getElementById('bc-message'),
@@ -332,6 +336,7 @@
         .replace('{email}', els.email.value.trim());
       els.form.hidden = true;
       els.success.classList.add('is-visible');
+      showSnackbar(t('book-snackbar-sent').replace('{when}', snackWhen(start)));
       els.form.reset();
       resetTurnstile();
     } catch (err) {
@@ -383,6 +388,11 @@
       }
       els.form.hidden = true;
       els.success.classList.add('is-visible');
+      showSnackbar(
+        t('book-snackbar-booked').replace('{when}', snackWhen(start)),
+        data.meetLink ? t('book-snackbar-join') : '',
+        data.meetLink || ''
+      );
       els.form.reset();
       resetTurnstile();
       state.slot = null;
@@ -404,6 +414,74 @@
     renderSlots();
     renderSummary();
   });
+
+  /* ---------- confirmation snackbar (Material 3) ---------- */
+  var SNACKBAR_MS = 8000; // M3: 4–10s; longer because it has an action
+  var snack = { timer: null, remaining: 0, startedAt: 0, hideTimer: null };
+
+  function snackStartTimer() {
+    clearTimeout(snack.timer);
+    snack.startedAt = Date.now();
+    snack.timer = setTimeout(hideSnackbar, snack.remaining);
+  }
+  function snackPauseTimer() {
+    if (!snack.timer) return;
+    clearTimeout(snack.timer);
+    snack.timer = null;
+    snack.remaining = Math.max(1500, snack.remaining - (Date.now() - snack.startedAt));
+  }
+
+  function showSnackbar(text, actionLabel, actionHref) {
+    var bar = els.snackbar;
+    if (!bar) return;
+    clearTimeout(snack.hideTimer);
+    els.snackbarText.textContent = text;
+    if (actionLabel && actionHref) {
+      els.snackbarAction.textContent = actionLabel;
+      els.snackbarAction.href = actionHref;
+      els.snackbarAction.hidden = false;
+    } else {
+      els.snackbarAction.hidden = true;
+    }
+    els.snackbarClose.setAttribute('aria-label', t('book-snackbar-close'));
+    bar.hidden = false;
+    bar.classList.remove('is-open');
+    void bar.offsetWidth; // restart the enter transition
+    bar.classList.add('is-open');
+    snack.remaining = SNACKBAR_MS;
+    snackStartTimer();
+  }
+
+  function hideSnackbar() {
+    var bar = els.snackbar;
+    if (!bar || bar.hidden) return;
+    clearTimeout(snack.timer);
+    snack.timer = null;
+    bar.classList.remove('is-open');
+    snack.hideTimer = setTimeout(function () { bar.hidden = true; }, 200);
+  }
+
+  if (els.snackbar) {
+    els.snackbarClose.addEventListener('click', hideSnackbar);
+    els.snackbarAction.addEventListener('click', function () { setTimeout(hideSnackbar, 150); });
+    // Keep it up while the visitor is reading or about to click
+    els.snackbar.addEventListener('mouseenter', snackPauseTimer);
+    els.snackbar.addEventListener('focusin', snackPauseTimer);
+    els.snackbar.addEventListener('mouseleave', function () {
+      if (!els.snackbar.contains(document.activeElement)) snackStartTimer();
+    });
+    els.snackbar.addEventListener('focusout', function (e) {
+      if (!els.snackbar.contains(e.relatedTarget)) snackStartTimer();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') hideSnackbar();
+    });
+  }
+
+  function snackWhen(start) {
+    var tz = visitorTz || undefined;
+    return fmtDate(start, tz, false) + ', ' + fmtTime(start, tz);
+  }
 
   /* ---------- feature card images follow the theme ---------- */
   function syncThemeImages() {

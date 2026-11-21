@@ -515,6 +515,10 @@
       "book-captcha-failed": "The captcha check failed. Please try again.",
       "book-success-live-body": "You're booked for {when}. A calendar invite with the Google Meet link is on its way to {email}.",
       "book-meet-link": "Open Google Meet link",
+      "book-snackbar-booked": "Call booked for {when}",
+      "book-snackbar-sent": "Request sent for {when}",
+      "book-snackbar-join": "Join Meet",
+      "book-snackbar-close": "Dismiss",
     },
 
     es: {
@@ -1027,6 +1031,10 @@
       "book-captcha-failed": "La verificación del captcha falló. Inténtalo de nuevo.",
       "book-success-live-body": "Tu llamada quedó agendada para el {when}. La invitación con el enlace de Google Meet va en camino a {email}.",
       "book-meet-link": "Abrir enlace de Google Meet",
+      "book-snackbar-booked": "Llamada agendada: {when}",
+      "book-snackbar-sent": "Solicitud enviada: {when}",
+      "book-snackbar-join": "Unirse a Meet",
+      "book-snackbar-close": "Cerrar",
     }
   };
 
