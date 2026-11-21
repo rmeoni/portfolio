@@ -25,6 +25,58 @@ h3 {
   color: #fff;
 }
 
+/* Nav: Download CV is the secondary button, Book a call the primary */
+.button-secondary.nav-button-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  margin: 0 12px 0 0 !important;
+  padding: 0 22px;
+  font-size: 15px;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.button.nav-button {
+  white-space: nowrap;
+}
+
+/* Smaller laptops: tighten both buttons so they clear the centered links */
+@media screen and (max-width: 1365px) {
+  .button-secondary.nav-button-secondary {
+    height: 44px;
+    margin-right: 8px !important;
+    padding: 0 16px;
+    font-size: 14px;
+  }
+
+  .button.nav-button {
+    height: 44px;
+    padding: 0 18px;
+    font-size: 14px;
+  }
+}
+
+/* "Book a call" is hidden from the nav for now (the page itself stays live).
+   Delete this rule to bring the button back in the top bar and mobile menu. */
+.button.nav-button[href$="book-a-call.html"],
+.nav-mobile-book {
+  display: none !important;
+}
+
+.button-secondary.nav-button-secondary {
+  margin-right: 0 !important;
+}
+
+/* Phones: Download CV lives in the mobile menu */
+@media screen and (max-width: 767px) {
+  .button-secondary.nav-button-secondary {
+    display: none;
+  }
+}
+
 /* Email Me / contact button — matches primary button style */
 .button.contact-button {
   background-color: #153180;
@@ -186,6 +238,16 @@ video {
 #project-cover {
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+/* Round the cover's frame to match the image (global img radius is 48px).
+   Webflow's reveal starts the image scaled up inside this frame, so without
+   this the corners look square until the animation ends.
+   translateZ(0) makes Safari clip transformed children to the radius. */
+.work-main-preview {
+  border-radius: 48px;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 /*End of zoom image on zoom code */
@@ -483,7 +545,7 @@ video {
     border-top-color: rgba(255, 255, 255, 0.12);
   }
 
-  .nav-mobile-cv {
+  .nav-mobile-book {
     display: block;
     background-color: #153180;
     color: #fff !important;
@@ -498,8 +560,40 @@ video {
     letter-spacing: 0.02em;
   }
 
+  .nav-mobile-book:hover {
+    background-color: #f96a4c;
+    color: #fff !important;
+  }
+
+  /* Download CV is secondary (outline) in the mobile menu too */
+  .nav-mobile-cv {
+    display: block;
+    background-color: transparent;
+    border: 1.5px solid #153180;
+    color: #153180 !important;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 0.02em;
+  }
+
   .nav-mobile-cv:hover {
-    background-color: #1a3d9e;
+    background-color: #E8EAF2;
+    color: #153180 !important;
+  }
+
+  [data-theme="dark"] .nav-mobile-cv {
+    border-color: #fff;
+    color: #fff !important;
+  }
+
+  [data-theme="dark"] .nav-mobile-cv:hover {
+    background-color: rgba(255, 255, 255, 0.1);
     color: #fff !important;
   }
 }

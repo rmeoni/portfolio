@@ -1,0 +1,17 @@
+name = "uxrodrigo-booking"
+main = "src/index.js"
+compatibility_date = "2024-09-23"
+
+[vars]
+# Calendar where bookings are created ("primary" = your main Google Calendar)
+CALENDAR_ID = "primary"
+# Calendars checked for busy times (comma-separated calendar IDs)
+BUSY_CALENDAR_IDS = "primary"
+# Sites allowed to call this Worker from the browser
+ALLOWED_ORIGINS = "https://www.uxrodrigo.com,https://uxrodrigo.com"
+
+# Secrets — set with `npx wrangler secret put <NAME>`, never in this file:
+#   GOOGLE_CLIENT_ID
+#   GOOGLE_CLIENT_SECRET
+#   GOOGLE_REFRESH_TOKEN
+#   TURNSTILE_SECRET

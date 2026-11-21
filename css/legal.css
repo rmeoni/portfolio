@@ -1,0 +1,99 @@
+/* ==============================================
+   LEGAL PAGES (privacy-policy.html, terms-of-service.html)
+   ============================================== */
+
+.legal-hero .text-label {
+  margin-bottom: 16px;
+}
+
+.legal-lead {
+  max-width: 640px;
+  margin: 24px 0 0;
+  font-size: 18px;
+  line-height: 30px;
+  color: #6877a7;
+}
+
+.legal {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.legal-updated {
+  display: inline-block;
+  margin: 0 0 32px !important;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #f0f2f7;
+  color: #6877a7;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.legal h2 {
+  margin: 48px 0 12px;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: none;
+}
+
+.legal p,
+.legal ul {
+  margin: 0 0 16px;
+}
+
+.legal ul {
+  padding-left: 22px;
+}
+
+.legal li {
+  margin-bottom: 8px;
+}
+
+.legal a {
+  color: #153180;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.legal a:hover {
+  color: #f96a4c;
+}
+
+[data-theme="dark"] .legal-lead,
+[data-theme="dark"] .legal-updated {
+  color: #9aa3bd;
+}
+
+[data-theme="dark"] .legal-updated {
+  background: #1e1e1e;
+}
+
+[data-theme="dark"] .legal a {
+  color: #fff;
+}
+
+[data-theme="dark"] .legal a:hover {
+  color: #f96a4c;
+}
+
+@media (max-width: 767px) {
+  .legal-lead {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .legal {
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .legal h2 {
+    margin-top: 36px;
+    font-size: 21px;
+    line-height: 28px;
+  }
+}
