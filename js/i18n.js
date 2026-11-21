@@ -1,4 +1,59 @@
 (function () {
+  /* ---------- First visit: pick the language from the visitor's location ----------
+     Location comes from the device time zone (no network request, nothing sent
+     anywhere). Spanish for Spain, Latin America and other Spanish-speaking
+     countries; English everywhere else. Runs before any other script reads
+     localStorage.language, and never overrides a language the visitor picked
+     with the EN/ES toggle (stored as languageChosen). */
+  var SPANISH_TZ_PREFIXES = [
+    'America/Argentina/', 'Brazil/', 'Chile/', 'Mexico/'
+  ];
+  var SPANISH_TZ = [
+    // Spain + Equatorial Guinea
+    'Europe/Madrid', 'Africa/Ceuta', 'Atlantic/Canary', 'Africa/Malabo',
+    // Mexico
+    'America/Mexico_City', 'America/Cancun', 'America/Merida', 'America/Monterrey',
+    'America/Matamoros', 'America/Chihuahua', 'America/Ciudad_Juarez', 'America/Ojinaga',
+    'America/Mazatlan', 'America/Bahia_Banderas', 'America/Hermosillo', 'America/Tijuana',
+    'America/Ensenada', 'America/Santa_Isabel',
+    // Central America + Caribbean
+    'America/Guatemala', 'America/El_Salvador', 'America/Tegucigalpa', 'America/Managua',
+    'America/Costa_Rica', 'America/Panama', 'America/Havana', 'Cuba',
+    'America/Santo_Domingo', 'America/Puerto_Rico',
+    // South America
+    'America/Bogota', 'America/Caracas', 'America/Guayaquil', 'Pacific/Galapagos',
+    'America/Lima', 'America/La_Paz', 'America/Santiago', 'America/Punta_Arenas',
+    'Pacific/Easter', 'America/Asuncion', 'America/Montevideo',
+    'America/Buenos_Aires', 'America/Cordoba', 'America/Catamarca', 'America/Jujuy',
+    'America/Mendoza', 'America/Rosario',
+    // Brazil (Latin America)
+    'America/Sao_Paulo', 'America/Noronha', 'America/Belem', 'America/Fortaleza',
+    'America/Recife', 'America/Araguaina', 'America/Maceio', 'America/Bahia',
+    'America/Campo_Grande', 'America/Cuiaba', 'America/Santarem', 'America/Porto_Velho',
+    'America/Boa_Vista', 'America/Manaus', 'America/Eirunepe', 'America/Rio_Branco'
+  ];
+
+  function languageFromLocation() {
+    var tz = '';
+    try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) {}
+    if (SPANISH_TZ.indexOf(tz) !== -1) return 'es';
+    for (var i = 0; i < SPANISH_TZ_PREFIXES.length; i++) {
+      if (tz.indexOf(SPANISH_TZ_PREFIXES[i]) === 0) return 'es';
+    }
+    return 'en';
+  }
+
+  try {
+    var stored = localStorage.getItem('language');
+    // Before this change every visit stored "en", so only "es" proves a manual pick
+    var chosen = localStorage.getItem('languageChosen') === '1' || stored === 'es';
+    if (chosen) {
+      localStorage.setItem('languageChosen', '1');
+    } else {
+      localStorage.setItem('language', languageFromLocation());
+    }
+  } catch (e) { /* storage blocked: English default below */ }
+
   var CURRENT_SCRIPT = document.currentScript;
   var BASE_PATH = CURRENT_SCRIPT ? CURRENT_SCRIPT.src.replace(/js\/i18n\.js(?:\?.*)?$/, '') : '';
   var LANG_ICON_LIGHT = BASE_PATH + 'images/language.svg';
@@ -1089,11 +1144,16 @@
     var savedLang = localStorage.getItem('language') || 'en';
     applyLanguage(savedLang);
     updateLangIcon();
+    // projects.js renders before this file loads; redraw if it used another language
+    if (savedLang !== 'en' && typeof window.renderCurrentProjects === 'function') {
+      window.renderCurrentProjects();
+    }
 
     document.querySelectorAll('.lang-toggle').forEach(function (btn) {
       btn.addEventListener('click', function () {
         var current = localStorage.getItem('language') || 'en';
         var next = current === 'en' ? 'es' : 'en';
+        try { localStorage.setItem('languageChosen', '1'); } catch (e) {}
         applyLanguage(next);
         updateLangIcon();
         if (typeof window.renderCurrentProjects === 'function') {
