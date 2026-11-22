@@ -114,41 +114,87 @@ h3 {
   text-align: center;
 }
 
-/* Download CV / nav button — consistent blue in both modes */
+/* ==============================================
+   BUTTONS
+   Three variants (primary, secondary, icon) and one chip, all on tokens,
+   one rule per variant for both themes.
+   Heights: lg (48) in forms and section CTAs, md (44) in the nav and for
+   icon buttons, sm (36) for chips and the story controls.
+   ============================================== */
+
+/* Primary. `.button.nav-button` is listed because Webflow paints
+   `.button.nav-button` #253C7C, which a plain `.button` rule cannot beat. */
+.button,
 .button.nav-button {
-  background-color: #153180;
-  color: #fff;
+  height: var(--size-control-lg);
+  border-radius: var(--radius-full);
+  background-color: var(--color-action-primary-bg);
+  color: var(--color-action-primary-fg);
+}
+
+.button:hover {
+  background-color: var(--color-action-primary-bg-hover);
+  color: var(--color-action-primary-fg);
+}
+
+/* The envelope icon must follow the label color: dark icon on the light
+   dark-theme fill */
+[data-theme="dark"] .button.contact-button {
+  background-image: url('../images/email.svg');
+}
+
+/* Secondary. Fixed height per context so text metrics never change it;
+   spacing around it comes from the container (.button-row etc.). */
+.button-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--size-control-lg);
+  padding: 0 20px;
+  border: var(--border-width-control) solid var(--color-action-secondary-border);
+  border-radius: var(--radius-full);
+  background: none;
+  color: var(--color-action-secondary-fg);
+  font-size: var(--font-size-control-md);
+  font-weight: bold;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: background .2s;
+}
+
+.button-secondary:hover {
+  background: var(--color-action-secondary-bg-hover);
+}
+
+/* Vertical spacing for a button that sits in running content */
+.button-row {
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 /* Nav: Download CV is the secondary button, Book a call the primary */
+.button.nav-button,
 .button-secondary.nav-button-secondary {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 48px;
-  margin: 0 12px 0 0 !important;
-  padding: 0 22px;
-  font-size: 15px;
-  line-height: 1;
+  height: var(--size-control-md);
   white-space: nowrap;
-  text-decoration: none;
 }
 
-.button.nav-button {
-  white-space: nowrap;
+.button-secondary.nav-button-secondary {
+  margin-right: 12px;
+  padding: 0 22px;
 }
 
 /* Smaller laptops: tighten both buttons so they clear the centered links */
 @media screen and (max-width: 1365px) {
   .button-secondary.nav-button-secondary {
-    height: 44px;
-    margin-right: 8px !important;
+    margin-right: 8px;
     padding: 0 16px;
     font-size: 14px;
   }
 
   .button.nav-button {
-    height: 44px;
     padding: 0 18px;
     font-size: 14px;
   }
@@ -202,39 +248,6 @@ h3 {
   .nav-right .dark-mode-toggle img {
     height: 22px;
   }
-}
-
-/* Email Me / contact button — matches primary button style */
-.button.contact-button {
-  background-color: #153180;
-  color: #fff;
-}
-
-/* Primary hover: darker shade of the same color (the old coral hover with
-   white text was 2.92:1) */
-.button:hover,
-.button.nav-button:hover,
-.button.contact-button:hover,
-#contact-form .button:hover {
-  background-color: var(--color-action-primary-bg-hover);
-  color: var(--color-action-primary-fg);
-}
-
-.button-secondary {
-  border: 1.5px solid #153180;
-  color: #153180;
-  background: none;
-  padding: 12px 20px;
-  border-radius: 40px;
-  font-weight: bold;
-  text-transform: capitalize;
-  transition: background .2s;
-  margin-top: 24px !important;
-  margin-bottom: 24px !important;
-}
-
-.button-secondary:hover {
-  background: #E8EAF2;
 }
 
 .work-card-preview.w-inline-block {
@@ -312,7 +325,8 @@ video {
 
 #close-overlay {
   position: absolute;
-  top: 0px;
+  /* 24px: the offset the old button margin used to add */
+  top: 24px;
   right: 24px;
   background-color: #ffffff;
   border: none;
@@ -411,16 +425,16 @@ video {
 
 .prev {
   left: 0;
-  width: 44px;
-  height: 44px;
-  border-radius: 50px;
-  background-color: #153180;
+  width: var(--size-control-md);
+  height: var(--size-control-md);
+  border-radius: var(--radius-full);
+  background-color: var(--color-action-primary-bg);
+  color: var(--color-action-primary-fg);
   transition: background-color .3s;
 }
 
 .prev .top-button-icon.w-icon-dropdown-toggle {
   transform: rotate(90deg);
-  color: #ffffff;
 }
 
 .prev:hover {
@@ -429,11 +443,11 @@ video {
 
 .next {
   right: 0;
-  width: 44px;
-  height: 44px;
-  border-radius: 50px;
-  background-color: #153180;
-  color: #ffffff;
+  width: var(--size-control-md);
+  height: var(--size-control-md);
+  border-radius: var(--radius-full);
+  background-color: var(--color-action-primary-bg);
+  color: var(--color-action-primary-fg);
   transition: background-color .3s;
 }
 
@@ -506,7 +520,8 @@ video {
 #close-video-overlay,
 .video-popup-close {
   position: absolute;
-  top: 0px;
+  /* 24px: the offset the old button margin used to add */
+  top: 24px;
   right: 24px;
   background-color: #ffffff;
   border: none;
@@ -596,7 +611,7 @@ video {
   padding: 4px 8px;
   margin-left: 12px;
   border: none;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   background: transparent;
   cursor: pointer;
   transition: background 0.2s;
@@ -624,7 +639,7 @@ video {
   padding: 4px 8px;
   margin-left: 4px;
   border: none;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   background: transparent;
   cursor: pointer;
   transition: background 0.2s;
@@ -642,16 +657,12 @@ video {
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.05em;
-  color: #153180;
+  color: var(--color-action-secondary-fg);
   line-height: 1;
 }
 
 .lang-toggle:hover {
   background: transparent;
-}
-
-[data-theme="dark"] .lang-toggle .lang-label {
-  color: #fff;
 }
 
 /* ==============================================
@@ -684,12 +695,15 @@ video {
   }
 
   .nav-mobile-book {
-    display: block;
-    background-color: #153180;
-    color: #fff !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--size-control-md);
+    background-color: var(--color-action-primary-bg);
+    color: var(--color-action-primary-fg);
     text-align: center;
-    padding: 10px 20px;
-    border-radius: 24px;
+    padding: 0 20px;
+    border-radius: var(--radius-full);
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
@@ -700,18 +714,21 @@ video {
 
   .nav-mobile-book:hover {
     background-color: var(--color-action-primary-bg-hover);
-    color: var(--color-action-primary-fg) !important;
+    color: var(--color-action-primary-fg);
   }
 
   /* Download CV is secondary (outline) in the mobile menu too */
   .nav-mobile-cv {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--size-control-md);
     background-color: transparent;
-    border: 1.5px solid #153180;
-    color: #153180 !important;
+    border: var(--border-width-control) solid var(--color-action-secondary-border);
+    color: var(--color-action-secondary-fg);
     text-align: center;
-    padding: 10px 20px;
-    border-radius: 24px;
+    padding: 0 20px;
+    border-radius: var(--radius-full);
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
@@ -721,18 +738,7 @@ video {
   }
 
   .nav-mobile-cv:hover {
-    background-color: #E8EAF2;
-    color: #153180 !important;
-  }
-
-  [data-theme="dark"] .nav-mobile-cv {
-    border-color: #fff;
-    color: #fff !important;
-  }
-
-  [data-theme="dark"] .nav-mobile-cv:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #fff !important;
+    background-color: var(--color-action-secondary-bg-hover);
   }
 }
 
@@ -744,7 +750,7 @@ video {
   background-color: #000;
 }
 
-[data-theme="dark"] a {
+[data-theme="dark"] a:not(:where(.button, .button-secondary, .nav-mobile-book, .nav-mobile-cv, .top-button)) {
   color: #f96a4c;
 }
 
@@ -873,46 +879,12 @@ video {
   background-color: #000 !important;
 }
 
-/* ==============================================
-   DARK MODE — BUTTONS
-   ============================================== */
-[data-theme="dark"] .button.contact-button {
-  background-color: #153180;
-  color: #fff;
-  background-image: url('../images/email-white.svg');
-}
-[data-theme="dark"] .button {
-  background-color: #fff;
-  color: #000;
-}
-
-/* Primary hover in dark mode (needed while the dark .button overrides above
-   exist; same tokens as the light rule) */
-[data-theme="dark"] .button:hover,
-[data-theme="dark"] .button.nav-button:hover,
-[data-theme="dark"] .button.contact-button:hover,
-[data-theme="dark"] #contact-form .button:hover {
-  background-color: var(--color-action-primary-bg-hover);
-  color: var(--color-action-primary-fg);
-}
-
-[data-theme="dark"] .button.nav-button {
-  background-color: #153180;
-  color: #fff;
-}
-
-[data-theme="dark"] .button-secondary {
-  border-color: #fff;
-  color: #fff;
-}
-
-[data-theme="dark"] .button-secondary:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
-
 /* Back-to-top button: surface fill, plus a border that is at least 3:1
    against the page in both themes (the old fill was 1.45:1 / 1.21:1) */
 .top-button {
+  width: var(--size-control-md);
+  height: var(--size-control-md);
+  border-radius: var(--radius-full);
   background-color: var(--color-bg-surface);
   border: 1px solid var(--color-border-control);
   color: var(--color-text-primary);
@@ -971,15 +943,22 @@ video {
   color: #e8e8e8;
 }
 
+/* Chip. Replaces the Webflow base rule (radius 32px, padding 2px 11px),
+   so the margins, uppercase and transition it carried live here now. */
 .tag-badge {
-  display: inline-block;
-  padding: 4px 12px;
-  border-radius: 20px;
-  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  height: var(--size-control-sm);
+  margin: 6px 6px 6px 0;
+  padding: 0 14px;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-control-sm);
   font-weight: 500;
-  background-color: #f0f2f7;
-  color: #153180;
+  line-height: 20px;
+  text-transform: uppercase;
   white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 200ms cubic-bezier(.25, .46, .45, .94), color 200ms cubic-bezier(.25, .46, .45, .94);
 }
 
 /* ==============================================
@@ -1124,11 +1103,6 @@ button.tag-badge {
    DARK MODE — CONTACT FORM
    ============================================== */
 [data-theme="dark"] #contact-sec h2 {
-  color: #fff;
-}
-
-[data-theme="dark"] #contact-form .button {
-  background-color: #153180;
   color: #fff;
 }
 

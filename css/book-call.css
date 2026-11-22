@@ -95,11 +95,11 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: var(--size-control-sm);
+  height: var(--size-control-sm);
   padding: 0;
   border: 0;
-  border-radius: 999px;
+  border-radius: var(--radius-full);
   background: transparent;
   color: var(--bc-text);
   cursor: pointer;
@@ -391,18 +391,19 @@
 
 .bc-submit.button {
   width: 100%;
+  height: var(--size-control-lg);
   margin-top: auto;
-  padding: 16px 24px;
-  border-radius: 999px;
-  background-color: #153180;
-  color: #fff;
+  padding: 0 24px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-action-primary-bg);
+  color: var(--color-action-primary-fg);
   font-size: 16px;
   font-weight: 700;
   text-align: center;
 }
 
 .bc-submit.button:hover {
-  background-color: #f96a4c;
+  background-color: var(--color-action-primary-bg-hover);
 }
 
 .bc-submit.button:disabled {

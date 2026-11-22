@@ -6,8 +6,8 @@
 .story-world {
   --sw-title: #162971;
   --sw-body: #3C4F8B;
-  --sw-kicker: #f96a4c;
-  --sw-accent: #F86348;
+  --sw-kicker: var(--color-text-accent);
+  --sw-accent: var(--coral-400);
   --sw-track: #CAD0E1;
   --sw-hint: #3C4F8B;
   --sw-bg: #fff;
@@ -151,7 +151,7 @@
 }
 .story-world .sw-btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 6px;
-  height: 36px; min-width: 36px; padding: 0; border: 0; border-radius: 999px;
+  height: var(--size-control-sm); min-width: var(--size-control-sm); padding: 0; border: 0; border-radius: var(--radius-full);
   background: var(--sw-chip-bg); color: var(--sw-title);
   box-shadow: var(--sw-chip-shadow); cursor: pointer;
   font: inherit; font-size: 11px; line-height: 16px; font-weight: 600;
@@ -164,7 +164,7 @@
 .story-world .sw-skip {
   /* site .button-secondary look; only spacing/layout adjusted to sit beside Play */
   display: inline-flex; align-items: center; gap: 6px;
-  height: 36px; padding: 0 16px; margin: 0 !important; cursor: pointer;
+  height: var(--size-control-sm); padding: 0 16px; margin: 0; cursor: pointer;
   font-family: inherit; font-size: 14px; line-height: 16px;
 }
 .story-world .sw-skip svg { width: 12px; height: 12px; fill: currentColor; display: block; }

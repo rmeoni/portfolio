@@ -5408,38 +5408,6 @@ figcaption {
   text-decoration: line-through;
 }
 
-.tag-badge {
-  display: inline-block;
-  margin-top: 6px;
-  margin-right: 6px;
-  margin-bottom: 6px;
-  padding: 2px 11px;
-  border-radius: 32px;
-  background-color: #f2f3f5;
-  -webkit-transition: background-color 200ms cubic-bezier(.25, .46, .45, .94), color 200ms cubic-bezier(.25, .46, .45, .94);
-  transition: background-color 200ms cubic-bezier(.25, .46, .45, .94), color 200ms cubic-bezier(.25, .46, .45, .94);
-  color: #151515;
-  font-size: 11px;
-  line-height: 20px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.tag-badge:hover {
-  background-color: #f96a4c;
-  color: #fff;
-}
-
-.tag-badge:focus {
-    background-color: #f96a4c;
-    color: #fff;
-}
-
-.tag-badge.activeBtn {
-  background-color: #f96a4c;
-  color: #fff;
-}
-
 .tag-badge.job-badge {
   margin-top: 6px;
   margin-right: 0px;
