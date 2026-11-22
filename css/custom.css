@@ -239,13 +239,23 @@ video {
 }
 
 /* Round the cover's frame to match the image (global img radius is 48px).
-   Webflow's reveal starts the image scaled up inside this frame, so without
-   this the corners look square until the animation ends.
-   translateZ(0) makes Safari clip transformed children to the radius. */
+   translateZ(0) makes Safari clip children to the radius. */
 .work-main-preview {
   border-radius: 48px;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
+}
+
+/* No Webflow slide-in reveal on the project cover: hide the wipe panel and
+   keep the image at its normal size, so only the skeleton shimmer shows
+   while it loads. !important beats the inline transforms Webflow sets. */
+.work-main-preview .overlay {
+  display: none !important;
+}
+
+.work-main-preview #project-cover {
+  -webkit-transform: none !important;
+  transform: none !important;
 }
 
 /*End of zoom image on zoom code */
