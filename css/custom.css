@@ -170,6 +170,40 @@ h3 {
   }
 }
 
+/* 992–1139px: the nav links are visible but there is not enough room for
+   them plus "Agendar llamada" (the CTA overlapped "Contacto" by up to 44px
+   in Spanish). Hide "Contacto" — the CTA and the footer cover it — and
+   tighten the link spacing. Below 992px the links live in the menu. */
+@media screen and (min-width: 992px) and (max-width: 1139px) {
+  .nav-menu .nav-link[href$="#contact-sec"] {
+    display: none;
+  }
+
+  .nav-menu .nav-link {
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+}
+
+/* Phones: the logo box is 200px wide, which left the theme toggle 7px from
+   it at 375px. A narrower logo keeps at least 12px between them. */
+@media screen and (max-width: 479px) {
+  .brand .logo {
+    width: 160px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .brand .logo {
+    width: 136px;
+  }
+
+  .nav-right .dark-mode-toggle img {
+    height: 22px;
+  }
+}
+
 /* Email Me / contact button — matches primary button style */
 .button.contact-button {
   background-color: #153180;
