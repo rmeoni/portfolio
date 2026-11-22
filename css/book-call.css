@@ -485,17 +485,18 @@
 }
 
 .bc-meet.button {
+  height: var(--size-control-lg);
   margin-top: 8px;
   padding: 0 24px;
-  border-radius: 999px;
-  background-color: #153180;
-  color: #fff;
+  border-radius: var(--radius-full);
+  background-color: var(--color-action-primary-bg);
+  color: var(--color-action-primary-fg);
   font-weight: 700;
   text-decoration: none;
 }
 
 .bc-meet.button:hover {
-  background-color: #f96a4c;
+  background-color: var(--color-action-primary-bg-hover);
 }
 
 .bc-meet[hidden] {
@@ -503,7 +504,7 @@
 }
 
 .bc-success .button-secondary {
-  margin-top: 12px !important;
+  margin-top: 12px;
   cursor: pointer;
 }
 
