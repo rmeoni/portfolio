@@ -1,3 +1,69 @@
+/* ==============================================
+   DESIGN TOKENS
+   Primitives hold raw values; components only use the semantic tokens,
+   which switch with [data-theme="dark"] on <html>.
+   ============================================== */
+:root {
+  /* Primitives */
+  --navy-50:#F1F5FF; --navy-100:#DEE8FE; --navy-200:#BED1F9; --navy-300:#9DB4E4; --navy-400:#7791CA;
+  --navy-500:#526FB0; --navy-600:#335198; --navy-700:#153180; --navy-800:#071C62; --navy-900:#020C4C;
+  --coral-50:#FEF2EF; --coral-100:#FEE0D9; --coral-200:#FEC0B1; --coral-300:#FE9780; --coral-400:#F96A4C;
+  --coral-500:#CF5339; --coral-600:#AD412A; --coral-700:#8C2F1C; --coral-800:#6D1E0D; --coral-900:#4B0B01;
+  --neutral-50:#F7F7F8; --neutral-100:#E8E8E8; --neutral-200:#D4D4D6; --neutral-300:#B3B3B6; --neutral-400:#888888;
+  --neutral-500:#6B6B6E; --neutral-600:#525255; --neutral-700:#2A2A2A; --neutral-800:#1A1A1A; --neutral-900:#0A0A0A;
+  --white:#FFFFFF; --black:#000000;
+
+  /* Semantic – light */
+  --color-bg-page: var(--white);
+  --color-bg-surface: var(--neutral-50);
+  --color-text-primary: var(--neutral-900);
+  --color-text-secondary: var(--neutral-600);
+  --color-text-accent: var(--coral-600);
+  --color-border-default: var(--neutral-200);
+  --color-action-primary-bg: var(--navy-700);
+  --color-action-primary-bg-hover: var(--navy-800);
+  --color-action-primary-fg: var(--white);
+  --color-action-secondary-border: var(--navy-700);
+  --color-action-secondary-fg: var(--navy-700);
+  --color-action-secondary-bg-hover: var(--navy-50);
+  --color-action-chip-bg: var(--navy-50);
+  --color-action-chip-fg: var(--navy-700);
+  --color-action-chip-bg-selected: var(--coral-600);
+  --color-action-chip-fg-selected: var(--white);
+  --color-focus-ring: var(--coral-600);
+  --color-action-disabled-bg: var(--neutral-100);
+  --color-action-disabled-fg: var(--neutral-500);
+
+  /* Non-color */
+  --radius-sm: 8px;
+  --radius-full: 9999px;
+  --size-control-sm: 36px;  --size-control-md: 44px;  --size-control-lg: 48px;
+  --font-size-control-sm: 13px; --font-size-control-md: 15px;
+  --border-width-control: 1.5px;
+}
+
+[data-theme="dark"] {
+  --color-bg-page: var(--neutral-900);
+  --color-bg-surface: var(--neutral-800);
+  --color-text-primary: var(--neutral-100);
+  --color-text-secondary: var(--neutral-400);
+  --color-text-accent: var(--coral-400);
+  --color-border-default: var(--neutral-700);
+  --color-action-primary-bg: var(--navy-200);
+  --color-action-primary-bg-hover: var(--navy-100);
+  --color-action-primary-fg: var(--navy-900);
+  --color-action-secondary-border: var(--neutral-100);
+  --color-action-secondary-fg: var(--neutral-100);
+  --color-action-secondary-bg-hover: var(--neutral-700);
+  --color-action-chip-bg: var(--neutral-700);
+  --color-action-chip-fg: var(--neutral-100);
+  --color-action-chip-bg-selected: var(--coral-400);
+  --color-action-chip-fg-selected: var(--neutral-900);
+  --color-focus-ring: var(--coral-400);
+  --color-action-disabled-bg: var(--neutral-800);
+  --color-action-disabled-fg: var(--neutral-500);
+}
+
 h2 {
   text-transform: capitalize;
 }
