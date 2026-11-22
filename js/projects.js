@@ -8,8 +8,8 @@ const projects = {
         description_es: "En este proyecto apliqué Design Thinking, comenzando con Investigación Cualitativa y Cuantitativa para definir User Personas e identificar puntos de dolor. Usamos un User Journey Map para idear soluciones, creamos un Wireframe y Prototipo en Figma, desarrollamos el sitio con React y realizamos Pruebas de Usabilidad para refinar el diseño.",
         link: "./detail_project_coffee_ux_dev.html",
         image: "images/portfolio-thumb-18.png",
-        buttonText: 'View Case Study',
-        buttonText_es: 'Ver Caso de Estudio',
+        buttonText: 'View case study',
+        buttonText_es: 'Ver caso de estudio',
         target: "_self"
     },
     */
@@ -22,8 +22,8 @@ const projects = {
         link: './detail_project_n2.html',
         image: 'images/portfolio-thumb-30.png',
         image_dark: 'images/portfolio-thumb-30-dark.png',
-        buttonText: 'View Case Study',
-        buttonText_es: 'Ver Caso de Estudio',
+        buttonText: 'View case study',
+        buttonText_es: 'Ver caso de estudio',
         target: '_self'
     },
     yotaxi: {
@@ -35,8 +35,8 @@ const projects = {
         link: './detail_project_yotaxi.html',
         image: 'images/portfolio-thumb-26.png',
         image_dark: 'images/portfolio-thumb-26-dark.png',
-        buttonText: 'View Case Study',
-        buttonText_es: 'Ver Caso de Estudio',
+        buttonText: 'View case study',
+        buttonText_es: 'Ver caso de estudio',
         target: '_self'
     },
     gflow: {
@@ -48,8 +48,8 @@ const projects = {
         link: './detail_project_gflow.html',
         image: 'images/portfolio-thumb-25.png',
         image_dark: 'images/portfolio-thumb-25-dark.png',
-        buttonText: 'View Case Study',
-        buttonText_es: 'Ver Caso de Estudio',
+        buttonText: 'View case study',
+        buttonText_es: 'Ver caso de estudio',
         target: '_self'
     },
     akisi_pay: {
@@ -74,8 +74,8 @@ const projects = {
         description_es: "Diseñé y desarrollé esta aplicación web desde cero para Wind Hill Growers, creando la UI en Figma y construyendo el sitio con HTML, CSS y Vanilla JavaScript. La app utiliza el input del usuario para ofrecer recomendaciones de productos personalizadas—¡un proyecto divertido que aprovechó al máximo JavaScript!",
         link: "./detail_project_tester_app.html",
         image: "images/portfolio-thumb-1.png",
-        buttonText: 'View Case Study',
-        buttonText_es: 'Ver Caso de Estudio',
+        buttonText: 'View case study',
+        buttonText_es: 'Ver caso de estudio',
         target: "_self"
     },
     */
@@ -88,8 +88,8 @@ const projects = {
         link: './detail_project_adoptio.html',
         image: 'images/portfolio-thumb-21.png',
         image_dark: 'images/portfolio-thumb-21-dark.png',
-        buttonText: 'View Case Study',
-        buttonText_es: 'Ver Caso de Estudio',
+        buttonText: 'View case study',
+        buttonText_es: 'Ver caso de estudio',
         target: '_self'
     },
     prestio: {
@@ -101,8 +101,8 @@ const projects = {
         link: "./detail_project_prestio.html",
         image: "images/portfolio-thumb-20.png",
         image_dark: "images/portfolio-thumb-20-dark.png",
-        buttonText: 'View Case Study',
-        buttonText_es: 'Ver Caso de Estudio',
+        buttonText: 'View case study',
+        buttonText_es: 'Ver caso de estudio',
         target: "_self"
     },
     cafedonlucas: {
@@ -114,8 +114,8 @@ const projects = {
         link: "./detail_project_coffee_ux.html",
         image: "images/portfolio-thumb-7.png",
         image_dark: "images/portfolio-thumb-7-dark.png",
-        buttonText: 'View Case Study',
-        buttonText_es: 'Ver Caso de Estudio',
+        buttonText: 'View case study',
+        buttonText_es: 'Ver caso de estudio',
         target: "_self"
     },
     /* 
@@ -128,8 +128,8 @@ const projects = {
         link: "./detail_project_whg_ui.html",
         image: "images/portfolio-thumb-10.png",
         image_dark: "images/portfolio-thumb-10-dark.png",
-        buttonText: 'View Case Study',
-        buttonText_es: 'Ver Caso de Estudio',
+        buttonText: 'View case study',
+        buttonText_es: 'Ver caso de estudio',
         target: "_self"
     },
     */
@@ -142,8 +142,8 @@ const projects = {
         link: './detail_project_mwd.html',
         image: 'images/portfolio-thumb-8.png',
         image_dark: 'images/portfolio-thumb-8-dark.png',
-        buttonText: 'View Case Study',
-        buttonText_es: 'Ver Caso de Estudio',
+        buttonText: 'View case study',
+        buttonText_es: 'Ver caso de estudio',
         target: "_self"
     },
     /*
@@ -155,8 +155,8 @@ const projects = {
         description_es: 'Tuve la oportunidad de diseñar la Interfaz de Usuario para una empresa inmobiliaria, colaborando estrechamente con el cliente para crear un prototipo personalizado en Figma, que luego fue llevado a la vida en Webflow.',
         link: './detail_project_lozana.html',
         image: './images/portfolio-thumb-2.png',
-        buttonText: 'View Case Study',
-        buttonText_es: 'Ver Caso de Estudio',
+        buttonText: 'View case study',
+        buttonText_es: 'Ver caso de estudio',
         target: "_self"
     },
     */
@@ -169,8 +169,8 @@ const projects = {
         link: './detail_project_gummies_mockup.html',
         image: './images/portfolio-thumb-14.png',
         image_dark: './images/portfolio-thumb-14-dark.png',
-        buttonText: 'View Project',
-        buttonText_es: 'Ver Proyecto',
+        buttonText: 'View project',
+        buttonText_es: 'Ver proyecto',
         target: "_self"
     },
     /*
@@ -182,8 +182,8 @@ const projects = {
         description_es: 'Una empresa tenía dificultades para gestionar su inventario en Zoho Inventory. Creé un script en JavaScript que extrae nuevas facturas a través de la API de Zoho Inventory y las envía a Google Sheets, permitiéndoles gestionar los datos fácilmente.',
         link: './detail_project_zoho_google_api.html',
         image: './images/portfolio-thumb-15.png',
-        buttonText: 'View Project',
-        buttonText_es: 'Ver Proyecto',
+        buttonText: 'View project',
+        buttonText_es: 'Ver proyecto',
         target: "_self"
     },
     */
@@ -196,8 +196,8 @@ const projects = {
         link: './detail_project_gflow_rebrand.html',
         image: './images/portfolio-thumb-28.png',
         image_dark: './images/portfolio-thumb-28-dark.png',
-        buttonText: 'View Project',
-        buttonText_es: 'Ver Proyecto',
+        buttonText: 'View project',
+        buttonText_es: 'Ver proyecto',
         target: "_self"
     },
     whg_rebranding: {
@@ -209,8 +209,8 @@ const projects = {
         link: './detail_project_whg_rebrand.html',
         image: './images/portfolio-thumb-19.png',
         image_dark: './images/portfolio-thumb-19-dark.png',
-        buttonText: 'View Project',
-        buttonText_es: 'Ver Proyecto',
+        buttonText: 'View project',
+        buttonText_es: 'Ver proyecto',
         target: "_self"
     },
     mwd_branding: {
@@ -221,8 +221,8 @@ const projects = {
         description_es: 'Mit Was Drin necesitaba un logo icónico y versátil que reflejara su visión y valores fundamentales. Trabajando estrechamente con el CEO, transformamos rápidamente un boceto en un diseño atemporal. El resultado es un logo que destaca tanto en plataformas digitales como en merchandising impreso. Este proyecto fue uno de los más entretenidos y gratificantes en los que he participado.',
         link: './detail_project_mwd_branding.html',
         image: './images/portfolio-thumb-16.png',
-        buttonText: 'View Project',
-        buttonText_es: 'Ver Proyecto',
+        buttonText: 'View project',
+        buttonText_es: 'Ver proyecto',
         target: "_self"
     },
     impulso_design_system: {

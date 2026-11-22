@@ -92,7 +92,7 @@
       /* ── Experience ── */
       'exp-heading':     'My Experience',
       'exp-description': 'Accomplished UX Designer and Developer with over 10 years of expertise in the tech industry, specializing in website design and development, design systems, and process automation. Proven ability to deliver effective solutions in dynamic, high-demand environments.',
-      'exp-contact-btn': 'Contact Me',
+      'exp-contact-btn': 'Contact me',
 
       'job-bareco':     "I worked on a year-long digitization project for Banco Industrial, one of Guatemala's largest banks. I was outsourced to help install new hardware for document scanning and update computer and server systems.",
       'job-intuitiva':  "As an employee at a SaaS startup developing an ERP software for accounting, inventory, sales, and purchasing solutions across various industries, I contributed to sales, implementation, and support, gaining hands-on experience in each area.",
@@ -189,7 +189,7 @@
       'cs-conclusion':        'Conclusion',
       'cs-contact-label':     "Let's get in touch",
       'cs-contact-cta':       "Have a project in mind? Let's build something great together!",
-      'cs-btn-pdf':           'Download Case Study PDF',
+      'cs-btn-pdf':           'Download case study PDF',
       'cs-figma-h2':          'Figma',
       'cs-zero-height-h2':    'ZeroHeight',
       'cs-principles':        'Principles',
@@ -252,7 +252,7 @@
       'yotaxi-persona-blockquote': "Linda relies on YoTaxi for doctor visits and errands. She appreciates scheduling rides but struggles with the app's interface and has missed rides due to booking errors. She values kind drivers and would feel safer with an emergency feature.",
       'yotaxi-sticker-p':       "I added a Sticker Sheet to make it easy to develop the app's unique components and styles.",
       'yotaxi-accessibility-p': 'To prioritize accessibility, YoTaxi includes language toggle options to support users from different regions, as well as light and dark modes for visual comfort. The interface features prominent headers and alt text for images to ensure screen reader compatibility, enhancing usability for visually impaired users. These features make the app more inclusive and user-friendly for a broader audience.',
-      'yotaxi-btn-appstore':    'View In App Store',
+      'yotaxi-btn-appstore':    'View in App Store',
       'yotaxi-responsibilities-ul': '<li>Conduct user research</li><li>Identify pain points</li><li>Ideate solutions</li><li>Create wireframes</li><li>Conduct usability studies</li><li>Develop prototypes</li>',
       'yotaxi-goals-ul':            '<li>Get to medical appointments and run errands efficiently.</li><li>Ensure the ride is affordable and safe.</li>',
       'yotaxi-frustrations-ul':     '<li>Inconsistent driver professionalism.</li><li>Difficulty navigating the app to book a ride.</li>',
@@ -267,7 +267,7 @@
       'akisi-title':       'Akisi Pay UI Design',
       'akisi-intro':       'As a UX Developer for a non-profit in Guatemala, I designed the UI of a mobile POS system that enables small business owners to accept credit card payments directly from their phones.',
       'akisi-problem-p':   'A non-profit fintech company in Guatemala—dedicated to supporting people living in poverty through individual and group loans—has over 4,000 employees, including 35 developers working across different teams. They came with the need to launch a Digital Wallet to help their customers manage loans, pay for products and services, receive remittances, and withdraw funds through partner businesses across the country. I was entrusted with designing the UI for their mobile POS app, "Akisi Pay". Using UX best practices, I created a high-fidelity prototype in Figma, applying the Atomic Design methodology to organize the system and ensure that all components were connected and easy to update in seconds. Throughout the project, I collaborated with cross-functional teams and communicated directly with stakeholders to deliver a sleek, modern, and minimalistic UI that aligned with both user needs and the company\'s values.',
-      'akisi-btn-playstore': 'View In Play Store',
+      'akisi-btn-playstore': 'View in Play Store',
 
       /* ── GFlow ── */
       'gflow-title':           'GFlow UX Design',
@@ -304,7 +304,7 @@
       'adoptio-usability-p1': 'A remote usability study was conducted with five participants from various regions to evaluate the ease of use and effectiveness of Adoptio in addressing user needs. The study focused on identifying pain points and potential improvements to enhance the adoption process.',
       'adoptio-usability-p2': 'We gathered and organized the data, which led to the following key insights:',
       'adoptio-conclusion-p': 'Adoptio represents more than just a design project—it\'s a tool that has the potential to transform lives by connecting pets with loving families, addressing a critical need in developing countries. This experience taught me the value of combining user-centered design with social impact, and how thoughtful research and usability can drive meaningful change. If you\'d like to discuss this project or future opportunities, feel free to contact me at <a href="mailto:hello@uxrodrigo.com">hello@uxrodrigo.com</a>.',
-      'adoptio-btn-xd':      'View Adobe XD Prototype',
+      'adoptio-btn-xd':      'View Adobe XD prototype',
       'adoptio-responsibilities-ul': '<li>Conduct user research</li><li>Identify pain points</li><li>Ideate solutions</li><li>Create wireframes</li><li>Conduct usability studies</li><li>Develop prototypes</li><li>Implement in React</li>',
       'adoptio-goals-ul':            '<li>To adopt pets responsibly and ensure they receive the love and care they need.</li>',
       'adoptio-frustrations-ul':     '<li>Slow responses when adopting through social media or online platforms.</li><li>The welfare of the animals post-adoption.</li>',
@@ -321,15 +321,15 @@
       'coffee-persona-blockquote': 'Sara is a 28-year-old marketer and business owner from Guatemala. She loves waking up with a cup of coffee. She likes to save money on everyday consumables and avoid spending time in traffic to go shopping.',
       'coffee-dev-h2':          'Development',
       'coffee-dev-p':           'The web app was then developed using React, and it is still under active development.',
-      'coffee-btn-github':      'View Github Project',
+      'coffee-btn-github':      'View GitHub project',
       'coffee-postlaunch-h2':   'Post-launch Usability Study',
       'coffee-usability-p1':    "We conducted a Usability Study to figure out what specific difficulties users encountered when they tried to complete the core tasks of the Café Don Lucas' app: Product selection, ordering, and in-app navigation.",
       'coffee-usability-p2':    'We conducted an unmoderated usability study with participants in Guatemala (remote), where participants went through the usability study in their own homes. We interviewed 5 people from mixed backgrounds, genders, and abilities.',
       'coffee-usability-p3':    'We then gathered the data and organized it to identify themes, which resulted in the following insights:',
       'coffee-usability-p4':    'Given the insights we found through our Usability Study, we adapted the design to improve the user experience and make the web app easier to use.',
       'coffee-accessibility-p': 'The website was designed for accessibility with Spanish and English language options, ensuring seamless navigation for all users. Dark and Light modes were added to accommodate visual preferences and improve usability in different lighting conditions, creating a more inclusive and adaptable user experience.',
-      'coffee-btn-website':     'View Website',
-      'coffee-btn-figma':       'View Figma Prototype',
+      'coffee-btn-website':     'View website',
+      'coffee-btn-figma':       'View Figma prototype',
       'coffee-goals-ul':        '<li>Avoiding traffic and lines by ordering online.</li><li>Saving money on everyday consumer products.</li><li>Waking up with a cup of coffee.</li>',
       'coffee-frustrations-ul': '<li>Forgetting to buy coffee.</li><li>Standing in line to pay for coffee at checkout.</li><li>Waking up late or without energy.</li>',
 
@@ -339,7 +339,7 @@
       'mwd-problem-p': 'A German cannabis education blog needed a fresh start: a new brand, audience, and strategy to make money. They wanted a website with space for blog posts, a podcast, a contact form, and a dosage calculator.',
       'mwd-role-p':    'As the UX Designer, I worked with their research and ideas to create a plan:',
       'mwd-launch-p':  'The site is now ready, and the brand is preparing to launch!',
-      'mwd-btn-xd':    'View Adobe XD Prototype',
+      'mwd-btn-xd':    'View Adobe XD prototype',
 
       /* ── Impulso ── */
       'impulso-title': 'Impulso Design System',
@@ -349,9 +349,9 @@
       'unity-title':          'Unity Design System',
       'unity-intro':          'As the UX Designer for Wind Hill Growers, we faced the challenge of creating a cohesive brand experience across multiple international markets. To address this, we developed "Unity", a comprehensive design system that acts as a single source of truth for all design assets. Unity was instrumental in bringing the brand to a new level of consistency, making it easier to manage and scale across various platforms.',
       'unity-zero-height-p':  'The Unity Design System is seamlessly integrated between Figma and ZeroHeight, creating a dynamic workflow that evolves alongside the brand. This connection allows the team to continuously update and refine design assets in Figma, ensuring that any changes are automatically reflected in ZeroHeight. As the brand grows and design scenarios change, this integration helps keep the design system relevant and up-to-date, enabling the team to adapt quickly to new requirements. This setup not only promotes consistency across all platforms but also supports the team in maintaining a cohesive brand experience as they scale and expand into new markets.',
-      'unity-btn-figma':      'View Figma File',
+      'unity-btn-figma':      'View Figma file',
       'unity-zero-height-h2': 'Zero Height',
-      'unity-btn-zeroheight': 'View In Zero Height',
+      'unity-btn-zeroheight': 'View in Zero Height',
 
       /* ── Akisi Mockup ── */
       'akisi-mockup-title': 'Akisi Mobile POS Mockup',
@@ -412,8 +412,8 @@
       'prestio-takeaways-p':         'I learned the importance of understanding user needs in the industry, such as the preference for simple, fast, and secure processes. Through user research, I discovered that accessibility and transparency are essential to building trust and loyalty in a competitive market.',
       'prestio-next-steps-ol':       '<li><strong>Multiple Languages and responsiveness:</strong> If I had more time, I would enhance the app\'s accessibility by adding multiple language options to reach a broader audience and design the interface for all devices.</li><li><strong>Dark Mode:</strong> I would also design the app with both light and dark modes to better utilize the color palette and provide a more flexible visual experience for users.</li><li><strong>Expand Research:</strong> Finally, I would conduct user and usability studies with a larger group to refine and improve the user experience more accurately and effectively.</li>',
       'prestio-conclusion-p':        'The design and development of this user experience showcase everything I was able to achieve in just three days, focusing on user needs and pain points. Imagine what I could accomplish for you with more time and resources. If you\'re interested in discussing further, feel free to contact me at <a href="mailto:hello@uxrodrigo.com">hello@uxrodrigo.com</a>.',
-      'prestio-btn-prototype':       'View Adobe XD Protytpe',
-      'prestio-btn-github':          'View Github Project',
+      'prestio-btn-prototype':       'View Adobe XD prototype',
+      'prestio-btn-github':          'View GitHub project',
 
       /* ── WHG UI ── */
       'whg-ui-title':              'Wind Hill Growers UI Design',
@@ -432,7 +432,7 @@
       'whg-ui-ga4-p':              'GA4 was set up with separate data streams for the DTC Squarespace site and the B2B Zoho Commerce portal, allowing us to track conversion metrics independently. Key events — product views, add-to-cart, checkout starts, and order completions — were instrumented across both. GA4\'s funnel exploration reports confirmed the drop-off patterns surfaced by Hotjar and gave us a quantitative baseline to measure the impact of every design change.',
       'whg-ui-ab-intro-p':         'With both qualitative and quantitative data in hand, we ran targeted A/B tests across two areas:',
       'whg-ui-ab-ul':              '<li><strong>Product pages:</strong> We tested two layouts for the DTC product cards — one leading with origin story and tasting notes, another leading with pack size and price. The story-first variant increased add-to-cart rate, aligning with the brand\'s premium positioning.</li><li><strong>Landing pages:</strong> The DTC homepage was tested with two hero variants — a lifestyle photograph vs. a product close-up. The lifestyle image produced a higher scroll depth and more clicks to the shop. For the B2B landing page, we tested a short-form "Request Access" page against a longer page explaining wholesale benefits; the longer variant converted better, confirming that trade buyers needed more context before committing.</li>',
-      'whg-ui-btn-website':        'View Website',
+      'whg-ui-btn-website':        'View website',
 
       /* ── IxDF Meet #4 ── */
       'ixdf-meet4-page-title': 'Interaction Design Foundation (IxDF) Guatemala City Meet #4: The Accessibility Challenge in Guatemala',
@@ -705,7 +705,7 @@
       'cs-conclusion':        'Conclusión',
       'cs-contact-label':     'Pongámonos en contacto',
       'cs-contact-cta':       '¿Tienes un proyecto en mente? ¡Construyamos algo grandioso juntos!',
-      'cs-btn-pdf':           'Descargar PDF del Caso de Estudio',
+      'cs-btn-pdf':           'Descargar PDF del caso de estudio',
       'cs-figma-h2':          'Figma',
       'cs-zero-height-h2':    'ZeroHeight',
       'cs-principles':        'Principios',
@@ -820,7 +820,7 @@
       'adoptio-usability-p1': 'Se realizó un estudio de usabilidad remoto con cinco participantes de diversas regiones para evaluar la facilidad de uso y efectividad de Adoptio. El estudio se centró en identificar puntos de dolor y posibles mejoras para el proceso de adopción.',
       'adoptio-usability-p2': 'Recopilamos y organizamos los datos, lo que llevó a los siguientes hallazgos clave:',
       'adoptio-conclusion-p': 'Adoptio representa más que un proyecto de diseño: es una herramienta con el potencial de transformar vidas conectando mascotas con familias amorosas en países en desarrollo. Esta experiencia me enseñó el valor de combinar el diseño centrado en el usuario con el impacto social. Si deseas conversar sobre este proyecto, contáctame en <a href="mailto:hello@uxrodrigo.com">hello@uxrodrigo.com</a>.',
-      'adoptio-btn-xd':      'Ver Prototipo en Adobe XD',
+      'adoptio-btn-xd':      'Ver prototipo en Adobe XD',
       'adoptio-responsibilities-ul': '<li>Realizar investigación de usuarios</li><li>Identificar puntos de dolor</li><li>Idear soluciones</li><li>Crear wireframes</li><li>Realizar estudios de usabilidad</li><li>Desarrollar prototipos</li><li>Implementar en React</li>',
       'adoptio-goals-ul':            '<li>Adoptar mascotas de manera responsable y asegurar que reciban el amor y cuidado que necesitan.</li>',
       'adoptio-frustrations-ul':     '<li>Respuestas lentas al adoptar a través de redes sociales o plataformas en línea.</li><li>El bienestar de los animales después de la adopción.</li>',
@@ -837,15 +837,15 @@
       'coffee-persona-blockquote': 'Sara es una marketera y empresaria de 28 años de Guatemala. Le encanta despertar con una taza de café. Le gusta ahorrar dinero en productos de consumo diario y evitar el tráfico para ir de compras.',
       'coffee-dev-h2':          'Desarrollo',
       'coffee-dev-p':           'La app web fue desarrollada con React y sigue en desarrollo activo.',
-      'coffee-btn-github':      'Ver Proyecto en Github',
+      'coffee-btn-github':      'Ver proyecto en GitHub',
       'coffee-postlaunch-h2':   'Estudio de Usabilidad Post-lanzamiento',
       'coffee-usability-p1':    "Realizamos un Estudio de Usabilidad para identificar las dificultades específicas que los usuarios encontraban al intentar completar las tareas principales de la app de Café Don Lucas: selección de productos, realización de pedidos y navegación dentro de la app.",
       'coffee-usability-p2':    'Realizamos un estudio de usabilidad no moderado con participantes en Guatemala (remoto), donde los participantes completaron el estudio en sus propios hogares. Entrevistamos a 5 personas de distintos orígenes, géneros y capacidades.',
       'coffee-usability-p3':    'Luego recopilamos y organizamos los datos para identificar temas, lo que dio como resultado los siguientes hallazgos:',
       'coffee-usability-p4':    'Con base en los hallazgos del Estudio de Usabilidad, adaptamos el diseño para mejorar la experiencia del usuario y hacer que la app web sea más fácil de usar.',
       'coffee-accessibility-p': 'El sitio web fue diseñado para ser accesible con opciones de idioma en español e inglés. Se añadieron modos Oscuro y Claro para adaptarse a las preferencias visuales y mejorar la usabilidad en diferentes condiciones de iluminación.',
-      'coffee-btn-website':     'Ver Sitio Web',
-      'coffee-btn-figma':       'Ver Prototipo en Figma',
+      'coffee-btn-website':     'Ver sitio web',
+      'coffee-btn-figma':       'Ver prototipo en Figma',
       'coffee-goals-ul':        '<li>Evitar el tráfico y las filas comprando en línea.</li><li>Ahorrar dinero en productos de consumo diario.</li><li>Despertar con una taza de café.</li>',
       'coffee-frustrations-ul': '<li>Olvidarse de comprar café.</li><li>Hacer fila para pagar el café en caja.</li><li>Despertarse tarde o sin energía.</li>',
 
@@ -855,7 +855,7 @@
       'mwd-problem-p': 'Un blog alemán de educación sobre cannabis necesitaba un nuevo comienzo: una nueva marca, audiencia y estrategia para monetizarse. Querían un sitio web con espacio para publicaciones de blog, un podcast, un formulario de contacto y una calculadora de dosis.',
       'mwd-role-p':    'Como Diseñador UX, trabajé con su investigación e ideas para crear un plan:',
       'mwd-launch-p':  '¡El sitio ya está listo y la marca se prepara para su lanzamiento!',
-      'mwd-btn-xd':    'Ver Prototipo en Adobe XD',
+      'mwd-btn-xd':    'Ver prototipo en Adobe XD',
 
       /* ── Impulso ── */
       'impulso-title': 'Sistema de Diseño Impulso',
@@ -865,7 +865,7 @@
       'unity-title':          'Sistema de Diseño Unity',
       'unity-intro':          'Como Diseñador UX para Wind Hill Growers, enfrentamos el desafío de crear una experiencia de marca cohesiva en múltiples mercados internacionales. Para abordar esto, desarrollamos "Unity", un sistema de diseño integral que actúa como única fuente de verdad para todos los activos de diseño. Unity fue fundamental para llevar la marca a un nuevo nivel de consistencia, facilitando su gestión y escalabilidad en diversas plataformas.',
       'unity-zero-height-p':  'El Sistema de Diseño Unity está perfectamente integrado entre Figma y ZeroHeight, creando un flujo de trabajo dinámico que evoluciona junto con la marca. Esta conexión permite al equipo actualizar y refinar continuamente los activos de diseño en Figma, asegurando que cualquier cambio se refleje automáticamente en ZeroHeight. A medida que la marca crece, esta integración mantiene el sistema de diseño relevante y actualizado, permitiendo al equipo adaptarse rápidamente a nuevos requisitos.',
-      'unity-btn-figma':      'Ver Archivo en Figma',
+      'unity-btn-figma':      'Ver archivo en Figma',
       'unity-zero-height-h2': 'Zero Height',
       'unity-btn-zeroheight': 'Ver en Zero Height',
 
@@ -928,8 +928,8 @@
       'prestio-takeaways-p':         'Aprendí la importancia de comprender las necesidades del usuario en la industria, como la preferencia por procesos simples, rápidos y seguros. A través de la investigación de usuarios, descubrí que la accesibilidad y la transparencia son esenciales para generar confianza y lealtad en un mercado competitivo.',
       'prestio-next-steps-ol':       '<li><strong>Múltiples idiomas y responsividad:</strong> Con más tiempo, mejoraría la accesibilidad de la app añadiendo opciones de múltiples idiomas para llegar a una audiencia más amplia y diseñando la interfaz para todos los dispositivos.</li><li><strong>Modo Oscuro:</strong> También diseñaría la app con modos claro y oscuro para aprovechar mejor la paleta de colores y ofrecer una experiencia visual más flexible.</li><li><strong>Ampliar la Investigación:</strong> Finalmente, realizaría estudios de usuario y usabilidad con un grupo más amplio para refinar y mejorar la experiencia del usuario con mayor precisión y efectividad.</li>',
       'prestio-conclusion-p':        'El diseño y desarrollo de esta experiencia de usuario muestra todo lo que pude lograr en solo tres días, enfocándome en las necesidades y puntos de dolor del usuario. Imagina lo que podría lograr para ti con más tiempo y recursos. Si estás interesado en conversar más, no dudes en contactarme en <a href="mailto:hello@uxrodrigo.com">hello@uxrodrigo.com</a>.',
-      'prestio-btn-prototype':       'Ver Prototipo en Adobe XD',
-      'prestio-btn-github':          'Ver Proyecto en Github',
+      'prestio-btn-prototype':       'Ver prototipo en Adobe XD',
+      'prestio-btn-github':          'Ver proyecto en GitHub',
 
       /* ── WHG UI ── */
       'whg-ui-title':              'Diseño UI de Wind Hill Growers',
@@ -948,7 +948,7 @@
       'whg-ui-ga4-p':              'GA4 se configuró con flujos de datos separados para el sitio Squarespace DTC y el portal Zoho Commerce B2B, permitiéndonos rastrear métricas de conversión de forma independiente. Los eventos clave — vistas de productos, agregar al carrito, inicios de checkout y completaciones de pedidos — se instrumentaron en ambos. Los informes de exploración de embudos de GA4 confirmaron los patrones de caída identificados por Hotjar y nos dieron una línea base cuantitativa para medir el impacto de cada cambio de diseño.',
       'whg-ui-ab-intro-p':         'Con datos tanto cualitativos como cuantitativos, ejecutamos pruebas A/B dirigidas en dos áreas:',
       'whg-ui-ab-ul':              '<li><strong>Páginas de producto:</strong> Probamos dos layouts para las tarjetas de productos DTC — uno que comenzaba con la historia de origen y notas de cata, otro con el tamaño del paquete y precio. La variante con historia primero aumentó la tasa de agregar al carrito, alineándose con el posicionamiento premium de la marca.</li><li><strong>Páginas de destino:</strong> La página de inicio DTC se probó con dos variantes de héroe — una fotografía de estilo de vida vs. un primer plano del producto. La imagen de estilo de vida produjo mayor profundidad de desplazamiento y más clics a la tienda. Para la página de destino B2B, probamos una página corta "Solicitar Acceso" contra una página más larga que explicaba los beneficios mayoristas; la variante más larga convirtió mejor, confirmando que los compradores comerciales necesitaban más contexto antes de comprometerse.</li>',
-      'whg-ui-btn-website':        'Ver Sitio Web',
+      'whg-ui-btn-website':        'Ver sitio web',
 
       /* ── IxDF Meet #4 ── */
       'ixdf-meet4-page-title': 'Interaction Design Foundation (IxDF) Guatemala City Meet #4: El Reto de la Accesibilidad en Guatemala',
