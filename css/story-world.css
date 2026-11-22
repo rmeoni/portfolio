@@ -156,9 +156,12 @@
   box-shadow: var(--sw-chip-shadow); cursor: pointer;
   font: inherit; font-size: 11px; line-height: 16px; font-weight: 600;
   letter-spacing: 0.8px; text-transform: uppercase;
-  transition: transform 0.15s ease, background 0.3s ease, color 0.3s ease;
 }
-.story-world .sw-btn:hover { transform: translateY(-1px); }
+/* Motion only for visitors who have not asked to reduce it */
+@media (prefers-reduced-motion: no-preference) {
+  .story-world .sw-btn { transition: transform 0.15s ease, background 0.3s ease, color 0.3s ease; }
+  .story-world .sw-btn:hover { transform: translateY(-1px); }
+}
 .story-world .sw-btn:focus-visible { outline: 2px solid var(--color-focus-ring); outline-offset: 2px; }
 .story-world .sw-btn svg { width: 14px; height: 14px; fill: currentColor; display: block; }
 .story-world .sw-skip {

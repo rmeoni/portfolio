@@ -77,8 +77,8 @@
           <a href="book-a-call.html" class="nav-mobile-book" data-i18n="nav-book-call">Book a call</a>
           <a href="case-study/rodrigo_meono_resume_no_ref_compressed.pdf" download target="_blank" class="nav-mobile-cv"
             data-i18n="nav-download-cv">Download CV</a>
-          <button class="lang-toggle" aria-label="Switch language" title="Switch language">
-            <img src="images/language.svg" alt="Language" class="lang-icon">
+          <button class="lang-toggle" aria-label="Switch language" title="Switch language" data-i18n-label="a11y-lang-toggle">
+            <img src="images/language.svg" alt="" aria-hidden="true" class="lang-icon">
             <span class="lang-label">ES</span>
           </button>
         </div>
@@ -87,11 +87,11 @@
         <a href="case-study/rodrigo_meono_resume_no_ref_compressed.pdf" download target="_blank"
           class="button-secondary nav-button-secondary" data-i18n="nav-download-cv">Download CV</a>
         <a href="book-a-call.html" class="button nav-button w-button" data-i18n="nav-book-call">Book a call</a>
-        <button class="dark-mode-toggle" id="dark-mode-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
-          <img src="images/icon-toggle-dark-mode.svg" alt="Toggle dark mode" id="dark-mode-toggle-icon">
+        <button class="dark-mode-toggle" id="dark-mode-toggle" role="switch" aria-checked="true" aria-label="Dark mode" title="Dark mode" data-i18n-label="a11y-theme-toggle">
+          <img src="images/icon-toggle-dark-mode.svg" alt="" aria-hidden="true" id="dark-mode-toggle-icon">
         </button>
-        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language" title="Switch language">
-          <img src="images/language.svg" alt="Language" id="lang-toggle-icon" class="lang-icon">
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language" title="Switch language" data-i18n-label="a11y-lang-toggle">
+          <img src="images/language.svg" alt="" aria-hidden="true" id="lang-toggle-icon" class="lang-icon">
           <span class="lang-label" id="lang-label">ES</span>
         </button>
         <div class="menu-button w-clearfix w-nav-button">
@@ -107,8 +107,8 @@
   <div style="opacity:0" class="page-wrapper">
     <div class="back-to-top">
       <div id="Top" data-w-id="e50e162b-5882-30aa-810d-4c4db386814c" class="top"></div>
-      <a href="#Top" class="top-button w-inline-block">
-        <div class="top-button-icon w-icon-dropdown-toggle"></div>
+      <a href="#Top" class="top-button w-inline-block" aria-label="Back to top" data-i18n-label="a11y-back-to-top">
+        <div class="top-button-icon w-icon-dropdown-toggle" aria-hidden="true"></div>
       </a>
     </div>
     <div class="top-section wf-section">
@@ -293,10 +293,11 @@
 
       function applyTheme(isDark) {
         document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+        var themeSwitch = document.getElementById('dark-mode-toggle');
+        if (themeSwitch) themeSwitch.setAttribute('aria-checked', isDark ? 'true' : 'false');
         var icon = document.getElementById('dark-mode-toggle-icon');
         if (icon) {
           icon.src = isDark ? ICON_TO_LIGHT : ICON_TO_DARK;
-          icon.alt = isDark ? 'Switch to light mode' : 'Switch to dark mode';
         }
         var langIcon = document.getElementById('lang-toggle-icon');
         if (langIcon) {

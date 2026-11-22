@@ -68,6 +68,13 @@
       'nav-contact':      'Contact',
       'nav-download-cv':  'Download CV',
 
+      /* ── Accessible names for icon-only controls ── */
+      'a11y-theme-toggle':  'Dark mode',
+      'a11y-lang-toggle':   'Switch language',
+      'a11y-back-to-top':   'Back to top',
+      'a11y-carousel-prev': 'Previous image',
+      'a11y-carousel-next': 'Next image',
+
       /* ── Hero ── */
       'hero-intro':  "My name is Rodrigo. I'm a User Experience Developer who loves to design & develop",
       'hero-line-1': 'mobile apps',
@@ -583,6 +590,13 @@
       'nav-about':        'Sobre mí',
       'nav-contact':      'Contacto',
       'nav-download-cv':  'Descargar CV',
+
+      /* ── Nombres accesibles de controles con solo icono ── */
+      'a11y-theme-toggle':  'Modo oscuro',
+      'a11y-lang-toggle':   'Cambiar idioma',
+      'a11y-back-to-top':   'Volver arriba',
+      'a11y-carousel-prev': 'Imagen anterior',
+      'a11y-carousel-next': 'Imagen siguiente',
 
       /* ── Hero ── */
       'hero-intro':  "Me llamo Rodrigo. Soy un Desarrollador de Experiencia de Usuario que ama diseñar y desarrollar",
@@ -1114,6 +1128,14 @@
     document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
       var key = el.getAttribute('data-i18n-html');
       if (t[key] !== undefined) el.innerHTML = t[key];
+    });
+
+    // Accessible names (aria-label, plus the tooltip when there is one)
+    document.querySelectorAll('[data-i18n-label]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n-label');
+      if (t[key] === undefined) return;
+      el.setAttribute('aria-label', t[key]);
+      if (el.hasAttribute('title')) el.setAttribute('title', t[key]);
     });
 
     // Language label: show the OTHER language (update all instances)
