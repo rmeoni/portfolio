@@ -169,7 +169,8 @@
 }
 .story-world .sw-skip svg { width: 12px; height: 12px; fill: currentColor; display: block; }
 .story-world .sw-skip:focus-visible { outline: 2px solid var(--sw-accent); outline-offset: 2px; }
-.story-world .sw-play { background: var(--sw-accent); color: #fff; }
+/* Same tokens as a selected chip (the old #F86348 with white text was 3.06:1) */
+.story-world .sw-play { background: var(--color-action-chip-bg-selected); color: var(--color-action-chip-fg-selected); }
 .story-world .sw-play .i-pause,
 .story-world.sw-playing .sw-play .i-play { display: none; }
 .story-world.sw-playing .sw-play .i-pause { display: block; }

@@ -33,6 +33,11 @@
   --color-focus-ring: var(--coral-600);
   --color-action-disabled-bg: var(--neutral-100);
   --color-action-disabled-fg: var(--neutral-500);
+  /* Not in the original audit: border-default and chip-bg are under 3:1
+     against the page, and secondary-bg-hover equals chip-bg, so a chip hover
+     on it would not show. These two keep controls at 3:1 and hover visible. */
+  --color-border-control: var(--neutral-500);         /* 5.31:1 on white */
+  --color-action-chip-bg-hover: var(--navy-100);
 
   /* Non-color */
   --radius-sm: 8px;
@@ -62,6 +67,8 @@
   --color-focus-ring: var(--coral-400);
   --color-action-disabled-bg: var(--neutral-800);
   --color-action-disabled-fg: var(--neutral-500);
+  --color-border-control: var(--neutral-500);         /* 3.95:1 on #000 */
+  --color-action-chip-bg-hover: var(--neutral-600);
 }
 
 h2 {
@@ -147,13 +154,14 @@ h3 {
   color: #fff;
 }
 
-/* Orange hover for all primary buttons */
+/* Primary hover: darker shade of the same color (the old coral hover with
+   white text was 2.92:1) */
 .button:hover,
 .button.nav-button:hover,
 .button.contact-button:hover,
 #contact-form .button:hover {
-  background-color: #f96a4c;
-  color: #fff;
+  background-color: var(--color-action-primary-bg-hover);
+  color: var(--color-action-primary-fg);
 }
 
 .button-secondary {
@@ -360,7 +368,7 @@ video {
 }
 
 .prev:hover {
-  background-color: #F96A4C;
+  background-color: var(--color-action-primary-bg-hover);
 }
 
 .next {
@@ -374,7 +382,7 @@ video {
 }
 
 .next:hover {
-  background-color: #F96A4C;
+  background-color: var(--color-action-primary-bg-hover);
 }
 
 .next .top-button-icon.w-icon-dropdown-toggle {
@@ -635,8 +643,8 @@ video {
   }
 
   .nav-mobile-book:hover {
-    background-color: #f96a4c;
-    color: #fff !important;
+    background-color: var(--color-action-primary-bg-hover);
+    color: var(--color-action-primary-fg) !important;
   }
 
   /* Download CV is secondary (outline) in the mobile menu too */
@@ -697,8 +705,10 @@ video {
   color: #888;
 }
 
-[data-theme="dark"] .text-label {
-  color: #f96a4c;
+/* Coral labels: coral-400 on white was under 3:1; the token is coral-600
+   in light and coral-400 in dark */
+.text-label {
+  color: var(--color-text-accent);
 }
 
 [data-theme="dark"] figcaption {
@@ -820,13 +830,14 @@ video {
   color: #000;
 }
 
-/* Orange hover for all primary buttons in dark mode */
+/* Primary hover in dark mode (needed while the dark .button overrides above
+   exist; same tokens as the light rule) */
 [data-theme="dark"] .button:hover,
 [data-theme="dark"] .button.nav-button:hover,
 [data-theme="dark"] .button.contact-button:hover,
 [data-theme="dark"] #contact-form .button:hover {
-  background-color: #f96a4c;
-  color: #fff;
+  background-color: var(--color-action-primary-bg-hover);
+  color: var(--color-action-primary-fg);
 }
 
 [data-theme="dark"] .button.nav-button {
@@ -843,10 +854,16 @@ video {
   background: rgba(255, 255, 255, 0.1);
 }
 
-/* Back-to-top button */
-[data-theme="dark"] .top-button {
-  background-color: #1a1a1a;
-  color: #fff;
+/* Back-to-top button: surface fill, plus a border that is at least 3:1
+   against the page in both themes (the old fill was 1.45:1 / 1.21:1) */
+.top-button {
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border-control);
+  color: var(--color-text-primary);
+}
+
+.top-button:hover {
+  background-color: var(--color-action-secondary-bg-hover);
 }
 
 /* ==============================================
@@ -910,26 +927,42 @@ video {
 }
 
 /* ==============================================
-   DARK MODE — TAG BADGES
+   TAG BADGES — states (both themes via tokens)
+   Default, hover, focus and selected must all look different:
+   hover changes the fill, focus gets the ring (see focus rules),
+   selected is coral.
    ============================================== */
-[data-theme="dark"] .tag-badge {
-  background-color: #1e1e1e;
-  color: #e8e8e8;
+.tag-badge {
+  background-color: var(--color-action-chip-bg);
+  color: var(--color-action-chip-fg);
 }
 
-[data-theme="dark"] .tag-badge:hover {
-  background-color: #f96a4c;
-  color: #fff;
+/* Filter chips are controls, so their edge must be 3:1 against the page */
+button.tag-badge {
+  border: 1px solid var(--color-border-control);
 }
 
-[data-theme="dark"] .tag-badge:focus {
-  background-color: #f96a4c;
-  color: #fff;
+.tag-badge:hover {
+  background-color: var(--color-action-chip-bg-hover);
+  color: var(--color-action-chip-fg);
 }
 
-[data-theme="dark"] .tag-badge.activeBtn {
-  background-color: #f96a4c;
-  color: #fff;
+/* Webflow paints :focus coral like the selected state; keep the fill as is */
+.tag-badge:focus {
+  background-color: var(--color-action-chip-bg);
+  color: var(--color-action-chip-fg);
+}
+
+.tag-badge.job-badge:hover {
+  background-color: var(--color-action-chip-bg);
+}
+
+.tag-badge.activeBtn,
+.tag-badge.activeBtn:hover,
+.tag-badge.activeBtn:focus {
+  background-color: var(--color-action-chip-bg-selected);
+  border-color: var(--color-action-chip-bg-selected);
+  color: var(--color-action-chip-fg-selected);
 }
 
 /* ==============================================
@@ -1056,7 +1089,7 @@ video {
 
 [data-theme="dark"] #contact-form input::placeholder,
 [data-theme="dark"] #contact-form textarea::placeholder {
-  color: #555;
+  color: var(--neutral-400);
 }
 
 /* ==============================================
