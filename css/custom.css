@@ -71,6 +71,28 @@
   --color-action-chip-bg-hover: var(--neutral-600);
 }
 
+/* ==============================================
+   FOCUS RING
+   Same specificity as Webflow's `.w-nav-button:focus { outline: 0 }` and
+   `.w-dropdown-toggle:focus { outline: 0 }` in webflow.css; this file loads
+   later, so it wins without !important.
+   ============================================== */
+.button:focus-visible,
+.button-secondary:focus-visible,
+.tag-badge:focus-visible,
+.top-button:focus-visible,
+.dark-mode-toggle:focus-visible,
+.lang-toggle:focus-visible,
+.w-nav-button:focus-visible,
+.w-dropdown-toggle:focus-visible,
+.nav-mobile-book:focus-visible,
+.nav-mobile-cv:focus-visible,
+.prev:focus-visible,
+.next:focus-visible {
+  outline: 2px solid var(--color-focus-ring);
+  outline-offset: 2px;
+}
+
 h2 {
   text-transform: capitalize;
 }
