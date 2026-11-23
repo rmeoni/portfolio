@@ -58,6 +58,7 @@
     name: document.getElementById('bc-name'),
     email: document.getElementById('bc-email'),
     message: document.getElementById('bc-message'),
+    guests: document.getElementById('bc-guests'),
     honey: document.getElementById('bc-company')
   };
 
@@ -262,6 +263,7 @@
     els.name.placeholder = t('book-name-ph');
     els.email.placeholder = t('book-email-ph');
     els.message.placeholder = t('book-message-ph');
+    els.guests.placeholder = t('book-guests-ph');
     if (LIVE) {
       els.note.textContent = t('book-note-live');
       if (!els.submit.disabled) els.submit.textContent = t('book-submit-live');
@@ -282,12 +284,31 @@
     if (window.turnstile && typeof window.turnstile.reset === 'function') window.turnstile.reset();
   }
 
+  /* Guests: the field is type="email" multiple, so the browser already
+     checks each address; here we split, trim, drop duplicates and the
+     visitor's own address. The Worker applies the same rules. */
+  var MAX_GUESTS = 5;
+  function guestList() {
+    var own = els.email.value.trim().toLowerCase();
+    var seen = {};
+    return els.guests.value.split(',')
+      .map(function (s) { return s.trim(); })
+      .filter(function (s) {
+        var k = s.toLowerCase();
+        if (!s || k === own || seen[k]) return false;
+        seen[k] = true;
+        return true;
+      });
+  }
+
   els.form.addEventListener('submit', async function (e) {
     e.preventDefault();
     clearError();
 
     if (!state.slot) { showError(t('book-need-slot')); return; }
     if (!els.form.reportValidity()) return;
+    var guests = guestList();
+    if (guests.length > MAX_GUESTS) { showError(t('book-guests-too-many')); els.guests.focus(); return; }
 
     var start = state.slot;
     var hostWhen = fmtDate(start, CONFIG.hostTimeZone, true) + ' · ' + fmtRange(start, CONFIG.hostTimeZone);
@@ -300,6 +321,7 @@
       'Requested time, ' + CONFIG.hostLabel + ': ' + hostWhen,
       "Visitor's time" + (visitorTz ? ' (' + visitorTz + ')' : '') + ': ' + visitorWhen,
       'Length: ' + CONFIG.durationMinutes + ' minutes',
+      'Guests: ' + (guests.length ? guests.join(', ') : '(none)'),
       '',
       'About the project:',
       about || '(no details provided)'
@@ -309,7 +331,7 @@
     els.submit.textContent = t('book-sending');
 
     if (LIVE) {
-      await submitLive(start, visitorWhen, about);
+      await submitLive(start, visitorWhen, about, guests);
       return;
     }
 
@@ -348,7 +370,7 @@
     }
   });
 
-  async function submitLive(start, visitorWhen, about) {
+  async function submitLive(start, visitorWhen, about, guests) {
     var email = els.email.value.trim();
     try {
       var res = await fetch(CONFIG.bookingApiUrl.replace(/\/$/, '') + '/book', {
@@ -358,6 +380,7 @@
           name: els.name.value.trim(),
           email: email,
           message: about,
+          guests: guests,
           start: start.toISOString(),
           tz: visitorTz,
           lang: lang(),

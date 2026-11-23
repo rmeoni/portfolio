@@ -4,9 +4,10 @@
  *   GET  /availability?from=YYYY-MM-DD&to=YYYY-MM-DD
  *        → open slots (host calendar dates, Guatemala time), minus anything
  *          busy on Rodrigo's Google Calendar.
- *   POST /book  { name, email, message, start, tz, lang, honey, turnstileToken }
+ *   POST /book  { name, email, guests[], message, start, tz, lang, honey, turnstileToken }
  *        → verifies Turnstile, re-checks the slot is free, creates the event
- *          with a Google Meet link and emails the invite to the visitor.
+ *          with a Google Meet link and emails the invite to the visitor and
+ *          any guests (up to MAX_GUESTS).
  *
  * Secrets (wrangler secret put …):
  *   GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, GOOGLE_REFRESH_TOKEN, TURNSTILE_SECRET
@@ -23,6 +24,9 @@ const RULES = {
   minNoticeHours: 24,
   maxDaysAhead: 60,
 };
+
+const MAX_GUESTS = 5;
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const GOOGLE_TOKEN_URL = 'https://oauth2.googleapis.com/token';
 const CAL_API = 'https://www.googleapis.com/calendar/v3';
@@ -127,10 +131,11 @@ async function busyTimes(env, timeMin, timeMax) {
   return busy;
 }
 
-async function createEvent(env, { start, name, email, message, tz }) {
+async function createEvent(env, { start, name, email, guests, message, tz }) {
   const end = new Date(start.getTime() + RULES.durationMinutes * 60e3);
   const calendarId = encodeURIComponent(env.CALENDAR_ID || 'primary');
   const lines = [`Booked from uxrodrigo.com/book-a-call.html`, `Name: ${name}`, `Email: ${email}`];
+  if (guests.length) lines.push(`Guests: ${guests.join(', ')}`);
   if (tz) lines.push(`Visitor time zone: ${tz}`);
   lines.push('', 'About the project:', message || '(no details provided)');
   const description = lines.join('\n');
@@ -145,7 +150,7 @@ async function createEvent(env, { start, name, email, message, tz }) {
         description,
         start: { dateTime: start.toISOString(), timeZone: RULES.hostTimeZone },
         end: { dateTime: end.toISOString(), timeZone: RULES.hostTimeZone },
-        attendees: [{ email, displayName: name }],
+        attendees: [{ email, displayName: name }, ...guests.map((g) => ({ email: g }))],
         conferenceData: {
           createRequest: {
             requestId: crypto.randomUUID(),
@@ -217,7 +222,19 @@ async function handleBook(request, env) {
   if (body.honey) return json(request, env, { ok: true });
 
   if (!name) return json(request, env, { error: 'name_required' }, 400);
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return json(request, env, { error: 'email_invalid' }, 400);
+  if (!EMAIL_RE.test(email)) return json(request, env, { error: 'email_invalid' }, 400);
+
+  // Guests: array (or comma string) of emails; trimmed, de-duplicated,
+  // without the visitor's own address, at most MAX_GUESTS
+  const rawGuests = Array.isArray(body.guests) ? body.guests : String(body.guests || '').split(',');
+  const guests = [];
+  for (const g of rawGuests) {
+    const e = String(g || '').trim().slice(0, 200);
+    if (!e || e.toLowerCase() === email.toLowerCase() || guests.some((x) => x.toLowerCase() === e.toLowerCase())) continue;
+    if (!EMAIL_RE.test(e)) return json(request, env, { error: 'guest_email_invalid' }, 400);
+    guests.push(e);
+  }
+  if (guests.length > MAX_GUESTS) return json(request, env, { error: 'too_many_guests' }, 400);
   if (isNaN(start.getTime())) return json(request, env, { error: 'start_invalid' }, 400);
 
   const ip = request.headers.get('CF-Connecting-IP');
@@ -236,7 +253,7 @@ async function handleBook(request, env) {
   const busy = await busyTimes(env, start, end);
   if (overlaps(start, busy)) return json(request, env, { error: 'slot_taken' }, 409);
 
-  const event = await createEvent(env, { start, name, email, message, tz });
+  const event = await createEvent(env, { start, name, email, guests, message, tz });
   return json(request, env, {
     ok: true,
     start: start.toISOString(),

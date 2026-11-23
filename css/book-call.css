@@ -335,6 +335,13 @@
   transition: border-color 0.2s;
 }
 
+.bc-hint {
+  margin: 6px 0 0;
+  color: var(--bc-muted);
+  font-size: 13px;
+  line-height: 18px;
+}
+
 .bc-field textarea {
   min-height: 120px;
   resize: vertical;
