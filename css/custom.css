@@ -1283,3 +1283,48 @@ button.tag-badge.activeBtn::before {
 @media screen and (max-width: 767px) {
   .glue-sec-media { border-radius: 24px; }
 }
+
+/* ===== NAV: ACTIVE SECTION (js/nav-spy.js, index.html) =====
+   The hover underline (.hover-line) is driven by Webflow interactions with
+   inline styles, so the active one is a separate pseudo-element. Same 1px
+   line, full width, growing from the left. */
+@media screen and (min-width: 992px) {
+  .nav-menu .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: #151515;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 300ms cubic-bezier(.25, .46, .45, .94);
+  }
+
+  .nav-menu .nav-link.is-active::after {
+    transform: scaleX(1);
+  }
+
+  [data-theme="dark"] .nav-menu .nav-link::after {
+    background-color: #e8e8e8;
+  }
+
+  html.skeleton-nav-loading .navbar .nav-link::after {
+    visibility: hidden;
+  }
+}
+
+/* Mobile menu panel: the active link is coloured instead (no underlines there) */
+@media screen and (max-width: 991px) {
+  .nav-menu .nav-link.is-active,
+  [data-theme="dark"] .nav-menu .nav-link.is-active {
+    color: var(--color-text-accent);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-menu .nav-link::after {
+    transition: none;
+  }
+}
