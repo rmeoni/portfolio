@@ -260,10 +260,6 @@ h3 {
   .brand .logo {
     width: 136px;
   }
-
-  .nav-right .dark-mode-toggle img {
-    height: 22px;
-  }
 }
 
 .work-card-preview.w-inline-block {
@@ -624,21 +620,50 @@ video {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4px 8px;
+  height: 44px;
+  padding: 0 8px;
   margin-left: 12px;
   border: none;
   border-radius: var(--radius-sm);
   background: transparent;
+  color: var(--color-text-primary);
   cursor: pointer;
   transition: background 0.2s;
   flex-shrink: 0;
 }
 
-.dark-mode-toggle img {
+/* Same switch as Glue's .g-theme-switch: sun · track with knob · moon, drawn
+   in the text colour. The knob sits by the sun in light mode and slides to
+   the moon in dark mode (26 = distance between the two knob positions in the
+   115 × 35 artwork). */
+.dark-mode-toggle svg {
   display: block;
-  height: 28px;
+  height: 22px;
   width: auto;
-  border-radius: 0 !important;
+}
+
+.dark-mode-toggle .theme-switch-knob {
+  transition: transform 300ms cubic-bezier(.25, .46, .45, .94);
+}
+
+[data-theme="dark"] .dark-mode-toggle .theme-switch-knob {
+  transform: translateX(26px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dark-mode-toggle .theme-switch-knob {
+    transition: none;
+  }
+}
+
+@media (max-width: 479px) {
+  .dark-mode-toggle {
+    padding: 0 4px;
+  }
+
+  .dark-mode-toggle svg {
+    height: 18px;
+  }
 }
 
 .dark-mode-toggle:hover {
