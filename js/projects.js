@@ -225,6 +225,19 @@ const projects = {
         buttonText_es: 'Ver proyecto',
         target: "_self"
     },
+    glue_design_system: {
+        title: 'Glue Design System',
+        title_es: 'Sistema de Diseño Glue',
+        category: 'Design System',
+        description: "Glue is the design system behind UXRodrigo. I used Claude, Anthropic's AI assistant, to turn this website's styles into design tokens, base CSS, components and documentation, then published it on GitHub and connected it to zeroheight and Figma Make, so design, code and AI prototyping share one source of truth.",
+        description_es: 'Glue es el sistema de diseño detrás de UXRodrigo. Usé Claude, el asistente de IA de Anthropic, para convertir los estilos de este sitio en tokens de diseño, CSS base, componentes y documentación; después lo publiqué en GitHub y lo conecté con zeroheight y Figma Make, para que diseño, código y prototipado con IA compartan una única fuente de verdad.',
+        link: './detail_project_glue_design_system.html',
+        image: './images/portfolio-thumb-31.png',
+        image_dark: './images/portfolio-thumb-31-dark.png',
+        buttonText: 'Read more',
+        buttonText_es: 'Leer más',
+        target: "_self"
+    },
     impulso_design_system: {
         title: 'Impulso Design System',
         title_es: 'Sistema de Diseño Impulso',
