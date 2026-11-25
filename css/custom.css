@@ -236,6 +236,17 @@ h3 {
   }
 }
 
+/* Desktop nav: the side columns were plain 1fr, so when the right group
+   (CTA, theme and language toggles) was wider than its half it spilled over
+   the last link (by up to 13px with "Glue" added). minmax(max-content, 1fr)
+   keeps the links centred whenever both sides fit and shifts them left only
+   when the right group needs the room. */
+@media screen and (min-width: 992px) {
+  .navigation {
+    grid-template-columns: minmax(max-content, 1fr) auto minmax(max-content, 1fr);
+  }
+}
+
 /* Phones: the logo box is 200px wide, which left the theme toggle 7px from
    it at 375px. A narrower logo keeps at least 12px between them. */
 @media screen and (max-width: 479px) {
@@ -1248,4 +1259,27 @@ button.tag-badge.activeBtn::before {
 
 .case-flow > :last-child {
   margin-bottom: 0;
+}
+
+/* ===== HOME: GLUE DESIGN SYSTEM SECTION ===== */
+.glue-sec-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+.glue-sec-media {
+  margin-top: 48px;
+  border-radius: 48px;
+  overflow: hidden;
+}
+.glue-sec-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 767px) {
+  .glue-sec-media { border-radius: 24px; }
 }

@@ -66,6 +66,7 @@
       'nav-portfolio':    'Portfolio',
       'nav-about':        'About',
       'nav-contact':      'Contact',
+      'nav-glue':         'Glue',
       'nav-download-cv':  'Download CV',
 
       /* ── Accessible names for icon-only controls ── */
@@ -377,6 +378,10 @@
       'glue-integrations-ul': "<li><strong>GitHub:</strong> the repository is the single source of truth, versioned with SemVer and served through a CDN.</li><li><strong>zeroheight:</strong> the token folder is synced as a token set with Light and Dark themes, and each guideline in the docs folder became a documentation page.</li><li><strong>Figma:</strong> Tokens Studio syncs the same tokens into Figma variables with Light and Dark modes.</li><li><strong>Figma Make:</strong> a guidelines folder written for AI tells Figma Make how to use Glue, so generated screens stay on brand.</li>",
       'glue-takeaways-ul': "<li>AI is a fast collaborator, but the design decisions still need a designer: every token and component was reviewed before it shipped.</li><li>Starting from real production CSS keeps a design system honest; Glue documents what the site already is.</li><li>Writing guidelines for both people and AI tools makes the same system useful in zeroheight and in Figma Make.</li>",
       'glue-live-btn': "View live",
+      'glue-sec-label': "Design System",
+      'glue-sec-heading': "Glue Design System",
+      'glue-sec-description': "The design system behind uxrodrigo.com: tokens, components, hand-made icons and usage guidelines, built with Claude and connected to GitHub, zeroheight and Figma Make.",
+      'glue-sec-more': "See more",
 
       /* ── Impulso ── */
       'impulso-title': 'Impulso Design System',
@@ -624,6 +629,7 @@
       'nav-portfolio':    'Portafolio',
       'nav-about':        'Sobre mí',
       'nav-contact':      'Contacto',
+      'nav-glue':         'Glue',
       'nav-download-cv':  'Descargar CV',
 
       /* ── Nombres accesibles de controles con solo icono ── */
@@ -935,6 +941,10 @@
       'glue-integrations-ul': "<li><strong>GitHub:</strong> el repositorio es la única fuente de verdad, versionado con SemVer y servido por CDN.</li><li><strong>zeroheight:</strong> la carpeta de tokens se sincroniza como token set con temas Light y Dark, y cada guía de la carpeta docs se convirtió en una página de documentación.</li><li><strong>Figma:</strong> Tokens Studio sincroniza los mismos tokens como variables de Figma con modos Light y Dark.</li><li><strong>Figma Make:</strong> una carpeta de guidelines escrita para IA le indica a Figma Make cómo usar Glue, para que las pantallas generadas respeten la marca.</li>",
       'glue-takeaways-ul': "<li>La IA es una colaboradora rápida, pero las decisiones de diseño siguen necesitando a un diseñador: cada token y componente se revisó antes de publicarse.</li><li>Partir del CSS real de producción mantiene honesto al sistema; Glue documenta lo que el sitio ya es.</li><li>Escribir guías tanto para personas como para herramientas de IA hace que el mismo sistema sirva en zeroheight y en Figma Make.</li>",
       'glue-live-btn': "Ver en vivo",
+      'glue-sec-label': "Sistema de diseño",
+      'glue-sec-heading': "Glue Design System",
+      'glue-sec-description': "El sistema de diseño detrás de uxrodrigo.com: tokens, componentes, íconos hechos a mano y guías de uso, creado con Claude y conectado a GitHub, zeroheight y Figma Make.",
+      'glue-sec-more': "Ver más",
 
       /* ── Impulso ── */
       'impulso-title': 'Sistema de Diseño Impulso',
