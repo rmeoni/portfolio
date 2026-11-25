@@ -160,6 +160,7 @@
       'footer-portfolio': 'Portfolio',
       'footer-about':     'About',
       'footer-contact':   'Contact',
+      'footer-glue-nav': "Glue",
       'footer-heading':   "Let's Get In Touch",
       'footer-text':      "I'd love to hear from you! Please reach out.",
 
@@ -723,6 +724,7 @@
       'footer-portfolio': 'Portafolio',
       'footer-about':     'Sobre mí',
       'footer-contact':   'Contacto',
+      'footer-glue-nav': "Glue",
       'footer-heading':   '¡Pongámonos en Contacto!',
       'footer-text':      '¡Me encantaría saber de ti! Por favor contáctame.',
 
